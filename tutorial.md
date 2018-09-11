@@ -59,7 +59,8 @@ Looking at the word "future" and "seeing beyond appearances", Frank's player dec
 
 Frank answers "*I believe that a patrol of soldiers with dogs is inspecting all the cars parked in the street. They're probably checking for bombs, because an official is going to come this way. They're a few cars away from me.*"
 
-Note that Frank, just like Alice, doesn't have to interpret the cards alone. There is absolutely no problem with asking around the table for suggestions. As GM, Alice gets to decide whether Frank's interpretation makes sense.
+Note that Frank's player, just like Alice, doesn't have to interpret the cards alone. There is absolutely no problem with asking around the table for suggestions. Since Frank's player is drawing, he'll be the one picking the final interpretation.
+Of course, as GM, Alice gets to decide whether Frank's interpretation makes sense.
 
 With this draw, we have additional information:
 - **Canine patrols are looking for bombs.**
@@ -67,8 +68,42 @@ With this draw, we have additional information:
 
 Also, Frank needs to react quickly. He may decide to keep his cool, or to ditch the van. He's probably going to be unavailable for a few rounds, too, so Desmond and Erika won't benefit from Frank's help – so Alice may inform the players that they have a malus.
 
+On we go, with the pursuit and the canine patrols.
+
 ## Ending the scene
 
-Eventually, it will be time to end the chase – especially if nobody is winning.
+Eventually, time will come to end the chase. This ending may come up naturally, if the players have managed to get rid of their pursuit, or if they have been overtaken. If it doesn't, it's much better to end the scene without waiting for boredom to catch up.
 
-TBD
+- Alice: "The pursuit is ending. I'll draw to find out how."
+
+![](assets/small_reversed_card_12.png)
+
+On this card, we see:
+- A name: "XII. Playing Protector"
+- An interpretation: "Rescue is coming?"
+- A picture, with some kind of winged hero attacking a winged monster.
+
+From "Rescue is coming", Alice decides that, well, rescue is coming. From "Playing Protector", she decides that the rescue will be impressive. And looking at the wings, she concludes that it will come from the air. Since there are **Soldiers everywhere in the streets**, it should be an helicopter from an airborn unit of the army.
+
+Alice then narrates "*As you turn for what may be the fiftieth time, hoping to lose the bikes in the small streets, you hear a chopper getting close to your position. Looking up, you see a military deployment vehicle. Suddenly, the silence on your radio is broken by the voice of Archangel, your boss: 'Prepare to ditch the car and board the helicopter. It will lead you to a safe place.'*"
+
+Also, since **An official is coming**, Alice suspects that the players are going to meet that official very soon.
+
+
+## What did we do?
+
+With a little help, an unprepped urban chase scene came up pretty memorable. Just as importantly, once the players encounter the official, all the military deployment and bomb-sniffing dogs will have been turned into *foreshadowing* – even though Frank was the one who introduced the canine squads in the first place.
+
+Let's summarize the techniques we have used so far:
+
+1. Setting up the scene.
+2. Writing down key facts as they were established.
+3. Reusing these facts when they become useful.
+4. Waking up a player who was dozing off by letting him pick a plot twist.
+5. Ending a scene before it becomes boring.
+6. Drawing from the Space·Time Deck.
+7. Interpreting ideas collaboratively.
+
+Many of these techniques are variants on tools that experienced GMs, Writers, Players and Improv actors use without even thinking.
+
+In the rest of this book, we'll expand on these techniques and introduce others tools designed to help you reach that level!
