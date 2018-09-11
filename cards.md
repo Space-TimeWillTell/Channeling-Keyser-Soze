@@ -21,10 +21,10 @@ chapter [Using the deck instead of your usual ruleset](rules.md).
 
 In theory, a GM or Player or Writer should be able to use anything
 around them as support for improvisation, anything they see or hear
-or remember. In fact, the ideal improviser is Kayser Söze, who manages
+or remember. In fact, the ideal improviser is Keyser Söze, who manages
 to come up with a plot twist just by looking at his coffee cup.
 
-Sadly, most of us aren't Kayser Söze. We have ideas, many of them,
+Sadly, most of us aren't Keyser Söze. We have ideas, many of them,
 all the time, but we typically have so many of them tha it's hard
 for us to concentrate pick one, focus on it, and develop it until
 it actually becomes a good idea.

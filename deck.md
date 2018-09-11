@@ -12,45 +12,7 @@ This chapter consists in the cards themselves, and a few examples on how to use 
 
 ## Introducing The Time Deck
 
-The Time Deck consists in 22 cards, loosely inspired from the Major Arcana of a Divination Tarot Deck.
 
-All images are believed to allow reproduction and reuse.
-
-| Card | Additional interpretations |
-| :---: | :--- |
-| ![](/assets/small_card_1.png) | Light. A Continuum Indirection materializing. |
-| ![](/assets/small_card_2.png) | The Time Commune. A Party. |
-| ![](/assets/small_card_3.png) | The Space·Time Fleet. A Time Citadel. |
-| ![](/assets/small_card_4.png) | The Most Benevolent Administrators. The Babylon Project. |
-| ![](/assets/small_card_5.png) | The Time Museum. Any kind of Paradox. A Future Sayer. |
-| ![](/assets/small_card_6.png) | The Time Brigade. The People's Time Liberation Army. |
-| ![](/assets/small_card_7.png) | Mad Science. |
-| ![](/assets/small_card_8.png) | Time Magazine. |
-| ![](/assets/small_card_9.png) | Escaping. The Foundation for a Time Encyclopedia. |
-| ![](/assets/small_card_10.png) | The Space Fleet. The Space·Time Fleet |
-| ![](/assets/small_card_11.png) | The Office of Time & Measures. |
-| ![](/assets/small_card_12.png) | The Agency for Continuity of Space & Time. The Time Museum. |
-| ![](/assets/small_card_13.png) | Perfect Polymorphic Provocateurs. The Time Adjustment Foundation, Time Magazine, |
-| ![](/assets/small_card_14.png) | The Time Hanse. The Time Museum. |
-| ![](/assets/small_card_15.png) | The Time Hierarchy |
-| ![](/assets/small_card_16.png) | ... |
-| ![](/assets/small_card_17.png) | ... |
-| ![](/assets/small_card_18.png) | ... |
-| ![](/assets/small_card_19.png) | ... |
-| ![](/assets/small_card_20.png) | ... |
-| ![](/assets/small_card_21.png) | ... |
-| ![](/assets/small_card_0.png) | Time itself |
-
-As you can see, each card has:
-
-* an image;
-* a title;
-* two interpretations, depending on how you hold the card;
-* also, a few ideas of additional interpretations.
-
-We'll use all of them for improvisation.
-
-[High-resolution, two-cards per deck, designed for printing as 11x15 photos.](https://photos.app.goo.gl/uYLnUiLAku8hLUcE7)
 
 ## Using The Time Deck
 

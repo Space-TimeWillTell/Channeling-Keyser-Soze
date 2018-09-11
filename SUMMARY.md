@@ -11,10 +11,9 @@
 1. [Hey, you! From 0 to NPC + its reactions](npc.md).
 1. Planets, dungeons and amusement parks: improvising places.
 1. Using the deck instead of your usual ruleset.
-1. Credits.
+1. [Credits](CREDITS.md)
 1. [License](LICENSE.md)
 
 # Misc
 
-1. [The Space·Time Deck](deck.md)
 1. [Draw a card](https://yoric.github.io/evil-teaspoons-and-inner-minotaurs/draw.html)
