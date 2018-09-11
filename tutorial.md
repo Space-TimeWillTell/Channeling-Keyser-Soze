@@ -70,6 +70,37 @@ Also, Frank needs to react quickly. He may decide to keep his cool, or to ditch 
 
 On we go, with the pursuit and the canine patrols.
 
+## Keeping things interesting
+
+Left to themselves, pursuit rules can end up bland: tick boxes or accumulate points until you have enough to declare yourself victorious. While numbers and dice and criticals can be sufficient to keep some pursuits interestings, others may end up feeling uninteresting and rehashed. Let's see what we can do if the players and their opposition have taken too many times the same rolls.
+
+- Alice: "Desmond, Erika, something is going to force you to change tactics. Tell me what!"
+
+Desmond and Erika draw a card.
+
+![](assets/small_card_12.png)
+
+On this card, we see:
+- A name: "XII. Playing Protector"
+- An interpretation: "Feeling defenceless?"
+- A picture, with some kind of winged hero attacking a winged monster.
+
+- Desmond: "'Playing protector', so it's related to the army. Possibly some armor."
+- Erika: "'Feeling defenceless', so it's something against which we have no defense. Maybe air support?"
+- Desmond: "Well, if it's air support, the military is bound to react, unless it's their air support."
+- Alice: "I'd rather avoid having the entire army against you, if that's ok with you."
+- Erika: "I know, maybe some genious from the Evil Corporation has managed to hack the communications of the army, and they're trying to convince helicopters to shoot at us. And we know about that – and we feel defenceless – because Frank is getting all the chatter from his van."
+- Alice: "That sounds good. Frank, I think that you're the only one who can do anything about that. Also, since you're the hacker here, you get to name the Evil Corporation hacker."
+- Frank: "I'll call him... no, I'll call her Lady Shadowcat! And I'll get immediately to try and hack her while she's hacking the army!"
+- Desmond: "And since we hear about it, we'll have to find a way to avoid being visible from the skies. So Frank, can you lead us through some crowded bazar or mall or subway or something?"
+- Frank: "Hey, give me a minute, I'm running interference for you, I'm only one man!"
+
+Alice adds the following facts:
+- **Lady Shadowcat, genius Evil Corporation hacker.**
+- **The army may decide to look after Desmond + Erika.**
+
+Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (And yes, it has 3 lines.)
+
 ## Ending the scene
 
 Eventually, time will come to end the chase. This ending may come up naturally, if the players have managed to get rid of their pursuit, or if they have been overtaken. If it doesn't, it's much better to end the scene without waiting for boredom to catch up.
@@ -78,32 +109,39 @@ Eventually, time will come to end the chase. This ending may come up naturally, 
 
 ![](assets/small_reversed_card_12.png)
 
-On this card, we see:
+Hey, we've seen that card already. No matter, since we're asking a different question, we'll end up with a different use for it.
+
+On this card, we (still) see:
 - A name: "XII. Playing Protector"
 - An interpretation: "Rescue is coming?"
 - A picture, with some kind of winged hero attacking a winged monster.
 
 From "Rescue is coming", Alice decides that, well, rescue is coming. From "Playing Protector", she decides that the rescue will be impressive. And looking at the wings, she concludes that it will come from the air. Since there are **Soldiers everywhere in the streets**, it should be an helicopter from an airborn unit of the army.
 
-Alice then narrates "*As you turn for what may be the fiftieth time, hoping to lose the bikes in the small streets, you hear a chopper getting close to your position. Looking up, you see a military deployment vehicle. Suddenly, the silence on your radio is broken by the voice of Archangel, your boss: 'Prepare to ditch the car and board the helicopter. It will lead you to a safe place.'*"
+Alice then narrates "*You drive up the stairways like madpeople, hoping that the bikes' wheels won't be as stable as yours. Eventually, you reach the exit, where you hear a chopper, very cclose to your position. Looking up, you see a military deployment vehicle getting ready to drop shock troopers. Suddenly, the silence on your radio is broken by the voice of Archangel, your boss: 'Prepare to ditch the car and board the helicopter. It will lead you to a safe place.'*"
 
 Also, since **An official is coming**, Alice suspects that the players are going to meet that official very soon.
 
 
 ## What did we do?
 
-With a little help, an unprepped urban chase scene came up pretty memorable. Just as importantly, once the players encounter the official, all the military deployment and bomb-sniffing dogs will have been turned into *foreshadowing* – even though Frank was the one who introduced the canine squads in the first place.
+With a little help, an unprepped urban chase scene came up pretty memorable. Just as importantly, once the players encounter the official, all the military deployment and bomb-sniffing dogs will have been turned into *foreshadowing* – even though Frank was the one who introduced the canine squads in the first place. Similarly, Lady Shadowcat who is at best a faceless opponent is this scene is going to return, at some point, again turning Frank's introduction into foreshadowing.
 
 Let's summarize the techniques we have used so far:
 
 1. Setting up the scene.
-2. Writing down key facts as they were established.
-3. Reusing these facts when they become useful.
-4. Waking up a player who was dozing off by letting him pick a plot twist.
-5. Ending a scene before it becomes boring.
-6. Drawing from the Space·Time Deck.
+2. Asking questions that the Space·Time Deck will answer.
+3. Interpreting the Space·Time Deck.
+4. Writing down key facts as they were established.
+5. Reusing these facts when they become useful.
+6. Shaking things by letting players pick plot twists.
 7. Interpreting ideas collaboratively.
+8. Letting players come up with future recurring NPCs.
+9. Ending a scene before it becomes boring.
+10. Turning facts into foreshadowing.
 
-Many of these techniques are variants on tools that experienced GMs, Writers, Players and Improv actors use without even thinking.
-
-In the rest of this book, we'll expand on these techniques and introduce others tools designed to help you reach that level!
+All these techniques, or variants thereof, are key ingredients
+to successful stories – whether we're talking role-playing games,
+novels or improv stage acting. So, in the rest of this book, we'll
+expand on these ideas and introduce others tools designed to help
+you make your unprepped stories awesome!
