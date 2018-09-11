@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>The Space·Time Deck!</title>
+    </head>
+<body>
+<img id="img_card" style="height:100%">
+<script>
+    (function() {
+        var is_up = Math.floor(Math.random() * 2) == 0;
+        var index = Math.floor((Math.random() * 22));
+        var prefix = is_up ? "" : "reversed_";
+        document.getElementById("img_card").setAttribute("src", `https://raw.githubusercontent.com/Yoric/evil-teaspoons-and-inner-minotaurs/master/assets/${prefix}card_${index}.png`);
+    })()
+</script>
+</body>
+</html>
