@@ -18,28 +18,28 @@ All images are believed to allow reproduction and reuse.
 
 | Card | Additional interpretations |
 | :---: | :--- |
-| ![](/assets/small_odd0.png) | Light. A Continuum Indirection materializing. |
-| ![](/assets/small_even1.png) | The Time Commune. A Party. |
-| ![](/assets/small_odd1.png) | The Space·Time Fleet. A Time Citadel. |
-| ![](/assets/small_even2.png) | The Most Benevolent Administrators. The Babylon Project. |
-| ![](/assets/small_odd2.png) | The Time Museum. Any kind of Paradox. A Future Sayer. |
-| ![](/assets/small_even3.png) | The Time Brigade. The People's Time Liberation Army. |
-| ![](/assets/small_odd3.png) | Mad Science. |
-| ![](/assets/small_even4.png) | Time Magazine. |
-| ![](/assets/small_odd4.png) | Escaping. The Foundation for a Time Encyclopedia. |
-| ![](/assets/small_even5.png) | The Space Fleet. The Space·Time Fleet |
-| ![](/assets/small_odd5.png) | The Office of Time & Measures. |
-| ![](/assets/small_even6.png) | The Agency for Continuity of Space & Time. The Time Museum. |
-| ![](/assets/small_odd6.png) | Perfect Polymorphic Provocateurs. The Time Adjustment Foundation, Time Magazine, |
-| ![](/assets/small_even7.png) | The Time Hanse. The Time Museum. |
-| ![](/assets/small_odd7.png) | The Time Hierarchy |
-| ![](/assets/small_even8.png) | ... |
-| ![](/assets/small_odd8.png) | ... |
-| ![](/assets/small_even9.png) | ... |
-| ![](/assets/small_odd9.png) | ... |
-| ![](/assets/small_even10.png) | ... |
-| ![](/assets/small_odd10.png) | ... |
-| ![](/assets/small_even0.png) | Time itself |
+| ![](/assets/small_card_1.png) | Light. A Continuum Indirection materializing. |
+| ![](/assets/small_card_2.png) | The Time Commune. A Party. |
+| ![](/assets/small_card_3.png) | The Space·Time Fleet. A Time Citadel. |
+| ![](/assets/small_card_4.png) | The Most Benevolent Administrators. The Babylon Project. |
+| ![](/assets/small_card_5.png) | The Time Museum. Any kind of Paradox. A Future Sayer. |
+| ![](/assets/small_card_6.png) | The Time Brigade. The People's Time Liberation Army. |
+| ![](/assets/small_card_7.png) | Mad Science. |
+| ![](/assets/small_card_8.png) | Time Magazine. |
+| ![](/assets/small_card_9.png) | Escaping. The Foundation for a Time Encyclopedia. |
+| ![](/assets/small_card_10.png) | The Space Fleet. The Space·Time Fleet |
+| ![](/assets/small_card_11.png) | The Office of Time & Measures. |
+| ![](/assets/small_card_12.png) | The Agency for Continuity of Space & Time. The Time Museum. |
+| ![](/assets/small_card_13.png) | Perfect Polymorphic Provocateurs. The Time Adjustment Foundation, Time Magazine, |
+| ![](/assets/small_card_14.png) | The Time Hanse. The Time Museum. |
+| ![](/assets/small_card_15.png) | The Time Hierarchy |
+| ![](/assets/small_card_16.png) | ... |
+| ![](/assets/small_card_17.png) | ... |
+| ![](/assets/small_card_18.png) | ... |
+| ![](/assets/small_card_19.png) | ... |
+| ![](/assets/small_card_20.png) | ... |
+| ![](/assets/small_card_21.png) | ... |
+| ![](/assets/small_card_0.png) | Time itself |
 
 As you can see, each card has:
 
@@ -74,7 +74,7 @@ Ok, so the Crew is running like madpeople and eventually stumbles upon a deadend
 
 Let's draw a card. And the card is...
 
-![](/assets/reversed_small_even5.png)
+![](/assets/reversed_card_10.png)
 
 So, we may decide to use **Great Progress?**, **X. Leaping like a Giant!** and/or that weird human-faced moon with a bullet in its eye.  Personally, I'd like to use **Leaping like a Giant!**, and interpret it as "_After following that corridor for a hundred meters or so, you suddenly enter a giant cavern, much larger than anything you had seen below the castle so far. Unfortunately, that cavern is barred by a huge chasm, much too large for any human to jump_."
 
@@ -90,13 +90,13 @@ So, while the Queen of Chandernagor is waiting for the Ambassador of Shangrila t
 
 #### _What does the contact look like?_
 
-![](/assets/small_even8.png)
+![](/assets/small_card_16.png)
 
 Ok, no need to go much further. The contact is a human being \(let's say female-looking\) "_with an extremely sophisticated hat that looks like an umbrella and a feather, as well as a moving cape that looks extremely uncomfortable for walking. Also, spines on her back_."
 
 #### _What does the contact want?_
 
-![](/assets/reversed_small_even1.png)
+![](/assets/reversed_card_2.png)
 
 This NPC is obviously into partying \(maybe the meeting point is some kind of garden party/orgy?\) and might be after something related to **Innocence?**, so something related to the judicial system of Chandernagor. Maybe that person wants information to exonerate a jailed relative? Or wants help to break someone out of jail? Or we can put all of this together: someone the NPC knows is prisoner of their own dreams, trapped by some drug, and she's after a cure that the Crew will need to steal or barter or promise to get her cooperation.
 
@@ -106,7 +106,7 @@ So, after deftly eloping with the bomb and made sure that it explodes in their s
 
 #### _What does the planet look like_?
 
-![](/assets/small_even0.png)
+![](/assets/small_card_0.png)
 
 Oh, joy, it's an enigma! Obviously, a planet filled with puzzles and brain-teasers. So "A_s you exit your escape pod, you stumble upon the remainings of a huge cardboard statue of a bull-headed children-friendly creature. You seem to be in the middle of some kind of glass labyrinth. Judging from the music, it looks like you have landed in some kind of amusement park! Apparently, you've done some damage while landing._"
 
@@ -116,7 +116,7 @@ Let's add some flavor.
 
 #### _What is happening right now on that planet?_
 
-![](/assets/small_odd4.png)
+![](/assets/small_card_9.png)
 
 So, an obstacle overlooked, people drowning in the sea...
 
@@ -136,25 +136,25 @@ A good plot needs:
 
 #### _Where and when does the story take place?_
 
-![](/assets/small_even4.png)
+![](/assets/small_card_8.png)
 
 Apparently, it's a battlefield, or some kind of revolution. Given the flag, it could be a French Revolution, but let's draw a second card to keep it surprising.
 
 #### _What kind of revolution?_
 
-![](/assets/small_odd7.png)
+![](/assets/small_card_15.png)
 
 Ok, so the story is set in a madhouse, during an uprising. Or maybe a madhouse in which political opponents are kept? Let's combine both: _the story is set during a riot inside a psychiatric clinic – the patients are actually opponents to the regime, sent there to be renormalized_.
 
 #### _What is happening?_
 
-![](/assets/reversed_small_odd0.png)
+![](/assets/reversed_card_1.png)
 
 So something new is born. Possibly a new life-form, or a new technology, or a new type of government. Let's see what..
 
 #### _What is being born?_
 
-![](/assets/small_odd4.png)
+![](/assets/small_card_9.png)
 
 Moses crossing the Red Sea? Ok, so it's obviously a new religion. Or perhaps a god? Nah, let's stick with religion.
 
@@ -164,7 +164,7 @@ So, a new religion is being born in that psychiatric clinic. Maybe this can be c
 
 Well, the religion is already a lot, but let's ask the Deck:
 
-![](/assets/small_even2.png)
+![](/assets/small_card_4.png)
 
 Ahah, communications trouble!
 
