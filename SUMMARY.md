@@ -15,4 +15,4 @@
 # Misc
 
 1. [The Space·Time Deck](deck.md)
-1. [Draw a card](draw.html)
+1. [Draw a card](https://yoric.github.io/evil-teaspoons-and-inner-minotaurs/draw.html)
