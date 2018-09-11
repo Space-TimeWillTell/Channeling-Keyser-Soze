@@ -74,7 +74,7 @@ Ok, so the Crew is running like madpeople and eventually stumbles upon a deadend
 
 Let's draw a card. And the card is...
 
-![](/assets/reversed_card_10.png)
+![](/assets/small_reversed_card_10.png)
 
 So, we may decide to use **Great Progress?**, **X. Leaping like a Giant!** and/or that weird human-faced moon with a bullet in its eye.  Personally, I'd like to use **Leaping like a Giant!**, and interpret it as "_After following that corridor for a hundred meters or so, you suddenly enter a giant cavern, much larger than anything you had seen below the castle so far. Unfortunately, that cavern is barred by a huge chasm, much too large for any human to jump_."
 
@@ -96,7 +96,7 @@ Ok, no need to go much further. The contact is a human being \(let's say female-
 
 #### _What does the contact want?_
 
-![](/assets/reversed_card_2.png)
+![](/assets/small_reversed_card_2.png)
 
 This NPC is obviously into partying \(maybe the meeting point is some kind of garden party/orgy?\) and might be after something related to **Innocence?**, so something related to the judicial system of Chandernagor. Maybe that person wants information to exonerate a jailed relative? Or wants help to break someone out of jail? Or we can put all of this together: someone the NPC knows is prisoner of their own dreams, trapped by some drug, and she's after a cure that the Crew will need to steal or barter or promise to get her cooperation.
 
@@ -148,7 +148,7 @@ Ok, so the story is set in a madhouse, during an uprising. Or maybe a madhouse i
 
 #### _What is happening?_
 
-![](/assets/reversed_card_1.png)
+![](/assets/small_reversed_card_1.png)
 
 So something new is born. Possibly a new life-form, or a new technology, or a new type of government. Let's see what..
 
