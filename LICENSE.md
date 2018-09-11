@@ -1,4 +1,5 @@
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) ![](https://i.creativecommons.org/l/by-sa/4.0/80x15.png).
+
 
 The full legal terms of the license may be found [on creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 

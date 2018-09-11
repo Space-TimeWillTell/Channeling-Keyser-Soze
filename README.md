@@ -8,4 +8,4 @@ Open [SUMMARY.md](SUMMARY.md), it's the index.
 
 # Draw a card
 
-[Draw a card](draw.html)
+[Draw a card](https://yoric.github.io/evil-teaspoons-and-inner-minotaurs/draw.html)

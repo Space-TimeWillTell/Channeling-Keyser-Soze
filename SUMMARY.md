@@ -1,7 +1,7 @@
 # Table of Contents
 
 1. [About this book](ABOUT.md)
-1. Drawing for ideas.
+1. [Drawing for ideas](tutorial.md)
 1. A deeper look at the deck.
 1. Threats and crisis. From 0 to campaign.
 1. Where do you come from? From 0 to PC.

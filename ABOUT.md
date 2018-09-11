@@ -16,6 +16,8 @@ It' also the story of a Writer (let's call her Charline), who had gotten his sto
 
 FIXME: More about Charline.
 
-Hi Alice, hi Bob, hi Charline. Welcome to *Evil Teaspoons and Inner Minotaurs*. In this book, we'll talk about getting ideas. Some of these ideas will come from other players, others will come from the companion Space·Time Deck, and in many cases, you will realize that these are ideas that you already had.
+Hi Alice, hi Bob, hi Charline. Welcome to *Evil Teaspoons and Inner Minotaurs*. In this book, we'll talk about getting ideas quickly and using them immediately, through techniques of improv. Some of these ideas will come from other players, others will come from the companion Space·Time Deck, and in many cases, you will realize that these are ideas that you already had.
+
+Throughout the book, we'll use the **Space·Time Deck**, a deck of cards loosely inspired from Tarot and designed to aid with improvisation. The techniques we'll show work just as well with other sources of inspiration, including other variants on Tarot. Also, these techniques do not require a specific ruleset – whether you're crunchy, narrative, or not playing at all, you will be able to use what you learn in this book.
 
 FIXME: More.
