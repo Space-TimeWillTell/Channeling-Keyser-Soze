@@ -17,7 +17,7 @@ Let's ask the Space·Time Deck. Alice draws, declaring "*Let's see what's happen
 On this card, we see:
 
 - A name "XVI. Planning for retirement."
-- An interpretation "Being ready, always."
+- An interpretation "Being ready, always?"
 - A picture, with many terracota soldiers.
 
 Looking at the picture and the interpretation, Alice, our GM, now declares "*Apparently, there are many soldiers in the streets. You are not sure why, but it looks like an entire batallion is being redeployed today.*"
@@ -72,7 +72,7 @@ On we go, with the pursuit and the canine patrols.
 
 ## Keeping things interesting
 
-Left to themselves, pursuit rules can end up bland: tick boxes or accumulate points until you have enough to declare yourself victorious. While numbers and dice and criticals can be sufficient to keep some pursuits interestings, others may end up feeling uninteresting and rehashed. Let's see what we can do if the players and their opposition have taken too many times the same rolls.
+Some chases work nicely, but others can end up uninteresting. Apparently, this is starting to be the case here. Let's see what we can do to liven things up.
 
 - Alice: "Desmond, Erika, something is going to force you to change tactics. Tell me what!"
 
@@ -130,8 +130,8 @@ With a little help, an unprepped urban chase scene came up pretty memorable. Jus
 Let's summarize the techniques we have used so far:
 
 1. Setting up the scene.
-2. Asking questions that the Space·Time Deck will answer.
-3. Interpreting the Space·Time Deck.
+2. Asking questions that will help you make the scene fun to play.
+3. Drawing and interpreting from the Space·Time Deck.
 4. Writing down key facts as they were established.
 5. Reusing these facts when they become useful.
 6. Shaking things by letting players pick plot twists.
@@ -139,6 +139,7 @@ Let's summarize the techniques we have used so far:
 8. Letting players come up with future recurring NPCs.
 9. Ending a scene before it becomes boring.
 10. Turning facts into foreshadowing.
+11. Letting the GM catch micro-breaks during the session!
 
 All these techniques, or variants thereof, are key ingredients
 to successful stories – whether we're talking role-playing games,
