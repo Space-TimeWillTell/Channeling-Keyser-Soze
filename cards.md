@@ -167,11 +167,22 @@ The characters have finally managed to open a security door on a space
         exploring the maze, you stumble upon "Experiment 31415 – success – seeded on Sol 3".
         It seems to hold a human being.
 
-### Everything else
-
-TODO
+### II. We were having so much fun!
 
 ![](/assets/small_card_2.png)
+
+TBD
+
+#### Example: King Arthur
+
+#### Example: Meeting the Ambassador
+
+#### Example: Getting hit by a sharp instrument
+
+### Everything else
+
+TBD
+
 ![](/assets/small_card_3.png)
 ![](/assets/small_card_4.png)
 ![](/assets/small_card_5.png)
@@ -206,11 +217,33 @@ TBD
 
 TBD
 
-## The process
+## What do we do with all these cards?
 
+The process is very simple:
 
-TBD
+1. Shuffle the deck – don't forget that the orientation of a card may change its meaning,
+    so also shuffle the orientation of the cards.
+2. Formulate a question – because it's hard to think of an answer until you have a clear
+    question in mind. You typically formulate the question out loud, but you don't have to.
+3. Draw a card.
+4. Look at the title, at the picture, at the interpretation facing you.
+5. Optionally, request the input from other people around the table.
+6. Explain how the card answers that question.
+7. The GM may get to veto or tone down an answer, if it doesn't make sense in the setting.
+8. Establish the Facts from the answer, and write them down where everybody can see them,
+    as you are going to use them again.
 
-## Symbols and free association
+In some cases, an answer may raise more questions. If you wish answer to these
+questions *right now*, repeat the process. In many cases, the answer can wait.
 
-TBD
+And that's pretty much *it*. With training, you'll get fast at this. If you are a GM or
+a Player, it's ok even if you are not: as long as you involve everybody around the table,
+everybody is still having fun, and it often makes a nice change of pace from your other
+swashbuckling, dungeoneering, investigating activities.
+
+> **Caveat**
+> You should not draw cards *too often*. Very simply, interpreting cards is
+fun, but it can also be tiring. Pace yourself. In a fight, for instance, you do not
+want to draw one card per round. Draw cards at the start, to give flavour, but after
+that, keep them for a moment when the fight seems to be repeating itself or to look
+too much like the previous fight.
