@@ -20,6 +20,12 @@ On this card, we see:
 - An interpretation "Being ready, always?"
 - A picture, with many terracota soldiers.
 
+> **Only one interpretation?**
+>
+> Each card has two interpretations, but we only ever look at the one facing us. Trust us, this adds more
+> variety to the results.
+
+
 Looking at the picture and the interpretation, Alice, our GM, now declares "*Apparently, there are many soldiers in the streets. You are not sure why, but it looks like an entire batallion is being redeployed today.*"
 
 Actually, let's go further "*Circulation on the main streets is quite complicated. There are columns of armored vehicles on the avenues and trucks full of young soldiers waiting at the red lights. People don't seem particularly alarmed, so you can only assume that this is either a common occurrence or something that people expected.*"
@@ -99,7 +105,7 @@ Alice adds the following facts:
 - **Lady Shadowcat, genius Evil Corporation hacker.**
 - **The army may decide to look after Desmond + Erika.**
 
-Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (And yes, it has 3 lines.)
+Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (If you wonder, yes, Rio de Janeiro it has 3 subway lines.)
 
 ## Ending the scene
 

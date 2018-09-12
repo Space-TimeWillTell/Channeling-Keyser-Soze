@@ -231,6 +231,10 @@ The process is very simple:
     don't forget that step, this will help one player easily reuse another players Facts,
     this is will help the GM or a Writer turn Facts into foreshadowing, etc.
 
+As mentioned previously, don't look at the interpretation facing away from you.
+By making the two sides to the same picture different, we both make our focus
+tighter and essentially double the number of cards.
+
 In some cases, an answer may raise more questions. If you wish answer to these
 questions *right now*, repeat the process. In many cases, the answer can wait.
 
