@@ -196,9 +196,31 @@ peaceful Sidhe to war, and they haev invaded the defenseless Camelot.
     - As the messenger arrived to the encampment of King Arthur's army, what he saw
         was anything but an army. Naked soldiers everywhere, enjoying the summer, the
         fruits and each other's flesh. The messenger fled this cursed place and returned
-        with the news that King Arthur has been enchanged by the Sidhe!
+        with the news that King Arthur has been enchanted by the Sidhe!
 
-#### Example: Meeting the Ambassador
+#### Example: Meeting an informant
+
+The characters have an appointment with Toady, one of their informants, who knows
+something about the supply lines of the arms dealer. They'll meet
+him behind a pub. *What do they see when they arrive in the back-alley?*
+
+- Either side:
+    - A group of teenagers high on something seem to have decided that this back alley was the
+        best place to make out, or perhaps pass out, they don't seem to be quite decided yet.
+        Toady is trying to remain inconspicuous at the end of the alley, and would clearly
+        prefer being anywhere else than here, but he doesn't seem ready to actually step
+        on the bodies to get out of there.
+- Ignoring the world:
+    - When you arrive, Toady is here. He's also very, very, very drunk. Not only can't you
+        get anything from him, but you also can't leav him here, otherwise he might drown in
+        his own vomit, or perhaps stagger back in the pub and babble to everyone about your
+        planned meeting.
+- Innocence:
+    - When you arrive, the first thing you see is a hooded shape, who looks back at you and
+        runs in fear... when you manage to catch up with him, you realize that it's not Toady,
+        just a kid who had picked that back alley to smoke a joint. When you return to the
+        meeting point, Toady is there, pretty nervous, but also quite happy that you made him
+        wait so long.
 
 #### Example: Getting hit by a sharp instrument
 
