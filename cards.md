@@ -182,6 +182,23 @@ The characters have finally managed to open a security door on a space
 
 TBD
 
+- The image: **TBD**
+- Innocence: Typically, someone or something that has no responsibility,
+    perhaps because they have done nothing wrong, or perhaps because
+    they do not realize the gravity of their actions. Children or
+    animals are typically considered innocent, but natural phenomena
+    would work here just as well. Someone who doesn't know is typically
+    considered innocent, too.
+- Sin: The definition of "sin" depends a lot on the setting in which
+    it takes place. Sinning against a given religion is not the same
+    thing as sinning against, say, the Maffia. In a realistic European
+    18th century setting, a woman in trousers would be considered a sinner.
+    More generally, a "sin" could be anything against the prevailing mores of the
+    time and place, or against the personal ethics of a character,
+    or it could be anything that they feel they are going to regret.
+
+
+
 #### Example: King Arthur
 
 King Arthur is away with his army and knights battling Sir Medraut. He left the
@@ -190,18 +207,18 @@ to stay away. However, the characters have somehow managed to provoke the genera
 peaceful Sidhe to war, and they haev invaded the defenseless Camelot.
 *How does King Arthur react to the news of the invasion?*
 
-- Ignoring the world:
+- Innocence:
+    - King Arthur knows of the peaceful ways of the Sidhe. He refuses to believe that
+        such innocent, fun-loving creatures would hurt Camelot in any way. In fact, he
+        would rather believes that either the messenger is a liar, or that the
+        characters are conspiring with Medraut and against him.
     - King Arthur was wounded during the battle. He's lying unconscious in his tent,
         and none of the healers was able to wake him up.
     - The spies of Sir Medraut managed to intercept the messenger and the message.
         King Arthur knows nothing of the invasion, but Sir Medraut does and will
         act upon this piece of information. You probably want to draw a second
         card to find out what Sir Medraut is planning.
-- Innocence:
-    - King Arthur knows of the peaceful ways of the Sidhe. He refuses to believe that
-        such innocent, fun-loving creatures would hurt Camelot in any way. In fact, he
-        would rather believes that either the messenger is a liar, or that the
-        characters are conspiring with Medraut and against him.
+- Sin:
     - As the messenger arrived to the encampment of King Arthur's army, what he saw
         was anything but an army. Naked soldiers everywhere, enjoying the summer, the
         fruits and each other's flesh. The messenger fled this cursed place and returned
@@ -219,19 +236,42 @@ him behind a pub. *What do they see when they arrive in the back-alley?*
         Toady is trying to remain inconspicuous at the end of the alley, and would clearly
         prefer being anywhere else than here, but he doesn't seem ready to actually step
         on the bodies to get out of there.
-- Ignoring the world:
-    - When you arrive, Toady is here. He's also very, very, very drunk. Not only can't you
-        get anything from him, but you also can't leav him here, otherwise he might drown in
-        his own vomit, or perhaps stagger back in the pub and babble to everyone about your
-        planned meeting.
 - Innocence:
     - When you arrive, the first thing you see is a hooded shape, who looks back at you and
         runs in fear... when you manage to catch up with him, you realize that it's not Toady,
         just a kid who had picked that back alley to smoke a joint. When you return to the
-        meeting point, Toady is there, pretty nervous, but also quite happy that you made him
+        meeting point, Toady is there, pretty nervous, but also quite unhappy that you made him
         wait so long.
+- Sin:
+    - When you arrive, Toady is here. He's also very, very, very drunk. Not only can't you
+        get anything from him, but you also can't leav him here, otherwise he might drown in
+        his own vomit, or perhaps stagger back in the pub and babble to everyone about your
+        planned meeting.
 
-#### Example: Getting hit by a sharp instrument
+#### Example: Surviving a fall
+
+One of the characters just fell from a cliff in full armor. The GM could decide to roll for
+damage, but decides that it would be pointless: killing the character because of a missed
+agility roll wouldn't be very interesting. So, *how did Desmond survive?*
+
+- Innocence:
+    - At the bottom of the cliff is some kind of monastery of monks and nuns sworn to
+        silence. Desmond doesn't remember the landing, or how he was found by the
+        monks and nuns, but he does remember, vaguely, how, gravely wounded, he was
+        stripped from his armor and tended to in silence. For several days, he remained
+        between life and death, but within a few weeks, he eventually regained sufficient
+        lucidity and mobility to start pondering his next step.
+- Sin:
+    - A Dark Angel appears in front of the character, offering one, last, chance at
+        survival, if only the character is willing to trade their soul, or perhaps
+        to swear to own one favor to that Dark Angel, and to deliver upon it at a
+        later date, no question asked.
+    - One of the enemy harpies jumps after the character, grabs him in her claws and
+        drops him in a safe place. When asked why, she smiles enigmatically, claiming
+        that she had the intuition she would regret not doing that.
+
+Here again, each of these interpretations introduces interesting Facts that will help
+you build the world and the plot.
 
 ### Everything else
 
