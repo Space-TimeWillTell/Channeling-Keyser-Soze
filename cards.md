@@ -61,7 +61,7 @@ book.
 
 ### I. The Big Bang
 
-![](/assets/small_card_1.png)
+![](/assets/small_horizontal_card_1.png)
 
 Default interpretations:
 - Overwhelming force?
@@ -169,11 +169,34 @@ The characters have finally managed to open a security door on a space
 
 ### II. We were having so much fun!
 
-![](/assets/small_card_2.png)
+![](/assets/small_horizontal_card_2.png)
 
 TBD
 
 #### Example: King Arthur
+
+King Arthur is away with his army and knights battling Sir Medraut. He left the
+characters in charge of watching the realm during the few weeks that he's expecting
+to stay away. However, the characters have somehow managed to provoke the generally
+peaceful Sidhe to war, and they haev invaded the defenseless Camelot.
+*How does King Arthur react to the news of the invasion?*
+
+- Ignoring the world:
+    - King Arthur was wounded during the battle. He's lying unconscious in his tent,
+        and none of the healers was able to wake him up.
+    - The spies of Sir Medraut managed to intercept the messenger and the message.
+        King Arthur knows nothing of the invasion, but Sir Medraut does and will
+        act upon this piece of information. You probably want to draw a second
+        card to find out what Sir Medraut is planning.
+- Innocence:
+    - King Arthur knows of the peaceful ways of the Sidhe. He refuses to believe that
+        such innocent, fun-loving creatures would hurt Camelot in any way. In fact, he
+        would rather believes that either the messenger is a liar, or that the
+        characters are conspiring with Medraut and against him.
+    - As the messenger arrived to the encampment of King Arthur's army, what he saw
+        was anything but an army. Naked soldiers everywhere, enjoying the summer, the
+        fruits and each other's flesh. The messenger fled this cursed place and returned
+        with the news that King Arthur has been enchanged by the Sidhe!
 
 #### Example: Meeting the Ambassador
 
@@ -183,29 +206,29 @@ TBD
 
 TBD
 
-![](/assets/small_card_3.png)
-![](/assets/small_card_4.png)
-![](/assets/small_card_5.png)
-![](/assets/small_card_6.png)
-![](/assets/small_card_7.png)
-![](/assets/small_card_8.png)
-![](/assets/small_card_9.png)
-![](/assets/small_card_10.png)
-![](/assets/small_card_11.png)
-![](/assets/small_card_12.png)
-![](/assets/small_card_13.png)
-![](/assets/small_card_14.png)
-![](/assets/small_card_15.png)
-![](/assets/small_card_16.png)
-![](/assets/small_card_17.png)
-![](/assets/small_card_18.png)
-![](/assets/small_card_19.png)
-![](/assets/small_card_20.png)
-![](/assets/small_card_11.png)
+![](/assets/small_horizontal_card_3.png)
+![](/assets/small_horizontal_card_4.png)
+![](/assets/small_horizontal_card_5.png)
+![](/assets/small_horizontal_card_6.png)
+![](/assets/small_horizontal_card_7.png)
+![](/assets/small_horizontal_card_8.png)
+![](/assets/small_horizontal_card_9.png)
+![](/assets/small_horizontal_card_10.png)
+![](/assets/small_horizontal_card_11.png)
+![](/assets/small_horizontal_card_12.png)
+![](/assets/small_horizontal_card_13.png)
+![](/assets/small_horizontal_card_14.png)
+![](/assets/small_horizontal_card_15.png)
+![](/assets/small_horizontal_card_16.png)
+![](/assets/small_horizontal_card_17.png)
+![](/assets/small_horizontal_card_18.png)
+![](/assets/small_horizontal_card_19.png)
+![](/assets/small_horizontal_card_20.png)
+![](/assets/small_horizontal_card_11.png)
 
 ### I know it must be here somewhere
 
-![](/assets/small_card_0.png)
+![](/assets/small_horizontal_card_0.png)
 
 This is the only card without a number. That's by design. Make it
 a beginning, or an end, or a journey through all the cards. It is
