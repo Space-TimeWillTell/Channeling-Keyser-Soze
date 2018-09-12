@@ -67,12 +67,21 @@ Default interpretations:
 - Overwhelming force?
 - Something new is born?
 
+
 The Big Bang is the current best scientific theory for a beginning to
 the universe. The Big Bang itself is described by scientists as the
 instant before the beginning of time, space, light or matter.
 
-The white on this card may symbolize purity, or a blinding
-light, or simply the color white.
+- The image: The white on this card may symbolize purity, or a blinding
+    light, or simply the color white.
+- Overwhelming force: The force may be in favor of the characters, or
+    against them, or simply something that they witness, such as a storm
+    in the distance, or opinion polls predicting a landslide victory.
+- Something new is born: It could be a person as well as an animal,
+    or an idea, or a technology. It could be beneficial, detrimental,
+    or both.
+
+
 
 #### Example: The temple.
 
