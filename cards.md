@@ -213,9 +213,6 @@ a labyrinth, full of mysteries and enigmas.
 
 TBD
 
-## Is it sufficient
-
-TBD
 
 ## What do we do with all these cards?
 
@@ -230,8 +227,9 @@ The process is very simple:
 5. Optionally, request the input from other people around the table.
 6. Explain how the card answers that question.
 7. The GM may get to veto or tone down an answer, if it doesn't make sense in the setting.
-8. Establish the Facts from the answer, and write them down where everybody can see them,
-    as you are going to use them again.
+8. Establish the Facts from the answer, and write them down where everybody can see them –
+    don't forget that step, this will help one player easily reuse another players Facts,
+    this is will help the GM or a Writer turn Facts into foreshadowing, etc.
 
 In some cases, an answer may raise more questions. If you wish answer to these
 questions *right now*, repeat the process. In many cases, the answer can wait.
@@ -241,9 +239,38 @@ a Player, it's ok even if you are not: as long as you involve everybody around t
 everybody is still having fun, and it often makes a nice change of pace from your other
 swashbuckling, dungeoneering, investigating activities.
 
-> **Caveat**
+> **Pace yourself**
+>
 > You should not draw cards *too often*. Very simply, interpreting cards is
-fun, but it can also be tiring. Pace yourself. In a fight, for instance, you do not
-want to draw one card per round. Draw cards at the start, to give flavour, but after
-that, keep them for a moment when the fight seems to be repeating itself or to look
+fun, but it can also be tiring. Also, drawing cards gives you ideas, but
+you can end up with *too many* good ideas, so many that you won't actually
+have the opportunity to use them all.
+>
+> In a fight, for instance, you do not want to draw one card per exchange.
+Draw cards at the start, to give flavour, but after that, keep them for a
+moment when the fight seems to be repeating itself or to look
 too much like the previous fight.
+>
+> Also, if you're a GM, by all means, make players participate, they are
+supposed to come up with ideas, too!
+
+## Are 22 cards enough?
+
+Well, ~20 years of GM-ing with a deck seem to indicate that yes, they do.
+
+It is true that 22 cards only means a total of 44 possible draws. You will
+rather quickly run out of different draws, but that's entirely ok. As you
+will see in further chapters, you are going to be able to come up with
+considerably more than 44 different characters or plots or places or events.
+
+There are a few very simple reasons for this:
+1. as you improv, you establish Facts, and these Facts will introduce
+    meaningful differences between answers to the same cards
+1. you will learn, progressively, to formulate more detailed questions,
+    which will in turn lead you to different answers with the exact
+    same card;
+1. whenever you find that an answer is too close to something that
+    you have already come up with, you should feel free to ask followup
+    questions that will introduce additional spice.
+
+Don't worry, we'll return on each of these points in the following chapters.
