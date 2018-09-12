@@ -74,54 +74,97 @@ The white on this card may symbolize purity, or a blinding
 light, or simply the color white.
 
 #### Example: The temple.
-The characters are in some kind of temple.
 
-- The white picture may symbolize, for instance:
-    - the divine presence (or absence, depending on the plot);
-    - a marriage.
-- The *overwhelming force* may be:
-    - that or the divine;
-    - that of its earthly church;
-    - the overwhelming presence of a preacher in that church.
-- *Something new is born* may be:
-    - a baby being born, right now, in that churchj;
-    - the introduction of faithfuls or babies to a religious mystery (say, a baptism);
-    - two philosophers discussing science in the back of the temple.
+The characters enter some kind of temple. *What do they see?*
+
+Drawing the Big Bang:
+
+- Either side
+    - there doesn't seem to be anyone in the temple, but they feel the divine presence, radiating in this place;
+    - there doesn't seem to be anyone in the temple, and somehow, the divine presence that they expected is... missing;
+    - oh, look, they're celebrating a marriage!
+- Overwhelming Force
+    - the presence of the divine is so strong in this temple that it's almost physically tangible, making every movement difficult;
+    - this cult is obviously extremely rich, you can feel it in the golden ornaments, the tapestries, the glassworks, the heavy incense;
+    - all the villagers are standing, silent, many of them mouth agape, while they listen to the preacher – he's a powerful presence, a powerful orator, and he's carrying a powerful message... Let's draw a second card to find out which one, exactly!
+- Something new is born
+    - there's some kind of big commotion in the church, men are being shooed away and sent to fetch hot water and clean clothes, oh, it looks like a woman has entered labor right in the middle of the temple;
+    - apparently, it's some kind of silent celebration of whatever local tradition introduces either babies or teenagers into the local community (say, a baptism, circumcision, etc.);
+    - the temple is mostly empty, except for two old men discussing in the back – their discussion seems to be somewhat animated, they gesticulate a lot, and you overhear something about the Earth being round. That sounds like blasphemy.
 
 #### Example: The desolate island.
-The characters are on a desolate island.
 
-- The white picture may represent, for instance:
-    - their isolation;
-    - the force of the sun.
-- The *overwhelming force* may be:
-    - thirst;
-    - the tide;
-    - a coming storm on the horizon;
-    - the fleet that they hoped to stop, passing by the island where they are stuck.
-- *Something new is born* could mean:
-    - it's mating or birth season for some animals on the island, or for the whales nearby;
-    - a strange phenomenon.
+The characters are stranded on a desolate island. *What do they see on the horizon?*
+
+Drawing the Bing Bang:
+
+- Either side:
+    - they see nothing, but the force of the sun, and the immense
+      isolation of the sea (GM decides to advance the story by a
+      few days while they despair);
+- Overwhelming Force:
+    - the sun, their thirst is crushing the characters, they need to
+        find water and some kind of refuge away from the sun;
+    - the tide is rising – oh, the tide seems to be rising a lot,
+        is that the reason for the moss all over the island?
+    - there seems to be some kind of storm on the horizon, and it
+        is either growing or coming this way;
+    - look, that's the fleet of Dread Pirate Roberts, the one you
+        were hired to stop, they are passing by the island,
+        and if you can believe your eyes, it's even stronger
+        than what you were told
+        (the characters might be able to get their attention
+        or swim towards one of the ships).
+- Something new is born:
+    - it seems to be birth season for some birds on the island
+        you hear the chirps of all these newborn birds and you
+        see their parents flying towards prey
+        (the GM adds, both as a threat and as a suggestion to
+        help the characters escape, that these are *giant* birds);
+    - it starts with the earth shaking, but now, you clearly
+        see some kind of green light coming out of a hole in
+        the ground – and there's something very large below
+        (what is it? I'm sure you have ideas, but you can
+        draw another card, if you wish)
 
 #### Example: The space station.
 
 The characters have finally managed to open a security door on a space
-    station. What's on the other side?
+    station. *What do they find on the other side?*
 
-- The white picture may mean that:
-    - there is absolutely nothing on the other side;
-    - there is a white room, dedicated to assembling highly dangerous components
-- The title *Big Bang* may suggest a laboratory trying to reproduce the conditions of the
-    actual Big Bang.
-- The *overwhelming force* may suggest that:
-    - they have found the central reactor. What is powering the reactor may be determined
-        by asking a second question to the Space·Time Deck;
-    - they have found the source or a manifestation of the force that is rising like a
-        tide across the galaxy and that is the entire point of the plot.
-- *Something new is born* could mean that:
-    - this is a lab, observing the birth of a star, or galaxy, or black hole, or cosmic creature;
-    - a new species is being invented in this lab;
-    - mankind has been invented in this lab.
+- Either side:
+    - there is absolutely nothing on the other side – apparently, the bad
+        guys seems to have packed meticulously and left – maybe the unmovable
+        station terminals know more about it;
+    - there is a white room, dedicated to assembling highly dangerous
+        components, two shape dressed in white suits are hunched over
+        something very delicate-looking, they haven't seen you yet;
+    - this is some kind of laboratory, full of equipment you do not understand,
+        and people focused on their terminals.
+        In the center, a large glass column seems to be holding in suspension
+        some form of matter that is so dark and odd that just watching at it
+        makes your eyes hurt. There's a large countdown on top of the column:
+        "Big Bang minus seven hours".
+- Overwhelming force:
+    - apparently, it's the central reactor – it's a bit strange that it was not
+        clearly labelled as such, isn't it? Also, this reactor seems to be odd,
+        you aren't entirely sure, but it seems to be powered by...
+        let's ask a second question to the Space·Time Deck;
+    - this is it, your instruments clearly indicate that this is the source for
+        the galactic tide that you have been searching for the entire story. It's
+        in that room, about three feet in front of you. How comes you see absolutely
+        nothing in that white room?
+- Something new is born:
+    - you enter a large hangar, full of cages, themselves full of odd creatures
+        from all over space. You're pretty sure that some of these creatures are
+        sentient. A crew of five hulkish figures is going round the cages, using
+        some kind of cattle prod to keep the figures away while they collect eggs...
+        and babies, too, apparently.
+    - this is clearly some kind of lab, a maze full of apparatus, and full of corpses
+        of odd-shaped creatures floating in jars. You can see labels: "Experiment
+        17 – failure", "Experiment 2048 - failure"... At some point, while
+        exploring the maze, you stumble upon "Experiment 31415 – success – seeded on Sol 3".
+        It seems to hold a human being.
 
 ### Everything else
 
