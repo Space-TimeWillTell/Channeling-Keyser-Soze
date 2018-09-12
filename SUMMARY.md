@@ -10,7 +10,7 @@
 1. Take that! From 0 to conflict.
 1. [Hey, you! From 0 to NPC + its reactions](npc.md).
 1. Planets, dungeons and amusement parks: improvising places.
-1. Using the deck instead of your usual ruleset.
+1. [Replacing your usual ruleset with the Space·Time Deck](rules.md).
 1. [Credits](CREDITS.md)
 1. [License](LICENSE.md)
 

@@ -15,14 +15,15 @@ its deck in lieu of dice, for narrative action resolution, most GMs
 will content themelves with using the Space·Time Deck for inspiration,
 in addition of their usual ruleset. Should you wish to actually use
 the Space·Time Deck for action resolution, we have you covered in
-chapter [Using the deck instead of your usual ruleset](rules.md).
+chapter [Replacing your usual ruleset with the deck](rules.md).
 
 ## Why cards?
 
 In theory, a GM or Player or Writer should be able to use anything
 around them as support for improvisation, anything they see or hear
-or remember. In fact, the ideal improviser is Keyser Söze, who manages
-to come up with a plot twist just by looking at his coffee cup.
+or remember. In fact, the ideal improviser is *Usual Suspects*'
+Keyser Söze, who manages to come up with a plot twist just by
+looking at his coffee cup.
 
 Sadly, most of us aren't Keyser Söze. We have ideas, many of them,
 all the time, but we typically have so many of them tha it's hard
