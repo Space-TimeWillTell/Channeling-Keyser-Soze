@@ -1,0 +1,9 @@
+[package]
+name = "minotaurs"
+version = "0.1.0"
+authors = ["David Teller <D.O.Teller@gmail.com>"]
+description = "Rebuild the deck"
+
+[dependencies]
+clap = "*"
+itertools = "*"

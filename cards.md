@@ -283,16 +283,90 @@ agility roll wouldn't be very interesting. So, *how did Desmond survive?*
 Here again, each of these interpretations introduces interesting Facts that will help
 you build the world and the plot.
 
-### III. Oh, that gorilla?
 
-![](/assets/small_horizontal_card_3.png)
+### XI. Right on schedule!
 
+![](/assets/small_horizontal_card_11.png)
 
+Default interpretations:
+- The pretence of success?
+- Too much of a good thing?
+
+This picture depicts one of most spectacular train accidents in history, in 1895.
+The train, which was running at the impressive speed of 60 km/h, failed to decelerate
+fast enough, and hit the train station at 40 km/h. While a mechanical failure was
+suspected, the judge decide to fine both drivers. Getting the train back in position
+was a complex operation, involving heavy engines, 25 horses and 3 goats. Yes, goats.
+
+The image: An accident and an engineering failure, which may or may not work in favor
+    of the characters. Also, a distant crowd of onlookers, representing curiosity and
+    the spirit of investigation, while the hard-to-notice policemen, may represent the
+    ability to keep this curiosity at bay, perhaps through conformism or obscurantism.
+    The destruction involved in this accident may apply to anything, buildings, objects,
+    pieces of art, or even ideas or causes. The attempts made to rescue the drivers
+    and to contain the accident may speak for the ability of people to help each
+    other during crisis.
+The pretence of success: Something that appears to work doesn't, or someone who appears
+    to be rich, influential or powerful isn't. It could mean ruin, an electoral defeat,
+    but also the mark of a con artist, or simply of a vanitous person, or of a blind
+    bureaucracy. It could also mean prestidigitation or illusions.
+Too much of a good thing: Something that is good or useful in small amounts may become
+    dangerous in larger amounts, or addictive, or toxic, or destructive. It could be
+    drugs or power or technology or faith. Has a character overused something?
+    Has an empire overextended itself? Has a group become over-reliant on something
+    on someone?
+
+#### Example: Robbery at the bank.
+
+The characters are gangsters robbing a bank, in Chicago during the 1920s.
+They are now ready to leave. *What awaits them outside?*
+
+- Either side:
+    - In the street, traffic is stopped by an accident. A tramway, or perhaps a bus,
+        has rolled on its side, injuring several passerbys. Onlookers are packed tight,
+        while several volunteers are trying to help the wounded as best as they can,
+        or to rescue the passengers of the tramway/bus. It's easy to stay unseen
+        in the crowd, but the escape vehicle is unusable.
+    - While the characters run towards the door, they realize that the director of the
+        bank has just pressed a hidden alarm button. Fortunately for the characters,
+        the alarm will fail. It may be an engineering problem – or maybe they're not
+        the only robbers around.
+- The pretence of success:
+    - While the characters exit the bank, attempting to reach their escape vehicle
+        without attracting undue attention, they find themselves in the middle of
+        some kind of commotion. A famous Hollywood actor/actress is walking that
+        same street right now, surrounded by admirers and journalists. Oh, and
+        photographers are taking as many pictures as they can. How many of them
+        show the characters?
+     - The characters leave the bank, manage to pile up in their escape vehicle,
+        and prepare to leave. That is, until one of them realizes that the ink
+        on the banknotes is still wet. Somehow, someone just pulled a fast one
+        on them.
+- Too much of a good thing:
+    - The characters were extremely successful. They have ten large bags full of currency,
+        jewels and treasure bonds. The characters run at the escape vehicle as fast as
+        they can, but too slowly. Someone in the street screams. A constable notices
+        all these suspicious people leaving the bank in a hurry, and starts blowing in
+        his whistle. The driver starts to panic. What do you do?
+    - Some people react strangely when they're pumped full of adrenaline. One of the robbers,
+        up on adrenaline, (PC? NPC?) draws his gun and starts shooting and "yeahing" in
+        the pure tradition of litterary cow-boys. That's bound to attract unwanted
+        attention. Armed attention.
+
+**TBD**
+
+#### Example: The Poet, at work.
+
+**TBD**
+
+#### Example: Battle for the North Wall
+
+**TBD**
 
 ### Everything else
 
 TBD
-
+![](/assets/small_horizontal_card_3.png)
 ![](/assets/small_horizontal_card_4.png)
 ![](/assets/small_horizontal_card_5.png)
 ![](/assets/small_horizontal_card_6.png)
@@ -300,7 +374,7 @@ TBD
 ![](/assets/small_horizontal_card_8.png)
 ![](/assets/small_horizontal_card_9.png)
 ![](/assets/small_horizontal_card_10.png)
-![](/assets/small_horizontal_card_11.png)
+
 ![](/assets/small_horizontal_card_12.png)
 ![](/assets/small_horizontal_card_13.png)
 ![](/assets/small_horizontal_card_14.png)
