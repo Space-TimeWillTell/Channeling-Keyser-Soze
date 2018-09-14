@@ -180,9 +180,19 @@ The characters have finally managed to open a security door on a space
 
 ![](/assets/small_horizontal_card_2.png)
 
-TBD
+This is the central part of the Garden of Earthly Delights, a painting by
+Hieronymus Bosch from the end of the 15th century. While this painting
+is somewhat enigmatic, as many of Bosch's works, it is generally
+interpreted as human beings having way too much fun on Earth, instead
+of taking care of their soul.
 
-- The image: **TBD**
+- The image: Dozens of naked people, in a state of bliss, eating
+    from impossibly large fruits or animals, or with parts of their
+    body turned into these large fruits. Also, naked dancing,
+    naked riding, naked boating, and strange creatures. This image
+    may easily be interpreted as drugs, or sex, or orgies. Without
+    being so extreme, it may be a rave party, a night clubbing,
+    a rock & roll concert, a fever dream, an overful buffet.
 - Innocence: Typically, someone or something that has no responsibility,
     perhaps because they have done nothing wrong, or perhaps because
     they do not realize the gravity of their actions. Children or
@@ -192,7 +202,7 @@ TBD
 - Sin: The definition of "sin" depends a lot on the setting in which
     it takes place. Sinning against a given religion is not the same
     thing as sinning against, say, the Maffia. In a realistic European
-    18th century setting, a woman in trousers would be considered a sinner.
+    18th century setting, a woman in trousers would socially be considered a sinner.
     More generally, a "sin" could be anything against the prevailing mores of the
     time and place, or against the personal ethics of a character,
     or it could be anything that they feel they are going to regret.
@@ -273,11 +283,16 @@ agility roll wouldn't be very interesting. So, *how did Desmond survive?*
 Here again, each of these interpretations introduces interesting Facts that will help
 you build the world and the plot.
 
+### III. Oh, that gorilla?
+
+![](/assets/small_horizontal_card_3.png)
+
+
+
 ### Everything else
 
 TBD
 
-![](/assets/small_horizontal_card_3.png)
 ![](/assets/small_horizontal_card_4.png)
 ![](/assets/small_horizontal_card_5.png)
 ![](/assets/small_horizontal_card_6.png)

@@ -10,14 +10,43 @@ It's also the story of a Player (let's call him Bob), who had no idea what kind 
 
 Hi, Bob, nice to meet you. Yeah, getting in a setting is tricky and getting in a character is basically impossible if you don't know what you should be in that setting. So this book is for you, too.
 
-FIXME: More about Bob.
+**FIXME** More about Bob.
 
 It' also the story of a Writer (let's call her Charline), who had gotten his story started, but didn't have fresh ideas for this antagonist, or that epic fight scene, or simply for finding out what laid behind the door that the hero had finally managed to open.
 
-FIXME: More about Charline.
+**FIXME** More about Charline.
 
 Hi Alice, hi Bob, hi Charline. Welcome to *Evil Teaspoons and Inner Minotaurs*. In this book, we'll talk about getting ideas quickly and using them immediately, through techniques of improv. Some of these ideas will come from other players, others will come from the companion Space·Time Deck, and in many cases, you will realize that these are ideas that you already had.
 
 Throughout the book, we'll use the **Space·Time Deck**, a deck of cards loosely inspired from Tarot and designed to aid with improvisation. The techniques we'll show work just as well with other sources of inspiration, including other variants on Tarot. Also, these techniques do not require a specific ruleset – whether you're crunchy, narrative, or not playing at all, you will be able to use what you learn in this book.
 
-FIXME: More.
+**FIXME** More.
+
+## Some vocabulary
+
+While this book is both for role-players and storytellers of all sorts,
+we had to pick one vocabulary, and we settled upon role-playing lingo.
+Here is a short translation for people who might not be familiar with
+that specific vernacular.
+
+- PC: Player Character. In traditional storytelling, that's a *protagonist*.
+- NPC: Non-Player Character. In traditional storytelling, that's everybody else:
+    - antagonists;
+    - supporting characters (also known as "Minor NPCs").
+- GM: Game Master. In most role-playing games, the GM is in charge of making sure
+    that the story remains consistent, with the help of a ruleset. The GM is also
+    in charge of coming up with a plot hook, most plot twists, and plays the Non-
+    Player Characters.
+- Ruleset/mechanics: The rules used to make sure that the story stays consistent
+    with the universe, for instance that human beings don't run faster than racing
+    cars, but that long-haired blond elves can surf on shieldes in the middle of a
+    battle. In traditional storytelling, things are generally fuzzier, and the
+    storyteller needs to rely on sticky notes, intuition and genre cannon. Some
+    rulesets are considered "crunchy", if they attempt to simulate a lot of
+    aspects of the universe, while others are considered "narrative", if the
+    players and GM are expected to rely more on improvisation than on the ruleset
+    themselves to ensure consistency.
+- Character sheet: A detailed list of abilities, limitations, quirks and motivations
+    of a character. In crunchier rulesets, this piece of paper typically
+    displays comprehensive numeric information, while in narrative rulesets, it typically
+    contains more handwavy descriptions.
