@@ -338,7 +338,7 @@ They are now ready to leave. *What awaits them outside?*
         same street right now, surrounded by admirers and journalists. Oh, and
         photographers are taking as many pictures as they can. How many of them
         show the characters?
-     - The characters leave the bank, manage to pile up in their escape vehicle,
+    - The characters leave the bank, manage to pile up in their escape vehicle,
         and prepare to leave. That is, until one of them realizes that the ink
         on the banknotes is still wet. Somehow, someone just pulled a fast one
         on them.
@@ -349,11 +349,10 @@ They are now ready to leave. *What awaits them outside?*
         all these suspicious people leaving the bank in a hurry, and starts blowing in
         his whistle. The driver starts to panic. What do you do?
     - Some people react strangely when they're pumped full of adrenaline. One of the robbers,
-        up on adrenaline, (PC? NPC?) draws his gun and starts shooting and "yeahing" in
+        up on adrenaline, (could be a PC or NPC) draws his gun and starts shooting at the
+        sky and and yeeeeaaaaaahing in
         the pure tradition of litterary cow-boys. That's bound to attract unwanted
         attention. Armed attention.
-
-**TBD**
 
 #### Example: The Poet, at work.
 
@@ -374,7 +373,7 @@ TBD
 ![](/assets/small_horizontal_card_8.png)
 ![](/assets/small_horizontal_card_9.png)
 ![](/assets/small_horizontal_card_10.png)
-
+![](/assets/small_horizontal_card_11.png)
 ![](/assets/small_horizontal_card_12.png)
 ![](/assets/small_horizontal_card_13.png)
 ![](/assets/small_horizontal_card_14.png)
@@ -384,7 +383,6 @@ TBD
 ![](/assets/small_horizontal_card_18.png)
 ![](/assets/small_horizontal_card_19.png)
 ![](/assets/small_horizontal_card_20.png)
-![](/assets/small_horizontal_card_11.png)
 
 ### I know it must be here somewhere
 
@@ -426,20 +424,37 @@ a Player, it's ok even if you are not: as long as you involve everybody around t
 everybody is still having fun, and it often makes a nice change of pace from your other
 swashbuckling, dungeoneering, investigating activities.
 
-> **Pace yourself**
->
-> You should not draw cards *too often*. Very simply, interpreting cards is
-fun, but it can also be tiring. Also, drawing cards gives you ideas, but
-you can end up with *too many* good ideas, so many that you won't actually
-have the opportunity to use them all.
->
-> In a fight, for instance, you do not want to draw one card per exchange.
-Draw cards at the start, to give flavour, but after that, keep them for a
-moment when the fight seems to be repeating itself or to look
-too much like the previous fight.
->
-> Also, if you're a GM, by all means, make players participate, they are
-supposed to come up with ideas, too!
+## When and when not to
+
+While the cards can add considerable variety to your sessions, you
+should avoid drawing cards *too often*. The first reason is that
+interpreting cards is fun, but it does involve mental effort, and
+it will tire you. Don't forget to pace yourself.
+
+The second reason is that each card will, generally, help you come
+up with one or more new idea. If you draw too many cards, you simply
+won't have time to use all your ideas – and you can even find yourself
+drowning in too many ideas.
+
+So, when should you draw a card? The answer, of course, depends
+on the storyteller, the story being told, and the players or
+audience. But a rule of thumb is:
+
+- you can draw whenever you wish to introduce something
+    brand new, such as a new character or location, or
+    secret-behind-the-door, and you need some inspiration;
+- you can draw to setup a scene that you want to make stand
+    out, whether it's an action scene, a description or a
+    heated argument – draw once to setup that scene, then
+    forget cards for a moment;
+- you can draw whenever you feel that there is a lull, or
+    that the scene is getting generic – however, if you
+    find yourself needing to draw more than two or three
+    times, it may well be time to actually stop the scene;
+
+Also, if you're a GM or if you're storytelling for an audience,
+by all means, make the players/the audience participate, they
+are supposed to come up with ideas, too!
 
 ## Are 22 cards enough?
 
