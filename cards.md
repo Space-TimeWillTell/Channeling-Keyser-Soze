@@ -61,18 +61,27 @@ book.
 
 ### I. The Big Bang
 
-![](/assets/small_card_1.png)
+![](/assets/small_horizontal_card_1.png)
 
 Default interpretations:
 - Overwhelming force?
 - Something new is born?
 
+
 The Big Bang is the current best scientific theory for a beginning to
 the universe. The Big Bang itself is described by scientists as the
 instant before the beginning of time, space, light or matter.
 
-The white on this card may symbolize purity, or a blinding
-light, or simply the color white.
+- The image: The white on this card may symbolize purity, or a blinding
+    light, or simply the color white.
+- Overwhelming force: The force may be in favor of the characters, or
+    against them, or simply something that they witness, such as a storm
+    in the distance, or opinion polls predicting a landslide victory.
+- Something new is born: It could be a person as well as an animal,
+    or an idea, or a technology. It could be beneficial, detrimental,
+    or both.
+
+
 
 #### Example: The temple.
 
@@ -167,34 +176,130 @@ The characters have finally managed to open a security door on a space
         exploring the maze, you stumble upon "Experiment 31415 – success – seeded on Sol 3".
         It seems to hold a human being.
 
+### II. We were having so much fun!
+
+![](/assets/small_horizontal_card_2.png)
+
+TBD
+
+- The image: **TBD**
+- Innocence: Typically, someone or something that has no responsibility,
+    perhaps because they have done nothing wrong, or perhaps because
+    they do not realize the gravity of their actions. Children or
+    animals are typically considered innocent, but natural phenomena
+    would work here just as well. Someone who doesn't know is typically
+    considered innocent, too.
+- Sin: The definition of "sin" depends a lot on the setting in which
+    it takes place. Sinning against a given religion is not the same
+    thing as sinning against, say, the Maffia. In a realistic European
+    18th century setting, a woman in trousers would be considered a sinner.
+    More generally, a "sin" could be anything against the prevailing mores of the
+    time and place, or against the personal ethics of a character,
+    or it could be anything that they feel they are going to regret.
+
+
+
+#### Example: King Arthur
+
+King Arthur is away with his army and knights battling Sir Medraut. He left the
+characters in charge of watching the realm during the few weeks that he's expecting
+to stay away. However, the characters have somehow managed to provoke the generally
+peaceful Sidhe to war, and they haev invaded the defenseless Camelot.
+*How does King Arthur react to the news of the invasion?*
+
+- Innocence:
+    - King Arthur knows of the peaceful ways of the Sidhe. He refuses to believe that
+        such innocent, fun-loving creatures would hurt Camelot in any way. In fact, he
+        would rather believes that either the messenger is a liar, or that the
+        characters are conspiring with Medraut and against him.
+    - King Arthur was wounded during the battle. He's lying unconscious in his tent,
+        and none of the healers was able to wake him up.
+    - The spies of Sir Medraut managed to intercept the messenger and the message.
+        King Arthur knows nothing of the invasion, but Sir Medraut does and will
+        act upon this piece of information. You probably want to draw a second
+        card to find out what Sir Medraut is planning.
+- Sin:
+    - As the messenger arrived to the encampment of King Arthur's army, what he saw
+        was anything but an army. Naked soldiers everywhere, enjoying the summer, the
+        fruits and each other's flesh. The messenger fled this cursed place and returned
+        with the news that King Arthur has been enchanted by the Sidhe!
+
+#### Example: Meeting an informant
+
+The characters have an appointment with Toady, one of their informants, who knows
+something about the supply lines of the arms dealer. They'll meet
+him behind a pub. *What do they see when they arrive in the back-alley?*
+
+- Either side:
+    - A group of teenagers high on something seem to have decided that this back alley was the
+        best place to make out, or perhaps pass out, they don't seem to be quite decided yet.
+        Toady is trying to remain inconspicuous at the end of the alley, and would clearly
+        prefer being anywhere else than here, but he doesn't seem ready to actually step
+        on the bodies to get out of there.
+- Innocence:
+    - When you arrive, the first thing you see is a hooded shape, who looks back at you and
+        runs in fear... when you manage to catch up with him, you realize that it's not Toady,
+        just a kid who had picked that back alley to smoke a joint. When you return to the
+        meeting point, Toady is there, pretty nervous, but also quite unhappy that you made him
+        wait so long.
+- Sin:
+    - When you arrive, Toady is here. He's also very, very, very drunk. Not only can't you
+        get anything from him, but you also can't leav him here, otherwise he might drown in
+        his own vomit, or perhaps stagger back in the pub and babble to everyone about your
+        planned meeting.
+
+#### Example: Surviving a fall
+
+One of the characters just fell from a cliff in full armor. The GM could decide to roll for
+damage, but decides that it would be pointless: killing the character because of a missed
+agility roll wouldn't be very interesting. So, *how did Desmond survive?*
+
+- Innocence:
+    - At the bottom of the cliff is some kind of monastery of monks and nuns sworn to
+        silence. Desmond doesn't remember the landing, or how he was found by the
+        monks and nuns, but he does remember, vaguely, how, gravely wounded, he was
+        stripped from his armor and tended to in silence. For several days, he remained
+        between life and death, but within a few weeks, he eventually regained sufficient
+        lucidity and mobility to start pondering his next step.
+- Sin:
+    - A Dark Angel appears in front of the character, offering one, last, chance at
+        survival, if only the character is willing to trade their soul, or perhaps
+        to swear to own one favor to that Dark Angel, and to deliver upon it at a
+        later date, no question asked.
+    - One of the enemy harpies jumps after the character, grabs him in her claws and
+        drops him in a safe place. When asked why, she smiles enigmatically, claiming
+        that she had the intuition she would regret not doing that.
+
+Here again, each of these interpretations introduces interesting Facts that will help
+you build the world and the plot.
+
 ### Everything else
 
-TODO
+TBD
 
-![](/assets/small_card_2.png)
-![](/assets/small_card_3.png)
-![](/assets/small_card_4.png)
-![](/assets/small_card_5.png)
-![](/assets/small_card_6.png)
-![](/assets/small_card_7.png)
-![](/assets/small_card_8.png)
-![](/assets/small_card_9.png)
-![](/assets/small_card_10.png)
-![](/assets/small_card_11.png)
-![](/assets/small_card_12.png)
-![](/assets/small_card_13.png)
-![](/assets/small_card_14.png)
-![](/assets/small_card_15.png)
-![](/assets/small_card_16.png)
-![](/assets/small_card_17.png)
-![](/assets/small_card_18.png)
-![](/assets/small_card_19.png)
-![](/assets/small_card_20.png)
-![](/assets/small_card_11.png)
+![](/assets/small_horizontal_card_3.png)
+![](/assets/small_horizontal_card_4.png)
+![](/assets/small_horizontal_card_5.png)
+![](/assets/small_horizontal_card_6.png)
+![](/assets/small_horizontal_card_7.png)
+![](/assets/small_horizontal_card_8.png)
+![](/assets/small_horizontal_card_9.png)
+![](/assets/small_horizontal_card_10.png)
+![](/assets/small_horizontal_card_11.png)
+![](/assets/small_horizontal_card_12.png)
+![](/assets/small_horizontal_card_13.png)
+![](/assets/small_horizontal_card_14.png)
+![](/assets/small_horizontal_card_15.png)
+![](/assets/small_horizontal_card_16.png)
+![](/assets/small_horizontal_card_17.png)
+![](/assets/small_horizontal_card_18.png)
+![](/assets/small_horizontal_card_19.png)
+![](/assets/small_horizontal_card_20.png)
+![](/assets/small_horizontal_card_11.png)
 
 ### I know it must be here somewhere
 
-![](/assets/small_card_0.png)
+![](/assets/small_horizontal_card_0.png)
 
 This is the only card without a number. That's by design. Make it
 a beginning, or an end, or a journey through all the cards. It is
@@ -202,15 +307,68 @@ a labyrinth, full of mysteries and enigmas.
 
 TBD
 
-## Is it sufficient
 
-TBD
+## What do we do with all these cards?
 
-## The process
+The process is very simple:
 
+1. Shuffle the deck – don't forget that the orientation of a card may change its meaning,
+    so also shuffle the orientation of the cards.
+2. Formulate a question – because it's hard to think of an answer until you have a clear
+    question in mind. You typically formulate the question out loud, but you don't have to.
+3. Draw a card.
+4. Look at the title, at the picture, at the interpretation facing you.
+5. Optionally, request the input from other people around the table.
+6. Explain how the card answers that question.
+7. The GM may get to veto or tone down an answer, if it doesn't make sense in the setting.
+8. Establish the Facts from the answer, and write them down where everybody can see them –
+    don't forget that step, this will help one player easily reuse another players Facts,
+    this is will help the GM or a Writer turn Facts into foreshadowing, etc.
 
-TBD
+As mentioned previously, don't look at the interpretation facing away from you.
+By making the two sides to the same picture different, we both make our focus
+tighter and essentially double the number of cards.
 
-## Symbols and free association
+In some cases, an answer may raise more questions. If you wish answer to these
+questions *right now*, repeat the process. In many cases, the answer can wait.
 
-TBD
+And that's pretty much *it*. With training, you'll get fast at this. If you are a GM or
+a Player, it's ok even if you are not: as long as you involve everybody around the table,
+everybody is still having fun, and it often makes a nice change of pace from your other
+swashbuckling, dungeoneering, investigating activities.
+
+> **Pace yourself**
+>
+> You should not draw cards *too often*. Very simply, interpreting cards is
+fun, but it can also be tiring. Also, drawing cards gives you ideas, but
+you can end up with *too many* good ideas, so many that you won't actually
+have the opportunity to use them all.
+>
+> In a fight, for instance, you do not want to draw one card per exchange.
+Draw cards at the start, to give flavour, but after that, keep them for a
+moment when the fight seems to be repeating itself or to look
+too much like the previous fight.
+>
+> Also, if you're a GM, by all means, make players participate, they are
+supposed to come up with ideas, too!
+
+## Are 22 cards enough?
+
+Well, ~20 years of GM-ing with a deck seem to indicate that yes, they do.
+
+It is true that 22 cards only means a total of 44 possible draws. You will
+rather quickly run out of different draws, but that's entirely ok. As you
+will see in further chapters, you are going to be able to come up with
+considerably more than 44 different characters or plots or places or events.
+
+There are a few very simple reasons for this:
+1. as you improv, you establish Facts, and these Facts will introduce
+    meaningful differences between answers to the same cards
+1. you will learn, progressively, to formulate more detailed questions,
+    which will in turn lead you to different answers with the exact
+    same card;
+1. whenever you find that an answer is too close to something that
+    you have already come up with, you should feel free to ask followup
+    questions that will introduce additional spice.
+
+Don't worry, we'll return on each of these points in the following chapters.

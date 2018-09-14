@@ -20,6 +20,12 @@ On this card, we see:
 - An interpretation "Being ready, always?"
 - A picture, with many terracota soldiers.
 
+> **Only one interpretation?**
+>
+> Each card has two interpretations, but we only ever look at the one facing us. Trust us, this adds more
+> variety to the results.
+
+
 Looking at the picture and the interpretation, Alice, our GM, now declares "*Apparently, there are many soldiers in the streets. You are not sure why, but it looks like an entire batallion is being redeployed today.*"
 
 Actually, let's go further "*Circulation on the main streets is quite complicated. There are columns of armored vehicles on the avenues and trucks full of young soldiers waiting at the red lights. People don't seem particularly alarmed, so you can only assume that this is either a common occurrence or something that people expected.*"
@@ -44,9 +50,9 @@ Three or four rounds into the pursuit, Alice realizes that Frank's player is get
 
 Let's spice things up.
 
-- Alice: "Frank, trouble is heading your way. While you were concentrating on helping Desmond and Erika, you didn't realize something..."
+- GM: "Frank, trouble is heading your way. While you were concentrating on helping Desmond and Erika, you didn't realize something..."
 - Frank: "What?"
-- Alice: "Draw a card and tell me what kind of trouble is coming for you."
+- GM: "Draw a card and tell me what kind of trouble is coming for you."
 
 ![](assets/small_card_14.png)
 
@@ -74,9 +80,9 @@ On we go, with the pursuit and the canine patrols.
 
 Some chases work nicely, but others can end up uninteresting. Apparently, this is starting to be the case here. Let's see what we can do to liven things up.
 
-- Alice: "Desmond, Erika, something is going to force you to change tactics. Tell me what!"
+- GM: "Desmond, Erika, something is going to force you to change tactics. Tell me what!"
 
-Desmond and Erika draw a card.
+Desmond's player and Erika's player draw a card.
 
 ![](assets/small_card_12.png)
 
@@ -88,9 +94,9 @@ On this card, we see:
 - Desmond: "'Playing protector', so it's related to the army. Possibly some armor."
 - Erika: "'Feeling defenceless', so it's something against which we have no defense. Maybe air support?"
 - Desmond: "Well, if it's air support, the military is bound to react, unless it's their air support."
-- Alice: "I'd rather avoid having the entire army against you, if that's ok with you."
+- GM: "I'd rather avoid having the entire army against you, if that's ok with you."
 - Erika: "I know, maybe some genious from the Evil Corporation has managed to hack the communications of the army, and they're trying to convince helicopters to shoot at us. And we know about that – and we feel defenceless – because Frank is getting all the chatter from his van."
-- Alice: "That sounds good. Frank, I think that you're the only one who can do anything about that. Also, since you're the hacker here, you get to name the Evil Corporation hacker."
+- GM: "That sounds good. Frank, I think that you're the only one who can do anything about that. Also, since you're the hacker here, you get to name the Evil Corporation hacker."
 - Frank: "I'll call him... no, I'll call her Lady Shadowcat! And I'll get immediately to try and hack her while she's hacking the army!"
 - Desmond: "And since we hear about it, we'll have to find a way to avoid being visible from the skies. So Frank, can you lead us through some crowded bazar or mall or subway or something?"
 - Frank: "Hey, give me a minute, I'm running interference for you, I'm only one man!"
@@ -99,7 +105,7 @@ Alice adds the following facts:
 - **Lady Shadowcat, genius Evil Corporation hacker.**
 - **The army may decide to look after Desmond + Erika.**
 
-Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (And yes, it has 3 lines.)
+Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (If you wonder, yes, Rio de Janeiro it has 3 subway lines.)
 
 ## Ending the scene
 
