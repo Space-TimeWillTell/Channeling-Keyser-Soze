@@ -41,4 +41,12 @@ that specific vernacular.
     with the universe, for instance that human beings don't run faster than racing
     cars, but that long-haired blond elves can surf on shieldes in the middle of a
     battle. In traditional storytelling, things are generally fuzzier, and the
-    storyteller needs to rely on sticky notes, intuition and genre cannon.
+    storyteller needs to rely on sticky notes, intuition and genre cannon. Some
+    rulesets are considered "crunchy", if they attempt to simulate a lot of
+    aspects of the universe, while others are considered "narrative", if the
+    players and GM are expected to rely more on improvisation than on the ruleset
+    themselves to ensure consistency.
+- Character sheet: A detailed list of abilities, limitations, quirks and motivations
+    of a character. In crunchier rulesets, this piece of paper typically
+    displays comprehensive numeric information, while in narrative rulesets, it typically
+    contains more handwavy descriptions.
