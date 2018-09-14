@@ -73,7 +73,10 @@ Gregorios.
 The GM ponders it a second, and decides that since Gregorios is clearly
 much stronger than Desmondos – and all threats should be scaled for
 Desmondos and his friends rather than for Gregorios – Gregorios doesn't
-need a character sheet.
+need a character sheet. The GM and Desmondos' player agree that
+Gregorios will often tell Desmondos how to do things, but
+generally won't do them himself, and that consequently, in such
+cases, Gregorios will at times give Desmondos bonuses.
 
 Facts established:
 - **General Gregorios is in his fifties.**
