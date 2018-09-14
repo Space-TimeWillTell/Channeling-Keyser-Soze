@@ -20,8 +20,9 @@ and you just realized that you're going to need to give
 it a few personality traits and, who knows, maybe even a
 description!
 
-Or maybe you're a Writer, and you need to do all of this,
-at once.
+Or maybe you're in the middle of a storytelling session,
+and Sheherazade has decided to nest yet another story
+inside a story, and she needs a new antagonist.
 
 Life is hard, isn't it? But that's also what makes it fun.
 
