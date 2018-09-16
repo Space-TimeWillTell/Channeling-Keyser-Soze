@@ -72,12 +72,12 @@ The Big Bang is the current best scientific theory for a beginning to
 the universe. The Big Bang itself is described by scientists as the
 instant before the beginning of time, space, light or matter.
 
-- The image: The white on this card may symbolize purity, or a blinding
+**The image** The white on this card may symbolize purity, or a blinding
     light, or simply the color white.
-- Overwhelming force: The force may be in favor of the characters, or
+**Overwhelming force** The force may be in favor of the characters, or
     against them, or simply something that they witness, such as a storm
     in the distance, or opinion polls predicting a landslide victory.
-- Something new is born: It could be a person as well as an animal,
+**Something new is born** It could be a person as well as an animal,
     or an idea, or a technology. It could be beneficial, detrimental,
     or both.
 
@@ -186,20 +186,20 @@ is somewhat enigmatic, as many of Bosch's works, it is generally
 interpreted as human beings having way too much fun on Earth, instead
 of taking care of their soul.
 
-- The image: Dozens of naked people, in a state of bliss, eating
+**The image** Dozens of naked people, in a state of bliss, eating
     from impossibly large fruits or animals, or with parts of their
     body turned into these large fruits. Also, naked dancing,
     naked riding, naked boating, and strange creatures. This image
     may easily be interpreted as drugs, or sex, or orgies. Without
     being so extreme, it may be a rave party, a night clubbing,
     a rock & roll concert, a fever dream, an overful buffet.
-- Innocence: Typically, someone or something that has no responsibility,
+**Innocence** Typically, someone or something that has no responsibility,
     perhaps because they have done nothing wrong, or perhaps because
     they do not realize the gravity of their actions. Children or
     animals are typically considered innocent, but natural phenomena
     would work here just as well. Someone who doesn't know is typically
     considered innocent, too.
-- Sin: The definition of "sin" depends a lot on the setting in which
+**Sin** The definition of "sin" depends a lot on the setting in which
     it takes place. Sinning against a given religion is not the same
     thing as sinning against, say, the Maffia. In a realistic European
     18th century setting, a woman in trousers would socially be considered a sinner.
@@ -298,7 +298,7 @@ fast enough, and hit the train station at 40 km/h. While a mechanical failure wa
 suspected, the judge decide to fine both drivers. Getting the train back in position
 was a complex operation, involving heavy engines, 25 horses and 3 goats. Yes, goats.
 
-The image: An accident and an engineering failure, which may or may not work in favor
+**The image** An accident and an engineering failure, which may or may not work in favor
     of the characters. Also, a distant crowd of onlookers, representing curiosity and
     the spirit of investigation, while the hard-to-notice policemen, may represent the
     ability to keep this curiosity at bay, perhaps through conformism or obscurantism.
@@ -306,11 +306,13 @@ The image: An accident and an engineering failure, which may or may not work in 
     pieces of art, or even ideas or causes. The attempts made to rescue the drivers
     and to contain the accident may speak for the ability of people to help each
     other during crisis.
-The pretence of success: Something that appears to work doesn't, or someone who appears
+
+**The pretence of success** Something that appears to work doesn't, or someone who appears
     to be rich, influential or powerful isn't. It could mean ruin, an electoral defeat,
     but also the mark of a con artist, or simply of a vanitous person, or of a blind
     bureaucracy. It could also mean prestidigitation or illusions.
-Too much of a good thing: Something that is good or useful in small amounts may become
+
+**Too much of a good thing** Something that is good or useful in small amounts may become
     dangerous in larger amounts, or addictive, or toxic, or destructive. It could be
     drugs or power or technology or faith. Has a character overused something?
     Has an empire overextended itself? Has a group become over-reliant on something
@@ -354,9 +356,38 @@ They are now ready to leave. *What awaits them outside?*
         the pure tradition of litterary cow-boys. That's bound to attract unwanted
         attention. Armed attention.
 
-#### Example: The Poet, at work.
+#### Example: The Poetess.
 
-**TBD**
+Europe, the 19th century. The characters are bodyguarding a witness in a case that involves
+dark sacrifices. This witness is a Poetess. *What is she like, in private?*
+
+- Either side:
+    - The Poetess is a wreck. Whatever she has seen has broken something in her. Now,
+        she has taken to start up screaming at all hours, yelling at invisible
+        critics and jumping in fear at any noise. She hasn't fallen into alcohol or
+        drug yet, but she looks longingly at the bottle of absinthe on the console,
+        and carressing it with imploring eyes.
+- The pretence of success:
+    - The entire world knows the works of the Poetess. In private, she's a bitter
+        woman, who has come to hate poetry and all its trappings. Perhaps she aimed
+        to uncover a part of the human soul and was entirely misunderstood by her readers.
+        Perhaps she just can't write anymore. Or perhaps she never did write her
+        own pieces.
+    - Every week, the doctor comes. Every week, the news remain bad. The Poetess
+        is dying. Nobody knows that she is, except the doctor, the Poetess and now
+        the characters. But before she dies, she has one last book in her.
+- Too much of a good thing:
+    - The success of the Poetess means that she's always moving. One night, she's
+        expected to give a reading in a famous Salon, while another night, she's
+        to show up at the Opera. Tomorrow, she will take the train for Vienna,
+        where she was invited by the Archduchess herself. The Poetess is a target,
+        but she won't let a threat to her life change her ways.
+    - The Poetess spends hours, days even in the company of the Ancients, reading
+        and declaiming the books of Ovid, or Homer, or poets of lesser fame. Whenever
+        she is with the Ancients, she will forget to eat, to bath, to sleep. She
+        also won't listen to anything or anyone, not even when the characters tell
+        her that a private reading of a poet on the rooftop or in front of a window
+        is the best way to get herself killed.
 
 #### Example: Battle for the North Wall
 
@@ -393,6 +424,53 @@ a beginning, or an end, or a journey through all the cards. It is
 a labyrinth, full of mysteries and enigmas.
 
 TBD
+
+### (TBD) Bunch of examples
+
+(bunch of random examples to use)
+
+- Entering the crypt of the Evil God
+- Overseeing the battle of Azincourt
+- Car race at the stadium
+- Escaping from prison
+- Building a pyramid
+- Dogfight
+- Shipfight
+- Alchemy
+- Cyberspace
+- Superhero leaping to the rescue
+- What's in the Evil Tome?
+- Supervillain's lair
+- Trapped in an illusion
+- Lord of the Paladins
+- What the sniper sees
+- What's on CNN?
+- Home invasion
+- Public Enemy #1
+- The mad circus
+- Arrival of the über-zombie
+- Speech of the Demagogue
+- At the tribunal
+- The high-security penitentiary
+- The secret library of the Vatican
+- Inside the FBI's air ducts
+- Hunted by the Xenomorph
+- What do I have, doctor?
+- City of Plague
+- Protecting the final of the Golden Fist challenge
+- Ascending Mount Final
+- Chess game at the Embassy
+- The first Aether-propelled ship
+- Dinner with Dracula
+- The evil sorcerer's last spell
+- Duel on top of the Eiffel Tower
+- Hunting Jack the Ripper
+- The Cardinal's secret
+- Mining for gold
+- Going beyond the enemy lines
+- The corrupt lawyer's defense
+- Poltergeist
+- Bathing in the Fount of Power
 
 
 ## What do we do with all these cards?
@@ -476,3 +554,11 @@ There are a few very simple reasons for this:
     questions that will introduce additional spice.
 
 Don't worry, we'll return on each of these points in the following chapters.
+
+## Exercise time!
+
+As an exercise:
+1. pick one of the questions associated to any of the cards;
+2. draw a card of the Space·Time Deck;
+3. interpret the question using that card and ses how you can get different results;
+4. repeat 2-3 times, to grow comfortable with the process.

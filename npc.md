@@ -330,3 +330,12 @@ An inconsistency *is* a question.
 ## What have we done and seen?
 
 TBD
+
+## Exercise time
+
+1. Pick a movie of book of your choice.
+2. Pick one of the major support characters, good, bad or other.
+3. Determine what is the actual amount of Facts established on that character, and when that information is given.
+4. Pick an instant when a Fact is established on that character. Find out what Question it answers.
+5. Draw a card from the Space·Time Deck to answer that Question and come up with a different answer and set of Facts.
+6. Try and see how this would affect the rest of the story.
