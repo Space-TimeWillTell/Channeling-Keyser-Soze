@@ -12,6 +12,7 @@
 1. Planets, dungeons and amusement parks: improvising places.
 1. The Truth is out there: improvising organizations and conspiracies:
 1. [Replacing your usual ruleset with the Space·Time Deck](rules.md).
+1. [Appendix: All the cards](reference.md)
 1. [Credits](CREDITS.md)
 1. [License](LICENSE.md)
 
