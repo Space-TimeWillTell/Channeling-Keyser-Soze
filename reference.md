@@ -365,15 +365,145 @@ TBD
 ![/assets/horizontal_card_19.png](/assets/small_horizontal_card_19.png)
 ![/assets/horizontal_card_20.png](/assets/small_horizontal_card_20.png)
 
-## I know it must be here somewhere
+## I know it must be here somewhere!
 
 ![/assets/horizontal_card_0.png](/assets/small_horizontal_card_0.png)
 
-This is the only card without a number. That's by design. Make it
-a beginning, or an end, or a journey through all the cards. It is
-a labyrinth, full of mysteries and enigmas.
+Default interpretations:
+ - Mysteries?
+ - Enigmas?
 
-TBD
+
+This card represents the Ancient Greek Hero Theseus, son of Egeus,
+King of Athens and descendent of Poseidon, God of the Oceans.
+Theseus is
+venturing forth in the Labyrinth of Crete. In the story, the
+Minean empire (which actually existed in History) rules over
+Athens, and requires a tribute of seven young men and seven young
+women per seven years, to feed the monstruous Minotaur.  Prince Theseus joined as one of the young
+men set for sacrifice into the Labyrinth, promising to
+convince the Minotaur to stop eating the youth of Athens. With the help
+of his lover Princess Ariadne of Crete, he would find
+and slay the Minotaur,
+escape the Labyrinth, and return to Athens.
+Somewhere along the way, he would betray and abandon
+Princess Ariadne and semi-accidentally cause the death
+of his own father, hence gaining the crown of Athens.
+Needless to say, Theseus is a very ambiguous hero.
+
+This card also represents The Minotaur, the half-man, half-bull
+Monster trapped in the Labyrinth. The Minotaur is a symbol of
+savage strenghts, as well as mark of the sin of Minos, king of
+Crete, who failed to hold is bargain with Poseideon, God of Seas.
+The Minotaur is the son of Minos' wife, Pasiphae and a divine
+Bull, with some engineering help of the genius Daedalus. Finally,
+the Minotaur itself was said to give strength to the Minoean
+Empire, by its sheer existence.
+
+Finally, this card represents the Labyrinth itself. An entire
+palace/temple/prison, designed by the polymath genius Daedalus
+to contain the Minotaur and its monstruous power, and which also
+served as a jail for Daedalus and his son Icarus themselves.
+The Labyrinth was where young men and women of Athens were
+sent to die, consumed by the Minotaur. To escape the Labyrinth,
+Daedalus invented a flying machine, and flew away with his son,
+who unfortunately got to close to the Sun and fell to his death.
+
+- **Picture** A fearless hero, or perhaps an ambitious one. The
+    Labyrinth, both a palace, a temple and a prison, as well as
+    the symbol of being lost – something which can apply very
+    either literally or metaphorically, as one may be lost in
+    their own thoughts, or in a reading, or in an illusion,
+    or in a riddle. A thread, which
+    may lead one to the exit. A Monster, a power beyond that
+    of mortals, who is also a victim of his birth. Also, this
+    Monster seems curious. Who is this man who comes without fear?
+    The bones
+    of those who came before. Also, a hunt, in which it isn't
+    clear who is hunting whom. Also, a sword – violence will
+    be shed.
+- **Enigmas** Something unexplained, but which can be puzzled out.
+    A riddle, a cypher, a password, or any other way to hide the
+    truth. Or perhaps a mathematical problem, or a philosophical
+    one, or a police investigation. Something which may be solved
+    for fun, or for dire reasons.
+- **Mysteries** Something unknown, but which can be taught. Generally,
+    an aspect of mysticism, hidden to the non-initiates.
+    Common linked to a religion, a cult, or a secret society. By
+    extension, any skill or knowledge associated to some kind
+    of subculture, from geekdom to poetry, from streetslang
+    to webdevelopment. Also, a metaphor, a message in a play, or a book,
+    or a poem.
+
+### Example: The New Drug on the Block
+
+In a cyber setting, the characters are investigating a series of overdoses,
+all of them related to some new drug called Vita. *What are the symptoms
+of taking this drug?*
+
+- Either side:
+    - Anybody who injects this drug loses consciousness. They find themselves
+        lost in memories, living and reliving them over and over again. In
+        these memories, the drug addicts can reshape themselseves, reimagining
+        themselves are stronger, or braver, or smarter.
+    - Drug addicts immediately feel themselves becoming stronger, braver, more
+        cunning. They move with a new purpose, temporarily becoming creatures
+        of straight ambition and power. Some become more efficient. Some turn
+        into monsters. It's not always easy to tell the difference.
+- Enigmas:
+    - To one high on this drug, no problem is too complicated, no riddle to
+        obscure. When high, a user can see patterns invisible even to the
+        trained brain, and follow them to their conclusion. Enigma is commonly
+        used by researchers and investigators.
+    - Addicts quickly become paranoid. Whatever they know, they must hide. Any
+        document they have, they encrypt. They come up with new languages and
+        cyphers.
+- Mysteries:
+    - To partake in Vita is to become one with the Divine. To feel its thoughts,
+        its envies, and to become greater than oneself. If the Voodoo masters
+        of the cyberspace have taken a sudden interest in Vita, it may be because
+        they are looking to transcend, or because they need to extinguish competition.
+    - For a few minutes, whoever inhales Vita feels smarter. While they are high,
+        they start speaking in unknown languages. Some experts, however, have
+        started decyphering this language. Apparently, the Vita-addicts
+        are *networking* with each other.
+
+### Example: The Duke returns
+
+Word is spreading. After five long years, the army of the Duke is returning from
+the Crusades. Peasants are gathering along the roads to watch the army pass, and
+for many to take their first look at their Duke. *What does the Duke look like?*
+
+- Either side:
+    - There is no Duke with the army. The army returns in shame. The Duke and his
+        personal guard were ambushed in Austria and captured by a fellow Christian
+        noble, who holds him for ransom. The Duchess and her children will have
+        to wait for one more year, or perhaps ten.
+    - It has been many years, so many years. So many years spent in a foreign soil,
+        outmanouvering or being outwitted by foreign foes, bartering, and loving,
+        and dreaming in foreign tongues. The army that returns is not the army
+        that left. It holds the same banners, but its soldiers have been burnt
+        by the sun and it is dressed as an army of foreigners. The peasants are
+        afraid. It looks like a sarracen army is marching.
+- Enigmas:
+    - Outwardly, the army looks exactly like a returning army. Tired men and
+        camp followers, eager to return to their homes and tell stories about
+        their heroism. The Duke, however, marches alone, lost in his thought.
+        Something has captured his mind. Perhaps it is the allure of a treasure,
+        buried in a foreign land, and whose secret lies hidden in the tome that
+        the Duke won't let anyone else read. Perhaps it is
+- Mysteries:
+    - Who is the man who rides first? He wears no arms, no armour. He's dressed
+        in black and white. Surely the Duke hasn't become one of the black monks.
+        Surely the Duke doesn't return... an Inquisitor?
+    - This returning is strange, and not only because they have been marked by
+        the sun. It is an army bearing different arms and different banners.
+        Where is the Cross worn by the knights on their chest, where is Lamb
+        of God that was carried by the standard bearer? This army has no images.
+        Only words, in some foreign language that not even the priest can read.
+        Word starts to spread that the Duke and his army have all abandoned
+        their faith and turned to the unholy worship of the Sarracens.
+
 
 ## (TBD) Bunch of examples
 
