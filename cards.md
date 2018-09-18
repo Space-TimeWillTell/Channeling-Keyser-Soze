@@ -139,7 +139,7 @@ We'll see examples below.
     to webdevelopment. Also, a metaphor, a message in a play, or a book,
     or a poem.
 
-### Example: The new drug on the block
+### Example: The New Drug on the Block
 
 In a cyber setting, the characters are investigating a series of overdoses,
 all of them related to some new drug called Vita. *What are the symptoms
@@ -174,6 +174,44 @@ Let's see a few possible interpretations using this card:
         started decyphering this language. Apparently, the Vita-addicts
         are *networking* with each other.
 
+### Example: The Duke returns
+
+Word is spreading. After five long years, the army of the Duke is returning from
+the Crusades. Peasants are gathering along the roads to watch the army pass, and
+for many to take their first look at their Duke. *What does the Duke look like?*
+
+Let's see a few possible interpretations using this card:
+
+- Either side:
+    - There is no Duke with the army. The army returns in shame. The Duke and his
+        personal guard were ambushed in Austria and captured by a fellow Christian
+        noble, who holds him for ransom. The Duchess and her children will have
+        to wait for one more year, or perhaps ten.
+    - It has been many years, so many years. So many years spent in a foreign soil,
+        outmanouvering or being outwitted by foreign foes, bartering, and loving,
+        and dreaming in foreign tongues. The army that returns is not the army
+        that left. It holds the same banners, but its soldiers have been burnt
+        by the sun and it is dressed as an army of foreigners. The peasants are
+        afraid. It looks like a sarracen army is marching.
+- Enigmas:
+    - Outwardly, the army looks exactly like a returning army. Tired men and
+        camp followers, eager to return to their homes and tell stories about
+        their heroism. The Duke, however, marches alone, lost in his thought.
+        Something has captured his mind. Perhaps it is the allure of a treasure,
+        buried in a foreign land, and whose secret lies hidden in the tome that
+        the Duke won't let anyone else read. Perhaps it is
+- Mysteries:
+    - Who is the man who rides first? He wears no arms, no armour. He's dressed
+        in black and white. Surely the Duke hasn't become one of the black monks.
+        Surely the Duke doesn't return... an Inquisitor?
+    - This returning is strange, and not only because they have been marked by
+        the sun. It is an army bearing different arms and different banners.
+        Where is the Cross worn by the knights on their chest, where is Lamb
+        of God that was carried by the standard bearer? This army has no images.
+        Only words, in some foreign language that not even the priest can read.
+        Word starts to spread that the Duke and his army have all abandoned
+        their faith and turned to the unholy worship of the Sarracens.
+
 ## What do we do with all these cards?
 
 The process is very simple:
@@ -186,7 +224,9 @@ The process is very simple:
 4. Look at the title, at the picture, at the interpretation facing you.
 5. Optionally, request the input from other people around the table.
 6. Explain how the card answers that question.
-7. The GM may get to veto or tone down an answer, if it doesn't make sense in the setting.
+7. If you are in a role-playing tame, the GM may get to veto or tone down an answer, if it
+    contradicts a Fact established in the setting, or something that the GM already has
+    in mind.
 8. Establish the Facts from the answer, and write them down where everybody can see them –
     don't forget that step, this will help one player easily reuse another players Facts,
     this is will help the GM or a Writer turn Facts into foreshadowing, etc.
@@ -205,13 +245,41 @@ swashbuckling, dungeoneering, investigating activities.
 
 ## Making the audience participate
 
-**TBD**
+If you are a GM, or if you are storytelling for an audience,
+you may be tempted to hide the process of drawing cards. In
+our experience, the process actually works better if the audience/players
+are part of it:
 
-Also, if you're a GM or if you're storytelling for an audience,
-the best way to draw cards is *not* to hide them. Rather, make
-the players/audience aware that you are drawing a card, make it
-part of the show and the suspense. And by all means, make the
-players/the audience participate, they are supposed to come up with ideas, too!
+- Storyteller: "At this instant, the two children managed to
+    push the trapdoor open. The dark presence was ten pace behind them,
+    maybe twelve. What do you think they found above the trapdoor?
+    Let's ask the cards, shall we?"
+- Storyteller pauses the narration, draws a card, leaves it exposed
+    on the table. The pause gives the Storyteller an instant to breathe,
+    possibly drink, and gives the audience a little time to wonder.
+![assets/reversed_card_17.png](assets/small_reversed_card_17.png)
+- Storyteller: "They saw soldiers. Thousands of soldiers. Thousands
+    of small toy soldiers, all waiting at attention, in what looked
+    like a children's playroom. As they hurriedly exited the passage
+    below the trapdoor, they heard one of the soldiers giving orders
+    to the others..."
+
+Also, do not hesitate to ask the audience:
+
+- Storyteller: "What do you think this little toy officer was ordering
+    the other toy soldiers to do? Do you have an idea?"
+- Storyteller pauses the narration, draws a card, leaves it exposed on
+    the table, and puts her/himself visibly in a waiting position.
+![assets/reversed_card_16.png](assets/small_reversed_card_16.png)
+- Audience: "Can they fly? Are they preparing planes?"
+- Storyteller: "Exactly. They were preparing the little toy planes,
+    with little ropes and pebbles, and these planes were preparing
+    to try and close the trapdoor behind the children. They were
+    preparing to try and stop the Dark Presence."
+
+
+> **Note** Check the cards before putting them in front of children.
+>    Some of them are violent.
 
 ## When and when not to
 
@@ -267,8 +335,14 @@ Don't worry, we'll return on each of these points in the following chapters.
 
 ## Exercise time!
 
-As an exercise:
-1. pick one of the questions associated to any of the cards;
-2. draw a card of the Space·Time Deck;
-3. interpret the question using that card and ses how you can get different results;
-4. repeat 2-3 times, to grow comfortable with the process.
+Skills seldom grow by pure reading. So, let's exercise these mind-muscles
+a bit!
+
+1. pick a novel, or a movie, or a manga, anime, etc. – for this exercise, it's easier if it's a page-turner/suspenseful story;
+1. at the first cliff-hanger, or major interrogation, close the book for a moment;
+1. formulate the Question asked by the story;
+1. draw a card of the Space·Time Deck;
+1. interpret the Question using that card;
+1. using the same card, but taken in the other sense, try to come up with a different answer to the same Question;
+1. continue reading/watching the story, repeat 2-3 times, to grow comfortable with the process.
+
