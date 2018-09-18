@@ -68,9 +68,9 @@ element in the picture, or the interpretation facing you.
 
 ### A little context
 
- This card represents the Ancient Greek Hero Theseus, son of Egeus,
-descendent of Zeus, God of the Skies and ruler of the Gods,
- (**TBD** check) and future king of Athens,
+This card represents the Ancient Greek Hero Theseus, son of Egeus,
+King of Athens and descendent of Poseidon, God of the Oceans.
+Theseus is
 venturing forth in the Labyrinth of Crete. In the story, the
 Minean empire (which actually existed in History) rules over
 Athens, and requires a tribute of seven young men and seven young
