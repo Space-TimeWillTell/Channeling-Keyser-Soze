@@ -1,36 +1,10 @@
-# Creating a NPC
+# Creating Characters
 
-So, your characters are about to meet that Ambassador of the
-Qfew'dhi Confederation, and you have no clue what a Qfew'dhi
-even means. Or they are going to be introduced to Temporary
-People's Representative of the Floating Commune, and you have
-no clue what that role entails. Or they are simply hitting
-the library, or the local temple, or the tavern, for the fifth
-time this session, for more details about that Screaming Demon,
-and you'd like them to actually meet someone interesting. Or
-maybe they have followed that kid pickpocket and stumbled upon
-the Orphanage, and you have no clue what that Orphanage is,
-but there must be some kind of Orphanage Ringmaster in it.
+All good things start with stories. It's not just a buzzphrase, by the way.
+In storytelling, whether it's a role-playing game, telling in front of an
+audience, or writing a book, it is the key.
 
-Or maybe you are a Player and the GM has just asked you to
-tell her more about your cousin Janice, the one you infected
-with that Psy-Virus during the first hours of Event 0. Or
-you decided to summon a Familiar from the 15th Dimension,
-and you just realized that you're going to need to give
-it a few personality traits and, who knows, maybe even a
-description!
-
-Or maybe you're in the middle of a storytelling session,
-and Sheherazade has decided to nest yet another story
-inside a story, and she needs a new antagonist.
-
-Life is hard, isn't it? But that's also what makes it fun.
-
-Let's see how we can make it easier, while keeping the fun in.
-
-## Nemeses and other Major NPCs
-
-For this section, imagine the following setting.
+So let us start with, once again, a story.
 
 Our story is set in a fantasy archipelago inhabited by dozens of sentient
 species, and loosely inspired from Ancient Greece, with larger ships.
@@ -43,13 +17,38 @@ We'll see more about improvising campaigns and settings
 interested in major NPCs, so we'll let the story flow without much
 detail and concentrate only in the introduction of these NPCs.
 
-So, let the story start.
+Our first player arrives. The GM tells him about the archipelago, the
+Spartan Legion, the war.
 
-A young hero, Desmondos (PC), has just entered the plot
-by accidentally receiving a magical message from Princess Erikaia
-(PC, but the player is running late, so uncreated so far).
+- GM: "So, what kind of character would you like to play?"
+- Player 1: "Mmmh... Well, obviously, a future hero. I don't know much
+    about the setting yet. so let's start with someone who's not involved
+    in the war at all. Maybe some kind of farmer's kid, eager for adventure.
+    I'll call him Desmondos."
 
-- GM: "Tell me about this message."
+Facts established:
+- **Desmondos doesn't know much about the war**
+- **Desmondos grew up on a farm**
+- **Desmondos is eager for adventure**
+
+
+- GM: "Alright. This story is going to be about you, and the other PCs,
+    taking an active part in the war against the Spartan Legion.
+    Desmondos, can you tell me how you *enter this plot*?"
+- Desmondos: "Could I receive a message accidentally? Some magical
+    message that's meant for an enemy of the Spartan Legion, who
+    hides on the same island as me, but for some reason, I got the
+    message, and since I'm eager for adventure, I decide to bring
+    it to the intended recipient?"
+- GM: "That sound good. Player 3 told me that she wants to play
+    some kind of princess. Let's say it's from her. It will create
+    the first relationship between your characters. Once Player 3
+    arrives, we'll see later how she gets drawn into that plot.
+    I don't know how she wants to call her character, but let's
+    say Erikaia. We'll change the names retroactively if she
+    doesn't like it."
+- Desmondos: "Yeah, I received a message from Princess Erikaia."
+- GM: "Ok, now tell me more about this message."
 - Desmondos: "Well, it seems to be encrypted somehow. But it's clearly meant
     for a general, an enemy of the Spartan Legion, who hides on this island."
 - GM: "Sounds good. I'll need a name for this general."
@@ -73,10 +72,11 @@ Gregorios.
 The GM ponders it a second, and decides that since Gregorios is clearly
 much stronger than Desmondos – and all threats should be scaled for
 Desmondos and his friends rather than for Gregorios – Gregorios doesn't
-need a character sheet. The GM and Desmondos' player agree that
-Gregorios will often tell Desmondos how to do things, but
-generally won't do them himself, and that consequently, in such
-cases, Gregorios will at times give Desmondos bonuses.
+need a character sheet. If necessary, Gregorios may be used as a *bonus*
+to make things possible or improve the results of Desmondos' actions.
+Not creating the character sheet immediately means that the GM is free
+to improvise the exact strength and powers of Gregorios as the story
+evolves, and to tailor it to wherever the story leads.
 
 Facts established:
 - **General Gregorios is in his fifties.**
@@ -96,20 +96,46 @@ to warn them of the terrible danger.
 Facts established:
 - **The Spartan Legion is about to unleash a terrible spell**
 
-Oh, a new player has just arrived ("Sorry about that, I hope
-you guys started without me!") He creates a character called
-Frankos the Shady Sailor, who owns a ship that can take
-General Gregorios and Desmondos to the Free Company, for
-a price. That's pretty easy to introduce in the plot.
+Oh, Player 2 has just arrived!
+
+- Player 2: "Sorry about that, I hope you guys started without me!"
+- GM: "We certainly did. Desmondos, do you wish to tell Player 2
+    about what has happened so far?"
+- Desmondos: [...]
+- GM: "... and so, we arrive to the moment where the heroes are
+    looking for a way to leave the island and reach the hidden
+    camp of the Free Company. Does this give you ideas for a
+    character?"
+- Player 2: "Yeah. Could I be some kind of mercenary... no, say
+    a smuggler? I have my own ship, it's small, it's fast, it
+    can get around the islands quickly and unseen."
+- GM: "That would certainly work. So, your plot introduction is
+    that you're going to be hired to bring the other heroes to
+    their destination, right?"
+- Player 2: "Right. And they don't have money with them, so I'm
+    going to stick with them until they pay me, because I have
+    debts. Also, it's a good way for me to get out of the way,
+    because someone might be after me to break my knees or
+    something."
+- GM: "Sounds good. Do you have a name?"
+- Player 2: "Mmmmh... Frankos the Sailor."
+
+Facts established:
+- **Frankos the Sailor has a small and fast ship.**
+- **Frankos the Sailor has debts.**
+- **Frankos the Sailor has a contract with Gregorios and Desmondos.**
 
 After more adventures, all three characters find themselves
 hidden in the hold of Drakon the Undefeated's own ship.
-At this point, another player arrives ("Sorry guys, I
-told you I'd arrive a bit late. Did you keep me Princess Erikaka,
-as I asked?") She creates the character and enters the plot
-by being held prisoner in that same ship.
+Right on time, Player 3 arrives.
 
-- GM: "Tell me more, why were you held prisoner?"
+- Player 3: "Sorry guys, I told you I'd arrive a bit late. Did you
+    keep me Princess Erikaka, as I asked?"
+- GM: "Yes, we did. Player 1, Player 2, can you tell her about
+    what has happened so far?"
+- [...]
+- Player 3, now Erikaia: "Ok, then it's simple. I'm prisoner in that ship!"
+- GM: "Tell me more, why are you held prisoner?"
 - Erikaia: "Well, I'm one of the leaders of the Anti-Spartan Legion..."
 - Desmondos: "We decided to call it the Free Company."
 - Erikaia: "Ok, I'm one of the leaders of the Free Company. Also, I got word
@@ -123,6 +149,8 @@ by being held prisoner in that same ship.
     being arrested, with details about that spell."
 
 Facts established:
+- **Erikaia is prisoner in Drakon's ship**
+- **Erikaia is one of the leaders of the Free Company**
 - **Drakon the Undefeated's boss is called The Demagogue**
 
 
@@ -145,7 +173,7 @@ the Undefeated, while the heroes manage to escape the ship.
 Facts established:
 - **Drakon the Undefeated is über-badass**
 
-Frankos the Shady Sailor manages to bring Princess Erikaia
+Frankos the Sailor manages to bring Princess Erikaia
 and Desmondos to the Free Company. Ensues a discussion on
 battle tactics, led by Princess Erikaia and the leader
 of the Free Company.
@@ -176,13 +204,29 @@ an explosion throws him overboard.
 The counterspell is launched, the spell is averted, everybody rejoices,
 and Drakon swears revenge.
 
-Congratulations, we have just completed the plot of *Star Wars*
-Episode IV without giving a character sheet to any of:
+Congratulation, heroes!
+
+As for you, reader, you may have realized a few things:
+- the major NPCs of this story (Drakon, Gregorios, the Demagogue, Myra Medea)
+    didn't need much in terms of character creation;
+- with a few tricks, the GM managed to entirely avoid character sheets
+    for these characters;
+- most of the creation for the characters was actually done by the players,
+    rather than the GM;
+- you already know this story.
+
+Oh, yes, did we forgot to mention it? We should thank our actors, who
+    came specially from *Star Wars* Episode IV to take the exact same
+    roles in this antique variants:
 - Darth Vader (as Drakon the Undefeated);
 - Obi-Wan Kenobi (as General Gregorios);
 - Emperor Palpatine (as the Demagogue);
 - Senator Mon Mothma (as Myra Medea);
 - ...
+
+We'll see in a moment how things scale up to Archipelago Wars V or VI.
+
+---
 
 Not only that, but much of what little character creation got done for
 these characters was actually done by the players, rather
@@ -221,6 +265,42 @@ Let us take a look at what we have done to make this possible:
 5. By introducing a major NPC simply by his/her name, without any
     detail, we have actually heightened the impact of the NPC on
     the story.
+
+
+
+---
+
+So, your characters are about to meet that Ambassador of the
+Qfew'dhi Confederation, and you have no clue what a Qfew'dhi
+even means. Or they are going to be introduced to Temporary
+People's Representative of the Floating Commune, and you have
+no clue what that role entails. Or they are simply hitting
+the library, or the local temple, or the tavern, for the fifth
+time this session, for more details about that Screaming Demon,
+and you'd like them to actually meet someone interesting. Or
+maybe they have followed that kid pickpocket and stumbled upon
+the Orphanage, and you have no clue what that Orphanage is,
+but there must be some kind of Orphanage Ringmaster in it.
+
+Or maybe you are a Player and the GM has just asked you to
+tell her more about your cousin Janice, the one you infected
+with that Psy-Virus during the first hours of Event 0. Or
+you decided to summon a Familiar from the 15th Dimension,
+and you just realized that you're going to need to give
+it a few personality traits and, who knows, maybe even a
+description!
+
+Or maybe you're in the middle of a storytelling session,
+and Sheherazade has decided to nest yet another story
+inside a story, and she needs a new antagonist.
+
+Life is hard, isn't it? But that's also what makes it fun.
+
+Let's see how we can make it easier, while keeping the fun in.
+
+## Nemeses and other Major NPCs
+
+For this section, imagine the following setting.
 
 
 ------------------------
