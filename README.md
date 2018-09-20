@@ -1,15 +1,15 @@
 # Front Cover
 
-**Title** Summoning lawyers from coffee cups and channeling names into dread pirates.
+**Title** The Plotonomicon
 
-**Subtitle** Spicing up your storytelling with improv and sleight of mind.
+**Subtitle** A very serious book about summoning plots when stories go boom, when audiences go zzzzz, or before they do! or: A bag of tricks to improv(e) your storytelling.
 
 # Back Cover
 
 
 Oops, the heroes have ruined the story, again. They managed to get Camelot invaded by the peaceful Seelie while King Arthur was at war, to kill teenage Karl Marx while vacationing in Space·Time or to blow up the Magical University where the entire campaign was meant to take place. Also, they have just entered the Unknowable Dungeon of Unspeakable Death, for which you have no maps, or they are due to meet the Ambassador of the Qfew'dhi Confederation, the one you just invented by pushing random keys on your keyboard.
 
-And they want more.
+And the story is not over.
 
 Guess it's time to switch to improv mode!
 
