@@ -1,8 +1,9 @@
 # Creating Characters
 
 All good things start with stories. It's not just a buzzphrase, by the way.
-In storytelling, whether it's a role-playing game, telling in front of an
-audience, or writing a book, it is the key.
+If you are building a story, whether you are role-playing, storytelling for
+an audience or writing a book, the story comes first and everything else
+tends to follow naturally.
 
 So let us start with, once again, a story.
 
@@ -218,19 +219,61 @@ As for you, reader, you may have realized a few things:
 Oh, yes, did we forgot to mention it? We should thank our actors, who
     came specially from *Star Wars* Episode IV to take the exact same
     roles in this antique variants:
-- Darth Vader (as Drakon the Undefeated);
+- Luke Skywalker (as Desmondos);
+- Princess Leia (as Princess Erikaia);
 - Obi-Wan Kenobi (as General Gregorios);
+- Darth Vader (as Drakon the Undefeated);
+- Han Solo (as Frankos the Sailor);
 - Emperor Palpatine (as the Demagogue);
 - Senator Mon Mothma (as Myra Medea);
 - ...
 
-We'll see in a moment how things scale up to Archipelago Wars V or VI.
+## The Spartan Legion Strikes Back
+
+The story is not over, of course. Eventually, Drakon the Undefeated will manage
+to trick Princess Erikaia and Frankos the Sailor into a trap and lure Desmondos
+the, er, Hoplites of Light into a hopeless fight.
+
+As our example is a Role-Playing Game, this scene may now go two ways. Either it
+can become a by-the-book round-by-round combat, or the GM and Players may come
+up with something a bit more inventive. In fact, since Drakon is so much stronger
+than Desmondos, a by-the-book combat scene would probably be rather boring, with
+Desmondos' player rolling attack after attack, only for them to be deflected by
+a Drakon who could certainly kill Desmondos in a single half-hearted blow.
+
+So, let's be a little more inventive.
+
+- GM: "I have bad news for you, Desmondos. Drakon is really, really, really much
+    stronger than you. You don't stand a chance."
+- Desmondos: "Er... right. Should I create a new character?"
+- GM: "Not quite yet. We're going to tell together how you fail to beat Desmondos,
+    but he won't kill you. Perhaps you'll be captured, as Erikaia and Frankos, or
+    perhaps you'll manage to escape, I don't know yet, but let's face it, you have
+    no way of actually beating Drakon."
+- Desmondos: "Oh, right. Escaping or being captured, sure, that sounds good. Do
+    I get to pick now?"
+- GM: "Well, you can, if you – as a player – have a strong preference, but otherwise,
+    we'll see as the scene progresses."
+- Desmondos: "Sounds good. Should I roll for attacks?"
+- GM: "Doesn't sound really useful, but you can describe your attacks, and how
+    Drakon evades or deflects them. But in fact, this scene is more a conversation
+    with the swordfighting as a bit of background noise, rather than a traditional
+    fight scene."
+- Desmondos: "YOU WILL NEVER GET ME, DRAKON!"
+- GM as Drakon: "Oh, but I will, young Hoplites. My master, the Demagogue, has
+    foreseen it"
+- ...
+
+As usual, it would be surprising if this exact dialog took place during a Storytelling
+performance or a Writing session, but the reasoning applies just as well to either case.
+
+- Desmondos: "I know that you killed my father, General Gregorios told me!"
+
+
+
+## Character creation as a bunch of Questions
 
 ---
-
-Not only that, but much of what little character creation got done for
-these characters was actually done by the players, rather
-than the GM.
 
 As an exercise, you could try and check just exactly how much
 character creation is required for all these major characters
