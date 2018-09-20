@@ -124,7 +124,7 @@ On this card, we (still) see:
 
 From "Rescue is coming", Alice decides that, well, rescue is coming. From "Playing Protector", she decides that the rescue will be impressive. And looking at the wings, she concludes that it will come from the air. Since there are **Soldiers everywhere in the streets**, it should be an helicopter from an airborn unit of the army.
 
-Alice then narrates "*You drive up the stairways like madpeople, hoping that the bikes' wheels won't be as stable as yours. Eventually, you reach the exit, where you hear a chopper, very cclose to your position. Looking up, you see a military deployment vehicle getting ready to drop shock troopers. Suddenly, the silence on your radio is broken by the voice of Archangel, your boss: 'Prepare to ditch the car and board the helicopter. It will lead you to a safe place.'*"
+Alice then narrates "*You drive up the stairways like madpeople, hoping that the bikes' wheels won't be as stable as yours. Eventually, you reach the exit, where you hear a chopper, very close to your position. Looking up, you see a military deployment vehicle getting ready to drop shock troopers. Suddenly, the silence on your radio is broken by the voice of Archangel, your boss: 'Prepare to ditch the car and board the helicopter. It will lead you to a safe place.'*"
 
 Also, since **An official is coming**, Alice suspects that the players are going to meet that official very soon.
 
