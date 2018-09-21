@@ -43,6 +43,8 @@ interesting and fun!
 
 Open [SUMMARY.md](SUMMARY.md), it's the table of contents.
 
+Or take a look at [the cover](cover.jpg).
+
 # Utilities
 
-[Draw a card](https://yoric.github.io/evil-teaspoons-and-inner-minotaurs/draw.html)
+[Draw a card](https://space-timewilltell.github.io/Channeling-Keyser-Soze/draw.html)
