@@ -340,15 +340,187 @@ dark sacrifices. This witness is a Poetess. *What is she like, in private?*
         is the best way to get herself killed.
 
 
-**TBD** One last example?
+## V. Hello, you gorgeous!
 
+![/assets/horizontal_card_5.png](/assets/small_horizontal_card_5.png)
+
+Default interpretations:
+- The futility of running away from Destiny?
+- The burden of knowledge?
+
+This picture depicts Oedipus and the Sphinx of Thebes facing – or
+perhaps embracing – each other. In Greek Mythology, Oedipus is the
+son of Queen Jocasta and King Laius of Thebes. Before Oedipus'
+birth, it was prophecized that he would murder his father
+and marry his own mother. To avoid the fulfilling of this
+prophecy, Oedipus' parents had him wounded at birth
+and abandoned to die in the wilderness. Of course, Oedipus
+survived and was adopted by loving parents – the Queen and
+King of Corinth. When, as a young adult, Oedipus eventually learnt of the
+prophecy, not knowing that he had been adopted, he fled his
+home to, once again, forestall the prophecy.
+Oedipus ended up meeting and killing King Laius, his real
+father, defeating the Sphinx of Thebes, and, as savior of
+Thebes, marrying the recently widowed Queen Jocasta. This
+unknowingly incestuous marriage cursed the city of Thebes,
+but it is only years later that Queen Jocasta and King Oedipus
+realized, after a series of coincidences and revelations, that
+they were mother and son. In shame, Jocasta killed herself,
+and Oedipus blinded himself, walking the roads as a blind
+beggar. Just to make sure that this story couldn't have any
+kind of happy ending, their children continued the curse -
+life was hard in Ancient Greek Myths.
+
+As for the Sphinx, she was a guardian of sorts, who choked
+and ate whoever could not answer her riddles, until she
+met a man who could, at which point she killed herself.
+In a later version of the story, she actually gave Oedipus
+the answer to the riddle, because that was her only way out
+this role of evil monster.
+
+**The image** The fight between a hero and a monster, or a dance
+    of seduction, or two arrogant figures, or a woman, more forward
+    than what society expects, and a younger man, surprised.
+    Also, a desolate landscape, the only entrance to a mysterious
+    city. Also, a guardian of secrets, willing to shed her charge.
+    Also, a blundering teenager, surprised by a question or a
+    secret whispered and about to be trapped into power.
+    Also, the clinging hand of a victim not fully dead yet.
+**The burden of knowledge** Information, but an information that
+    comes with a cost. Maybe the cost is upfront and visible, and the
+    heroes will have to meet it to get the information. More
+    likely, this information comes with a responsibility that
+    the characters should not have wanted, perhaps in the
+    form of a choice to make, or a long-ignored debt to own.
+    Perhaps it is time for a character to learn of a bastard they
+    have sired, or a child thought dead, or a lover or a friend
+    or a mentor in hardship. Perhaps it is time for the heroes
+    to make a choice where no option is acceptable.
+**The futility of running away from Destiny** If something was
+    hunting down the heroes, or perhaps their antagonists,
+    that something has arrived, or at
+    least a good reason to believe that it cannot be escaped.
+    Perhaps a countdown had started for some doomsday clock?
+    Doomsday has arrived while the characters were looking
+    away. Maybe a prophecy was under way, or a paradox? In
+    either case, it is time to tie the knot. Or maybe it is
+    something less scary that cannot be escaped anymore,
+    something like love, or a conversation that needs to
+    happen now, even in the middle of a dungeon. Or maybe
+    it is time for a character to realize their role in the
+    story and perhaps even to accept it – a hero may be
+    born, or a villain.
+
+### Example: Going beyond the enemy lines
+
+World War 2 in Europe. The sarge and his men have been tasked
+with a secret mission. They have spent two days half-lost
+beyond the enemy lines, and have finally just reached the hill
+behind Château Maniais. They only have a few hours before
+the Obersturmführer escapes towards Berlin. The sarge looks
+at the Château from his goggles. *What does he see?*
+
+- Either side:
+    - The entire surroundings of Château Maniais have been turned
+        into fortifications. Sandbags and barbwires everywhere,
+        guard towards and machine guns. The only path leads towards
+        the entrance and it is covered by Panzers. It's going to
+        be a tough job.
+    - The landscape is desolate, but only one of the windows is alight.
+        At the window, two shapes seem to be dancing. One of them is
+        uniformed, clearly the Obersturmführer. The other one is a womanm,
+        probably his mistress.
+- The burden of knowledge:
+    - The Obersturmführer's retinue is getting ready to leave, that much
+        is obvious – they are currently cleaning house. Which, among
+        other things, means that they are taking a bunch of civilians – women,
+        all of them – to the trench behind the castle, to be executed.
+        The heroes have a chance to save them, if they act now, but
+        this might come at the cost of the mission. Or the sarge can
+        decide to stay mute, to spare the rest of the team from the
+        responsibility of letting these innocents be murdered.
+    - The Obersturmführer is getting ready to leave alright, and he's not
+        leaving empty-handed. The sarge witnesses two trucks being loaded
+        with paintings, gold bars, jewels. Now, some squad members could
+        decide to go for the gold after – or instead of – their mission.
+        This could be desertion. Or the sarge might decide not to tell them.
+- The futility of running away from Destiny:
+    - The sarge takes one second to focus, then drops the goggles.
+        The Obersturmführer is right here, not twenty paces from the squad,
+        relieving himself in front of a tree, or perhaps smoking
+        a cigarette. Destiny has come for him.
+    - It was only a matter of time before the squad was spotted.
+        Well, while the sarge was spotting, a sentry noticed something
+        in the bushes. A patrol is dispatched to the squad's position,
+        right now.
+
+### Example: The shifting maze
+
+A group of random strangers has awakened in a deadly shifting maze,
+in which they must band together to survive. Or not. *Why were they
+put in the labyrinth?*
+
+ - Either side:
+    - It's a social experiment, pure and simple.
+    - It's a rite of passage. If they manage to make it through, well,
+        some secret will be revealed.
+ - The burden of knowledge:
+    - One of the strangers knows more than he lets on. He's somehow
+        responsible for everybody being here, perhaps because he built
+        the maze, or perhaps because he's the target, and everybody else
+        was just caught with him.
+    - The maze is an interrogation device. This is not the first time
+        the strangers awake in the maze. They have died already, and died
+        again, and been cloned or resurrected. Each time, the maze rearranges
+        itself, trying to get the strangers to talk and share. This will
+        continue until one of the strangers finally reveals their secret.
+ - The futility or running away from Destiny:
+    - Everybody is sent to the maze, at least once on their lifetime.
+        They don't remember, because if they survive, their memory is erased.
+    - All these strangers are actually dead. This is some form of purgatory or hell.
+
+### Example: What does the Alchemist want?
+
+The heroes need the expertise of an alchemist to identify the Stone
+of Power that they managed to trick away from the Lord of Wind Castle.
+As it turns out, there is only one alchemist of renoun in the region,
+and she serves in the Temple of the All-seeing. *What does she want?*
+
+- Either side:
+    - The Alchemist is busy dealing with arcane knowledge. Maybe, if the
+        heroes somehow find a way to help her in her investigation, she
+        might make a little time to look at their babble.
+    - The Alchemist is in the middle of a lover's quarel. Her companion,
+        the professional hero, wants her tame and housebroken. She will have
+        none of that, and she has enough arrogance to match that of her
+        hero. For the moment, neither of the lover is willing to listen
+        to the heroes, but there may be a way to try and get them to
+        one-upman each other through piercing the enigma of the Stone.
+- The burden of knowledge:
+    - The Alchemist is old, perhaps dying. She knows so many things,
+        and has nobody to pass that knowledge. At this stage, the Alchemist
+        wants – needs – an apprentice more than anything in this world.
+        Everything else is secondary, including answering the questions
+        of annoying heroes.
+    - Oh, that Alchemist? You mean, your mom? Well, I'm sure she'd like
+        to hear about your latest adventures. Also, any grandchildren yet?
+        No? Well, it just happens so that she knows someone your age,
+        someone you should absolutely meet.
+- The futility of running away from Destiny:
+    - The Stone of Power was created by the Alchemist, dozens of years
+        ago. When she found out what the Stone could do, she did her
+        best to destroy it or hide it. After all these years, the Stone
+        is returning to its creator. The Alchemist only wants one thing:
+        she wants to be far away from the Stone of Power!
+    - The Lord of Wind Castle is the former lover of the Alchemist.
+        When they broke up, he stole the Stone. The Alchemist wants
+        only one thing: the Stone itself.
 
 ## Everything else
 
 TBD
 ![/assets/horizontal_card_3.png](/assets/small_horizontal_card_3.png)
 ![/assets/horizontal_card_4.png](/assets/small_horizontal_card_4.png)
-![/assets/horizontal_card_5.png](/assets/small_horizontal_card_5.png)
 ![/assets/horizontal_card_6.png](/assets/small_horizontal_card_6.png)
 ![/assets/horizontal_card_7.png](/assets/small_horizontal_card_7.png)
 ![/assets/horizontal_card_8.png](/assets/small_horizontal_card_8.png)
@@ -548,7 +720,6 @@ for many to take their first look at their Duke. *What does the Duke look like?*
 - Hunting Jack the Ripper
 - The Cardinal's secret
 - Mining for gold
-- Going beyond the enemy lines
 - The corrupt lawyer's defense
 - Poltergeist
 - Bathing in the Fount of Power

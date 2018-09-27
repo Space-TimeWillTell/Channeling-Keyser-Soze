@@ -232,7 +232,7 @@ Oh, yes, did we forgot to mention it? We should thank our actors, who
 
 The story is not over, of course. Eventually, Drakon the Undefeated will manage
 to trick Princess Erikaia and Frankos the Sailor into a trap and lure Desmondos
-the, er, Hoplites of Light into a hopeless fight.
+the, er, Hoplite of Light into a hopeless fight.
 
 As our example is a Role-Playing Game, this scene may now go two ways. Either it
 can become a by-the-book round-by-round combat, or the GM and Players may come
@@ -259,19 +259,131 @@ So, let's be a little more inventive.
     Drakon evades or deflects them. But in fact, this scene is more a conversation
     with the swordfighting as a bit of background noise, rather than a traditional
     fight scene."
-- Desmondos: "YOU WILL NEVER GET ME, DRAKON!"
-- GM as Drakon: "Oh, but I will, young Hoplites. My master, the Demagogue, has
-    foreseen it"
+- Desmondos: "I run at him, yelling « YOU WILL NEVER GET ME, DRAKON! » while I
+    attempt to stab him with my spear, but he deflects it effortlessly."
+- GM as Drakon: "Oh, but I will, young Hoplite. My master, the Demagogue, has
+    foreseen it."
 - ...
 
 As usual, it would be surprising if this exact dialog took place during a Storytelling
 performance or a Writing session, but the reasoning applies just as well to either case.
 
-- Desmondos: "I know that you killed my father, General Gregorios told me!"
+- Desmondos: "As I drop my spear and try to go under his shield with my dagger,
+    « I know that you killed my father ! », but he manages be able to catch
+    my wrist and force me to drop the dagger."
+- GM as Drakon: "Who told you that?"
+- Desmondos: "Could Gregorios have told me that?"
+- GM, taking notes: "Sure."
+- Desmondos: "Gregorios told me, before you murdered him, like the coward you are!"
+- GM as Drakon, with a smirk: "That old fool lied to you, Desmondos. I AM YOUR FATHER."
+
+Facts established so far:
+- **Gregorios claims that Drakon killed Desmondos' father**
+- **Drakon claims that he's Desmondos' father**
+- **Drakon claims that the Demagogue has somehow foreseen the capture of Desmondos**
+
+- GM: "It's time to end the scene, by the way. Are you going to be captured, injured,
+    are you going to escape?"
+- Desmondos: "I think he actually broke my wrist. Let me draw a card to find out how
+    I manage to escape."
+
+![assets/reversed_card_17.png](assets/small_reversed_card_17.png)
+
+- Desmondos: "We were fighting close to this gaping hole, right? **Being ready, always**,
+    can I have had time to look at the bottom of the hole and realize it communicates
+    with the sea?"
+- GM: "Yep."
+- Desmondos: "Then I take one step backwards and drop into the hole. The fall will
+    certainly hurt me, but I hope that my friends can rescue me in their ship."
+- GM: "Very well. When he realizes what you're trying to do, Drakon the Undefeated
+    attemps to grab you, but he's just one tiny instant too late, and by then, you
+    are already falling down. Falling down is the last thing you remember. You'll
+    lose consciousness when hitting the water."
+
+What we have done here is subverting the round-based combat (hero acts, bad guys
+act, hero acts, bad guys act, ...) dear to many role-playing games, in particular
+video games, but also to many action movies and rephrasing this encounter as a conversation
+between Desmondos and Drakon. For one thing, the combat would have made no sense,
+as Drakon is so much more powerful than Desmondos. In a role-playing game, a combat
+scene would have been both frustrating and limiting. Regardless of storytelling
+format, making it a conversation made it interesting: the characters exchanged both
+threats and informations, moving the plot forwards. While we do not know, at this
+stage, whether Drakon is telling the truth, he undoubtedly had a good reason for
+his claims. Investigating the relationship between Drakon and Desmondos sounds like
+a very nice hook for the next part of the story.
+
+And, once again, letting the player (or, in other formats, the audience) decide
+the rhythm of the fight and the mean of escape of Desmondos both avoid the frustration
+of this one-sided fight and setup the means of regaining hope in the rest of the story.
+
+Oh, and in a role-playing format, it also means that we still don't need a detailed
+character sheet for Drakon the Undefeated.
+
+We'll stop the story of Archipelago Wars here, on this apparent defeat of the heroes,
+and we leave it as an exercise for the reader to determine just exactly how much
+needs to be prepped ahead of time about the characters of this story for Episode VI,
+*Return of the Hoplite of Light*. Hint: we can get away with the answer "nothing".
+
+## Creating a Major Character
+
+Depending on your story, characters may reach much further than
+human (or human-like) beings. A faction may be a character,
+a religion may be a character, a malicious or soothing mountain
+or sea or the immensity of space may be characters, Tolkien's One Ring
+may be a character, etc. Let's settle for the following rule:
+
+**A *character* is anything that can, somehow, be attributed a
+    role in the story, a purpose, an attitude and means.**
+
+Doesn't this look like a set of Questions?
+
+The first question is the same for every character, and will lead to everything else.
+
+- Initially, how does this character fit in the story?
+
+In many cases, you already know the answer:
+- the Main Villain, who intends to rob the city blind;
+- the smithy, who repairs the heroe's armors;
+- the witness of the murder, who needs to be interrogated;
+- a shady character of vague villainess, used for foreshadowing;
+- the hero.
+
+TBD: Don't confuse "asking many questions" and "creating an interesting character".
+
+TBD
+
+## Focusing on... a hero
+
+TBD
+
+## Focusing on... a villain
+
+TBD
+
+## Focusing on...
+
+TBD
+
+---
+
+
+Once we have Question, we may answer it, either by looking
+at the existing facts, by drawing a card from the Space·Time Deck, by looking
+in our cup of coffee, or through any other mean.
 
 
 
-## Character creation as a bunch of Questions
+So let's start with a Question:
+
+1. What kind of character do we need?
+
+
+
+do you want the character to be?
+
+
+
+Let's start with two different characters.
 
 ---
 
