@@ -324,7 +324,11 @@ and we leave it as an exercise for the reader to determine just exactly how much
 needs to be prepped ahead of time about the characters of this story for Episode VI,
 *Return of the Hoplite of Light*. Hint: we can get away with the answer "nothing".
 
-## Creating a Major Character
+If you have time to create detailed backstories and/or character sheets ahead of
+time, and if you enjoy this task, you are of course welcome to do so. Just be
+aware that it is not a requirement.
+
+# Step-by-step character creation
 
 Depending on your story, characters may reach much further than
 human (or human-like) beings. A faction may be a character,
@@ -332,96 +336,213 @@ a religion may be a character, a malicious or soothing mountain
 or sea or the immensity of space may be characters, Tolkien's One Ring
 may be a character, etc. Let's settle for the following rule:
 
-**A *character* is anything that can, somehow, be attributed a
-    role in the story, a purpose, an attitude and means.**
+> A *character* is anything that can, somehow, be attributed a
+> role in the story, a face, a purpose, an attitude and means.
 
-Doesn't this look like a set of Questions?
+Of course, "role", "face", "purpose", "attitude" and "means"
+will mean very different things for the brutish Orc Warchief,
+the inscrutable depths of the sea or the gender-swapped alter
+ego of the hero. The Warchief is commonly a villain, or could
+be a mentor, distant father or worshipped leader. The sea
+may be oppressing or soothing, mysterious or bountiful,
+a terrain of adventure, or the last place where the dregs of
+mankind take refuge when everywhere else is barred to them.
+The gender-swapped alter ego could be competition or comic
+relief, love interest or the only person with whom the hero
+can share a beer and discuss freely politics or today's
+supervillain.
 
-The first question is the same for every character, and will lead to everything else.
+If you have read the previous chapters, role, face, purpose,
+attitude and means may sound to you like a list of Questions.
+Well, if it sounds like Questions, let's treat it as Questions.
 
-- Initially, how does this character fit in the story?
+As usual, you may find your Answer in established Facts, or
+in discussion with your audience/players/fellow players or
+in a coffee cup, or in a movie you have just seen, or in
+a conversation you have overheard in the subway, or
+pretty much anywhere else. For the rest of this section,
+we'll assume that we haven't found all our Answers yet,
+and we'll typically use the Space·Time Deck.
 
-In many cases, you already know the answer:
+## Character fit
+
+*Initially, how does this character fit in the story?*
+
+In most cases, you already know the answer:
 - the Main Villain, who intends to rob the city blind;
 - the smithy, who repairs the heroe's armors;
 - the witness of the murder, who needs to be interrogated;
-- a shady character of vague villainess, used for foreshadowing;
-- the hero.
+- a shady character of vague villainess, who may be reused later in any purpose;
+- the hero;
+- a possible rival;
+- a possible love interest;
+- an obstacle;
+- the owner of the house the heroes are robbing, and who might
+    wake up at any second now;
+- ...
 
-TBD: Don't confuse "asking many questions" and "creating an interesting character".
+If you don't know the answer, it might be a sign that you
+don't need to create that character yet – a character with
+no role is one who has pretty strong chances of never
+showing up in the course of the story. Then again, you
+may have a very good reason to create that character,
+so let's look at a few examples.
+
+### Example: The hero
+
+This is a story of pirates. A new player wants to create a character
+but has no idea what they want to play yet. *How does my character
+fit in this story?*
+
+As usual, if you have no idea, let's ask the Space·Time Deck.
+
+![/assets/card_18.png](/assets/small_card_18.png)
+
+A young woman in a white, possibly bridal, dress, with the
+inspiration "Faithfulness unto death"...
+
+- Player: "Can I play a young woman in this game? I mean, I know
+    it's a pirate game, but I'd rather not play someone who's
+    going to spend the entire story getting raped."
+- GM: "I'm sure we can agree on that. A game about rape doesn't
+    sound like much fun, so we'll establish this as a Fact
+    before starting. Now, according to my Hollywood-acquired
+    knowledge pirates, a young woman among
+    bucaneers may have difficulties getting taken seriously.
+    We may decide to simply ignore this trope, or to assume
+    that your character is particularly good at either charisma
+    or authority. I can work with either, which one would you
+    prefer?"
+- Player: "I'll go for the trope of the woman in a man's world,
+    who swears twice louder than a man and fights twice harder,
+    earning grudging respect."
+- GM: "Sounds good. So, how do you fit in the story?"
+- Player: "I think I'll be a bride-to-be, shipped from the Old
+    World to be married to a bridegroom she has never seen, and
+    who dreams to escape that fate. Can we introduce me to the
+    plot when pirates board the ship on which I'm a passenger,
+    I grab a sword, and defend myself so well that they offer
+    me to become one of them?"
+- GM: "What do you think if, say, you managed to disarm the pirate
+    captain or take him hostage?"
+- Player: "Sounds like he might wish to take revenge at some point,
+    right?"
+- GM, smirking: "Sounds exactly right."
+
+With this conversation, the character has acquired not only a *role*,
+but also an *attitude*. So far, so good.
+
+### Example: The NPC
+
+Context: The heroes are the staff of a Hollywood starlet, and
+she's just as obnoxious as everything you can imagine. That's
+an attitude. But *How does she fit in this story?*
+
+![assets/card_16.png](assets/small_reversed_card_16.png)
+
+Taking flight? Sadly, it's just imagination? It sounds like
+a tragic figure. It sounds like she's on her way towards
+disillusion. So, what about making the starlet someone
+who will need to be protected despite herself from the
+shredder of hopes that is Hollywood?
+
+If this is a role-playing game, this will, of course,
+require buy-in from the players. If they do not enjoy
+this direction, an alternative would be simply to let
+the starlet crash and burn as a background to the main
+event.
+
+
+### Example: The mountain
+
+Context: The heroes are the survivors of a plane crash on the Himalaya.
+To make things worse, they are pursued by a local smuggler queen
+and her thugs, for a reason they do not understand yet. On the
+Himalaya, the mountain simply must have a role. *How does the
+mountain fit in this story?*
+
+![assets/reversed_card_21.png](assets/small_reversed_card_21.png)
+
+The Big Crunch, end of all things, interpreted as Longevity.
+Despite the blackness, this actually sounds like a message of
+hope. This Storyteller decides that the mountain, despite its
+dangers, despite the fact that it may eventually swallow both
+the hunted and the hunters, is a place of immensity and peace.
+Its role in the narration could be that of a survivalist
+nightmare, but no, the Storyteller concludes that it will be
+more of a nurturing, hiding place, full of refuges and
+breathtaking vistas that lead one towards contemplation rather
+than violence.
+
+Again, it not being realistic doesn't really matter. This is
+just a story, and realism is part of another story.
+
+Who knows, there may even be some magic involved.
+
+### Example: The villain
+
+Context: Musketeers, high ladies, Versailles, the court of the Sun
+King Louis XIV, high intrigue and swashbuckling! The heroes have
+heard a few times about Rochefort, a nobleman that they obviously
+did not want to cross. Unfortunately, Rochefort has now heard about
+them. It is time for Rochefort to properly enter the story.
+*How does he fit in this story?*
+
+![assets/reversed_card_20.png][assets/small_reversed_card_20.png]
+
+Under-equipped? A doctor in a plague mask? It could be that
+Rochefort has evil objectives, but right now, it looks like
+he needs help. Also, perhaps he is sick himself. So Rochefort,
+evil and ailing Rochefort, needs reinforcements. Whatever he has heard
+about the heroes, he thinks of them as possible henchmen.
+
+## A face
+
+The face of a human being has little in common, of course,
+with what will pass for a face in an Imagination Sprite
+of the 15th Level, in a Computer Virus, or in the Labyrinth
+of Souls. But they all have something visible, something by
+which the heroes will see them – or guess at their presence.
+
+*What does the character look like?*
+
+Again, in many cases, you may already know the answer, or
+have one at hand. If you don't, let's see a few examples.
+
+### Example: The Virus
+
+Context: Cyberpunk. A Virus has been unleashed on Night City.
+The heroes have heard of it, now, it's time for them to
+interact with it. *What does interacting with the Virus mean?*
+
+![assets/card_6.png][assets/small_card_6.png]
+
+
+### Example: The hero
 
 TBD
 
-## Focusing on... a hero
+## A purpose
 
 TBD
 
-## Focusing on... a villain
+## Means
 
 TBD
 
-## Focusing on...
+## Wait a second, what if I really have no idea?
+
+The three-cards spread.
 
 TBD
 
----
+## Other tricks
 
+- Reusing a character.
 
-Once we have Question, we may answer it, either by looking
-at the existing facts, by drawing a card from the Space·Time Deck, by looking
-in our cup of coffee, or through any other mean.
+## Evil empires, conspiracies and other organizations as NPCs
 
-
-
-So let's start with a Question:
-
-1. What kind of character do we need?
-
-
-
-do you want the character to be?
-
-
-
-Let's start with two different characters.
-
----
-
-As an exercise, you could try and check just exactly how much
-character creation is required for all these major characters
-in *Star Wars* Episodes V and VI.
-
-During these two movies, very few additional Facts are
-established on these characters. Giving Darth Vader a full
-character sheet would make sense in Episodes V and VI,
-for the fights against Luke Skywalker,
-but is by no mean a necessity: in Episode V, Darth Vader is
-so much stronger than Luke that getting Luke to survive pretty
-means requires ignoring the character sheet or the fight rules,
-while in Episode VI, Luke is so much stronger that the fight
-is a mere formality.
-
-In other words, if you wish, you can very much get away
-with only a few (improvised) Facts for any of these major NPCs
-of *Star Wars*. The same goes for Sauron, Saroumane and the Council
-in *Lord of the Rings*, Talia or Bane in *The Dark Knight Rises*,
-etc.
-
-Let us take a look at what we have done to make this possible:
-1. Avoid creating major NPCs before the story starts.
-2. Create these NPCs one Fact at a time, with the help
-    of the Players and/or the Space·Time Deck.
-3. If a NPC is much stronger than the heroes, encounter scenes
-    are largely about *avoiding* them, which is better done through
-    improv than through rules.
-4. By treating major NPCs as *scenes* and *obstacles* or *helpers*,
-    rather than statistics, we may entirely skip any formal character
-    creation.
-5. By introducing a major NPC simply by his/her name, without any
-    detail, we have actually heightened the impact of the NPC on
-    the story.
-
-
+TBD
 
 ---
 

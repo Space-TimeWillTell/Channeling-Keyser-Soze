@@ -110,7 +110,7 @@ fn main() {
     let Options { cards, source, dest } = parse_cli();
     let cards = cards.into_iter()
         .sorted();
-    println!("Regenerating cards {cards} from {source}",
+    println!("Regenerating card(s) {cards} from {source}",
         cards = cards.iter().format(","),
         source = source);
 
@@ -120,7 +120,7 @@ fn main() {
         .map(|i| i / 2)
         .dedup()
         .collect();
-    print!("Regenerating pages {}", pages.iter().format(","));
+    print!("Regenerating page(s) {}", pages.iter().format(","));
 
     batch(pages.into_iter()
             .map(|i| {
@@ -140,7 +140,7 @@ fn main() {
             })
             .collect());
 
-    print!("Extracting high quality horizontal cards");
+    print!("Extracting high quality horizontal card(s)");
     batch(cards.iter()
             .map(|i| {
                 let geometry =
@@ -169,7 +169,7 @@ fn main() {
         .collect());
 
 
-    print!("Extracting high quality up cards");
+    print!("Extracting high quality up card(s)");
     batch(cards.iter()
             .map(|i| {
                 Command::new("convert")
@@ -188,7 +188,7 @@ fn main() {
             })
         .collect());
 
-    print!("Extracting high quality down cards");
+    print!("Extracting high quality down card(s)");
     batch(cards.iter()
             .map(|i| {
                 Command::new("convert")
@@ -207,7 +207,7 @@ fn main() {
             })
         .collect());
 
-    print!("Extracting horizontal thumbnails");
+    print!("Extracting horizontal thumbnail(s)");
     batch(cards.iter()
         .map(|i| {
             Command::new("convert")
@@ -226,7 +226,7 @@ fn main() {
         })
         .collect());
 
-    print!("Extracting up thumbnails");
+    print!("Extracting up thumbnail(s)");
     batch(cards.iter()
         .map(|i| {
             Command::new("convert")
@@ -246,7 +246,7 @@ fn main() {
         })
         .collect());
 
-    print!("Extracting down thumbnails");
+    print!("Extracting down thumbnail(s)");
     batch(cards.iter()
         .map(|i| {
             Command::new("convert")
