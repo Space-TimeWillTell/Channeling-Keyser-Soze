@@ -42,7 +42,7 @@ Lest anybody forgets, Alice will write this on a piece of paper:
 - **Nobody seems worried by the soldiers.**
 - **Large streets are pretty much blocked.**
 
-The pursuit may now start. For this, Alice is going to use the usual rules provided by her ruleset, so we're not going to give all the details about the pursuit. If you want Space·Time Deck-based rules for the pursuit, either because you're Charline the Writer, or because you just want to try something different, we'll look at this [later in this book](total-conversion.md).
+The pursuit may now start. For this, Alice is going to use the usual rules provided by her ruleset, so we're not going to give all the details about the pursuit. If you want Space·Time Deck-based rules for the pursuit, either because you're Charlene the Writer, or because you just want to try something different, we'll look at this [later in this book](total-conversion.md).
 
 ## Waking up sleeping players
 
