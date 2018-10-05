@@ -12,11 +12,11 @@ Hi, Bob, nice to meet you. Yeah, getting in a setting is tricky and getting in a
 
 **FIXME** More about Bob.
 
-It' also the story of a Writer (let's call her Charline), who had gotten his story started, but didn't have fresh ideas for this antagonist, or that epic fight scene, or simply for finding out what laid behind the door that the hero had finally managed to open.
+It' also the story of a Writer (let's call her Charlene), who had gotten her story started, but didn't have fresh ideas for this antagonist, or that epic fight scene, or simply for finding out what laid behind the door that the hero had finally managed to open.
 
-**FIXME** More about Charline.
+**FIXME** More about Charlene.
 
-Hi Alice, hi Bob, hi Charline. Welcome to *Evil Teaspoons and Inner Minotaurs*. In this book, we'll talk about getting ideas quickly and using them immediately, through techniques of improv. Some of these ideas will come from other players, others will come from the companion Space·Time Deck, and in many cases, you will realize that these are ideas that you already had.
+Hi Alice, hi Bob, hi Charlene. Welcome to *The Plotonomicon*. In this book, we'll talk about getting ideas quickly and using them immediately, through techniques of improv. Some of these ideas will come from other players, others will come from the companion Space·Time Deck, and in many cases, you will realize that these are ideas that you already had.
 
 Throughout the book, we'll use the **Space·Time Deck**, a deck of cards loosely inspired from Tarot and designed to aid with improvisation. The techniques we'll show work just as well with other sources of inspiration, including other variants on Tarot. Also, these techniques do not require a specific ruleset – whether you're crunchy, narrative, or not playing at all, you will be able to use what you learn in this book.
 
@@ -39,7 +39,7 @@ that specific vernacular.
     Player Characters.
 - Ruleset/mechanics: The rules used to make sure that the story stays consistent
     with the universe, for instance that human beings don't run faster than racing
-    cars, but that long-haired blond elves can surf on shieldes in the middle of a
+    cars, but that long-haired blond elves can surf on shields in the middle of a
     battle. In traditional storytelling, things are generally fuzzier, and the
     storyteller needs to rely on sticky notes, intuition and genre cannon. Some
     rulesets are considered "crunchy", if they attempt to simulate a lot of

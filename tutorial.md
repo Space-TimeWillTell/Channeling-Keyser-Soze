@@ -2,7 +2,7 @@
 
 You know what? Let's keep explanations for later. Let's start with some action!
 
-Imagine cars racing in the streets of Rio de Janeiro. It's the present. Two of the heroes (let's call them Desmond and Erika) share a sportscar, driving as fast as they can away from the HQ of Evil Corporation, where they just stole a USB key. Our third hero (Frank) is in the gadget van, driving more slowly, while looking at a map of traffic lights. A dozen of armed thugs on motorcycles are after Desmond and Erika. Also, imagine you have never visited Rio de Janeiro, you have no clue what the city looks like, and you haven't prepped this pursuit.
+Imagine cars racing in the streets of Rio de Janeiro. It's the present. Two of the heroes (let's call them Desmond and Erika) share a sportscar, driving as fast as they can away from the HQ of Evil Corporation, where they just stole a USB stick. Our third hero (Frank) is in the gadget van, driving more slowly while looking at a map of traffic lights. A dozen of armed thugs on motorcycles are after Desmond and Erika. Also, imagine you have never visited Rio de Janeiro, you have no clue what the city looks like, and you haven't prepped this pursuit.
 
 No problem. For one thing, we don't actually care what the city looks like – it's just a game, and you're not going to get it any more wrong than most Hollywood movies. So let's see what we can do to make it fun. If you *do* live in Rio de Janeiro, just imagine it's Istanbul instead!
 
@@ -61,7 +61,7 @@ On this card, we see:
 - An interpretation: "Seeing beyond appearances."
 - A picture, with many well-dressed men worshipping a golden calf.
 
-Looking at the word "future" and "seeing beyond appearances", Frank's player decides that, due to some preparations, someone is going to notice the van and find it odd, somehow. Since we already have **Soldiers everywhere in the streets**, the logical choice is that a patrol of soldiers is approaching the van. And to give them a reason to notice at the van, let's make that a canine patrol.
+Looking at the word "future" and "seeing beyond appearances", Frank's player decides that, due to some preparations, someone is going to notice the van and find it odd, somehow. Since we already have **Soldiers everywhere in the streets**, the logical choice is that a patrol of soldiers is approaching the van. And to give them a reason to investigate the van, let's make that a canine patrol.
 
 Frank answers "*I believe that a patrol of soldiers with dogs is inspecting all the cars parked in the street. They're probably checking for bombs, because an official is going to come this way. They're a few cars away from me.*"
 
@@ -95,7 +95,7 @@ On this card, we see:
 - Erika: "'Feeling defenceless', so it's something against which we have no defense. Maybe air support?"
 - Desmond: "Well, if it's air support, the military is bound to react, unless it's their air support."
 - GM: "I'd rather avoid having the entire army against you, if that's ok with you."
-- Erika: "I know, maybe some genious from the Evil Corporation has managed to hack the communications of the army, and they're trying to convince helicopters to shoot at us. And we know about that – and we feel defenceless – because Frank is getting all the chatter from his van."
+- Erika: "I know, maybe some genius from the Evil Corporation has managed to hack the communications of the army, and they're trying to convince helicopters to shoot at us. And we know about that – and we feel defenceless – because Frank is getting all the chatter from his van."
 - GM: "That sounds good. Frank, I think that you're the only one who can do anything about that. Also, since you're the hacker here, you get to name the Evil Corporation hacker."
 - Frank: "I'll call him... no, I'll call her Lady Shadowcat! And I'll get immediately to try and hack her while she's hacking the army!"
 - Desmond: "And since we hear about it, we'll have to find a way to avoid being visible from the skies. So Frank, can you lead us through some crowded bazar or mall or subway or something?"
@@ -105,7 +105,7 @@ Alice adds the following facts:
 - **Lady Shadowcat, genius Evil Corporation hacker.**
 - **The army may decide to look after Desmond + Erika.**
 
-Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (If you wonder, yes, Rio de Janeiro it has 3 subway lines.)
+Pretty soon, the pursuit is going to continue in the subway of Rio – are there subways in Rio de Janeiro? That's not important for an Hollywood action chase! (If you wonder: yes, Rio de Janeiro has 3 subway lines.)
 
 ## Ending the scene
 
