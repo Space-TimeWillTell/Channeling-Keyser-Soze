@@ -6,7 +6,7 @@ extern crate itertools;
 use std::collections::HashSet;
 use std::process::Command;
 
-use clap::{ Arg, App };
+use clap::{ Arg, App, SubCommand };
 use itertools::Itertools;
 
 const NUMBER_OF_CARDS: usize = 22;
@@ -26,12 +26,19 @@ const FINAL_THUMBNAIL_HORIZONTAL_CARD_NAME: &'static str = "small_horizontal_car
 const GEOMETRY_TOP: &'static str = "0x2117+0+0";
 const GEOMETRY_BOT: &'static str = "0x2117+0+2117";
 
+enum Operation {
+    Poker,
+    OneSheet,
+}
+
 struct Options {
     /// Source pdf.
     source: String,
+    /// The indices of cards, starting at 0.
     cards: HashSet<usize>,
     /// Destination directory.
     dest: String,
+    operation: Operation,
 }
 
 fn parse_cli() -> Options {
@@ -50,6 +57,7 @@ fn parse_cli() -> Options {
             .takes_value(true)
             .required(true)
         )
+        .subcommand(SubCommand::with_name("poker"))
         .get_matches();
 
     // Cards
@@ -90,10 +98,17 @@ fn parse_cli() -> Options {
         .map(str::to_string)
         .unwrap_or_else(|| "assets".to_string());
 
+    let operation = if matches.subcommand_matches("poker").is_some() {
+        Operation::Poker
+    } else {
+        Operation::OneSheet
+    };
+
     Options {
         cards,
         source,
         dest,
+        operation
     }
 }
 
@@ -107,7 +122,7 @@ fn batch(commands: Vec<std::process::Child>) {
 }
 
 fn main() {
-    let Options { cards, source, dest } = parse_cli();
+    let Options { cards, source, dest, operation } = parse_cli();
     let cards = cards.into_iter()
         .sorted();
     println!("Regenerating card(s) {cards} from {source}",
