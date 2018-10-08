@@ -331,7 +331,7 @@ aware that it is not a requirement.
 # Step-by-step character creation
 
 Depending on your story, characters may reach much further than
-human (or human-like) beings. A faction may be a character,
+human (or human-like) beings. A conspiracy may be a character,
 a religion may be a character, a malicious or soothing mountain
 or sea or the immensity of space may be characters, Tolkien's One Ring
 may be a character, etc. Let's settle for the following rule:
@@ -381,10 +381,10 @@ In most cases, you already know the answer:
     wake up at any second now;
 - ...
 
-If you don't know the answer, it might be a sign that you
-don't need to create that character yet – a character with
-no role is one who has pretty strong chances of never
-showing up in the course of the story. Then again, you
+If you don't know the answer, in some cases, it might be a
+sign that you don't need to create that character yet – a
+character with no role is one who has pretty strong chances
+of never showing up in the course of the story. Then again, you
 may have a very good reason to create that character,
 so let's look at a few examples.
 
@@ -394,7 +394,9 @@ This is a story of pirates. A new player wants to create a character
 but has no idea what they want to play yet. *How does my character
 fit in this story?*
 
-As usual, if you have no idea, let's ask the Space·Time Deck.
+A simple answer would be: "Just a random pirate." Let's
+see if the Space·Time Deck can help us come up with
+something more interesting.
 
 ![/assets/card_18.png](/assets/small_card_18.png)
 
@@ -438,6 +440,10 @@ Context: The heroes are the staff of a Hollywood starlet, and
 she's just as obnoxious as everything you can imagine. That's
 an attitude. But *How does she fit in this story?*
 
+Simple answers would be: annoying quest giver, or perhaps
+comic relief. Let's ask the Space·Time Deck for an
+alternative.
+
 ![assets/card_16.png](assets/small_reversed_card_16.png)
 
 Taking flight? Sadly, it's just imagination? It sounds like
@@ -461,6 +467,9 @@ and her thugs, for a reason they do not understand yet. On the
 Himalaya, the mountain simply must have a role. *How does the
 mountain fit in this story?*
 
+A simple answer would be: a survivalist dream/nightmare. Let's
+ask the Space·Time Deck for an alternative.
+
 ![assets/reversed_card_21.png](assets/small_reversed_card_21.png)
 
 The Big Crunch, end of all things, interpreted as Longevity.
@@ -468,8 +477,8 @@ Despite the blackness, this actually sounds like a message of
 hope. This Storyteller decides that the mountain, despite its
 dangers, despite the fact that it may eventually swallow both
 the hunted and the hunters, is a place of immensity and peace.
-Its role in the narration could be that of a survivalist
-nightmare, but no, the Storyteller concludes that it will be
+Rather than making the mountain smoething that needs to be
+tamed or survived, the Storyteller concludes that it will be
 more of a nurturing, hiding place, full of refuges and
 breathtaking vistas that lead one towards contemplation rather
 than violence.
@@ -488,13 +497,50 @@ did not want to cross. Unfortunately, Rochefort has now heard about
 them. It is time for Rochefort to properly enter the story.
 *How does he fit in this story?*
 
-![assets/reversed_card_20.png][assets/small_reversed_card_20.png]
+A simple answer would be: the big bad villain. Let's ask
+the Space·Time Deck for an alternative.
+
+![assets/reversed_card_20.png](assets/small_reversed_card_20.png)
 
 Under-equipped? A doctor in a plague mask? It could be that
 Rochefort has evil objectives, but right now, it looks like
 he needs help. Also, perhaps he is sick himself. So Rochefort,
 evil and ailing Rochefort, needs reinforcements. Whatever he has heard
 about the heroes, he thinks of them as possible henchmen.
+
+### Example: The faction/conspiracy
+
+Context: Space Opera, large empires torn by war or tied by
+fragile alliances. In several occasions, the heroes have found
+traces of the mysterious House of Eyes, as a power that may
+be involved in the ongoing attempts on the ambassadors of
+the Blue Alliance. *How does the House of Eyes fit in the story?*
+
+A simple answer would be: a powerful conspiracy to prevent peace
+and/or to ensure victory of some faction. Let's ask the Space·Time
+Deck for an alternative.
+
+![assets/reversed_card_11.png](assets/small_reversed_card_11.png)
+
+A trainwreck labelled "The pretense of success", along with
+watcherbys? Could it be that the House of Eyes is, rather than a
+powerful conspiracy, the effort of a weak faction attempting to
+gain real power by pretending to be the illusory power derailing
+the Blue Alliance?
+
+Let's go further: while the ambassadors of the Blue Alliance are
+being dispatched, the House of Eyes has actually nothing to do
+with it. The real culprits are agents of the Red Alliance, doing
+their usual job. The House of Eyes is actually a single person,
+an adventurer, without any real power to harm – yet. That person's
+sole role in the attempts so far has been to somehow let it be
+known that the House of Eyes was involved. The real plot of the
+adventurer is to gain fame under his alias of the House of Eyes,
+in to later turn this fame into power and money.
+
+### Example: The Reluctant Hero
+
+TBD
 
 ## A face
 
@@ -511,34 +557,156 @@ have one at hand. If you don't, let's see a few examples.
 
 ### Example: The Virus
 
-Context: Cyberpunk. A Virus has been unleashed on Night City.
-The heroes have heard of it, now, it's time for them to
-interact with it. *What does interacting with the Virus mean?*
+Context: Cyberpunk. A Virus has been unleashed in the Cyberspace
+of Night City. The heroes have heard of it, now, it's time for
+them to interact with it. *What does interacting with the Virus mean?*
 
 ![assets/card_6.png][assets/small_card_6.png]
+
+A truth, hiden? Where is Waldo? The effects of the Virus
+are hard to discern, at first. If the heroes are looking
+for the Virus, they will find clues, but no single entity.
+In fact, the Virus is probably not a single monolithic
+program, but rather an emergent behavior of thousands
+of smaller services and devices that interact with each
+other in apparently harmess fashion.
+
+Discussing with the Virus will mean receiving messages
+from dozens of sources that form a single sentence.
+Fighting the virus will mean being attacked by toasters
+and cars and being swatted.
 
 
 ### Example: The hero
 
-TBD
+Context: Heroic Fantasy. The hero is a young soldier,
+who has just been drafted in a generic fantasy group
+of heroes sent to fetch the Holy Sword of the Veil,
+the only artifact that can bring down the evil Black
+Dragon. Yep, can't go much more generic. Now, *what does the character look and sound like?*
+
+![assets/reversed_card_20.png](assets/small_reversed_card_20.png)
+
+Well, wherever the hero got his equipment from, he
+clearly looks ill-equipped, quite possibly disguised.
+In other words, from the point of view of other
+characters, he looks like a clown.
+
+This answers the first part of our question. Let's draw
+a second card: *what does the character sounds like?*
+
+![assets/reversed_card_19.png][assets/small_reversed_card_19.png]
+
+Apparently, our hero sounds like a drunk. Maybe he's
+actually alcoholic, or maybe it's just the way he speaks.
+Regardless, he seems to speak with drunk-logics that makes
+it a bit hard on others to understand – or trust – him.
+Also, whenever he's exchanging with someone, conversations
+tend to veer towards drink, food, sleep, or any of the
+other various pleasures of the flesh.
+
+We're much less generic now, aren't we?
+
+### Example: The villain
+
+Context: Anthropomorphic animals in a post-apocalyptic world.
+The villain controls the distribution of water in this
+junkyard city. *What does that villain look and sound like?*
+
+![assets/reversed_card_17.png][assets/small_reversed_card_17.png]
+
+From the many soldiers on this card, let's deduce that the villain is not one
+but many. The villain is actually an entire intelligent hive
+of wasps, somehow gathered into a face looking like that of
+a human being. It consequently speaks with buzzes, with a
+dozen discordant frequencies.
+
+Also, given the "Being ready, always", this villain certainly
+expresses paranoia with every act and word.
 
 ## A purpose
 
-TBD
+In real life, many people don't really want something. At
+least, they don't want it strongly enough that their every
+action reflects this want. In stories, though, if your
+characters don't want something, they are not contributing.
+This may be sufficient for the first encounter with the
+local smithy, but some day, you may wish to add depth to
+this character. Similarly, a villain without a purpose
+is useless. Even in quest-based stories, a quest-giver
+without a purpose is nothing more than a classified ad
+given a face.
+
+Note that purposes may range from the intimate to the
+cosmic. A religious smithy may be after absolution for
+a petty thought, or might be trying to earn sufficient
+money to pay for prayers for the birth of his first child.
+Another one may be demotivated, waiting for his son to
+grow old enough to take his place, or be after support
+to become mayor of the city or guild spokesman. He can
+just as well be waiting for the perfect victim whose
+blood will be used to forge a Demonsword, or be plotting
+the murder of an family whose sole fault is to be born
+with a different skin color, or be busy preparing his
+own equipment to join the Steel Crusade once it lands
+on this planet. Or, he can be bidding his time until
+Sunday, because that's when cousin Philip will come
+from the city and they're going to have a great time
+at the fair!
+
+Outside of video games, it is unlikely that a character
+will expose her purposes to a random stranger. As in the
+real world, most characters are generally not even aware
+of where they put their energy. But once a character has
+a purpose, it will inform their choices and actions. The
+religious smithy may, without realizing, be kissing his
+holy book or nodding at the local idol whenever he passes
+in front of it. The demotivated one will deliver late,
+make mistakes and maybe look for arguments with the heroes.
+
+
+As previously, in many cases, you may already know the answer, or
+have one at hand. If you don't, let's see a few examples.
+
+### Example: The Villain
+
+### Example: The Quest-Giver
 
 ## Means
 
 TBD
 
-## Wait a second, what if I really have no idea?
-
-The three-cards spread.
+## And more
 
 TBD
+
+There is, of course, no rule written in stone that forbids
+you from stopping there. If you wish to add depth to a
+character, or if one of the Questions above didn't make
+sense in your context, feel free to add more Questions.
+
+Here are a few more examples:
+
+- *What is the character hiding from others?*
+- *What doesn't the character know about themselve?*
+- *What is the destiny of the character?*
+- *What is the character doing here?*
+- *What troubles the character?*
+- *Where does the character come from?*
+- *What does the character hate?*
+- *What does the character love?*
+- *What is this character's weak point?*
+- *What is this character's strong point?*
+- *What is the relationship between character X and character Y?*
+- ...
+
 
 ## Other tricks
 
 - Reusing a character.
+- The three-cards spread.
+
+TBD
 
 ## Evil empires, conspiracies and other organizations as NPCs
 
