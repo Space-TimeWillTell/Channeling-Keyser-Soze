@@ -9,57 +9,152 @@
 
 TBD
 
-## Conflict resolution
+## Overcoming obstacles
 
-There are three possible geometries for a conflict:
-1. Balanced.
-2. Unbalanced.
-3. Desperate.
+- If the action can succeed, it will eventually succeed.
+- Draw cards until the action has succeeded.
+- Each card increases the *cost* of the action.
 
-Balanced conflict:
-- each side picks a card;
-- if the Excuse (the card without number) is picked by either side:
-    - no side gains advantage;
-    - discard this card and draw another one for narration purposes
-- otherwise
-    - highest number means that the side gains advantage;
-- each side use their card to narrate how they gain/lose advantage.
+TBD
 
-If advantage the conflict doesn't deserve a longer narration, it stops
-here. Otherwise, it continues as:
-- a **Balanced conflict** if the conflict is still balanced; or
-- an **Unbalanced Conflict** if one side has gained advantage.
+## Resolving conflicts
 
-Unbalanced conflict:
-- the weakest side picks one card;
-- the strongest side picks two cards, keeps the highest number;
-- if the Excuse (the card without number) is picked by either side:
-    - the strongest side loses the advantage;
-    - discard this card and draw another card for narration purposes
-- otherwise
-    - highest number means that the side gains some/grows advantage;
-- each side use their cards to narrate how they gain advantage/
-    rebalance the conflict.
 
-If advantage the conflict doesn't deserve a longer narration, it stops
-here. Otherwise, it continues as:
-- a **Balanced conflict** if the conflict was rebalanced; or
-- an **Desperate Conflict** if the strongest side has grown advantage.
+A conflict is a scene in which two parties or more have
+agendas, which cannot be fulfilled simultaneously. In most role-playing
+games, the most common form of conflict is the combat, but that is by
+no mean the only form possible: conflict could be car races, social wit,
+political campaigns, chess, battlefield strategy, attempting to ruin your
+opponent's reputation or fortune, popularity contests, football matches,
+etc.
 
-Desperate conflict:
-- the weakest side picks two card, keeps the lowest number;
-- the strongest side picks two cards, keeps the highest number;
-- if the Excuse (the card without number) is picked by either side:
-    - the strongest side loses some of its advantage;
-    - discard this card and draw another card for narration purposes;
-- otherwise
-    - highest number means that the side gains some advantage/wins;
-- each side use their cards to narrate how they win the conflict/
-    regain some advantage.
+Conflict does not have to be symmetrical. A guerilla may be attempting to
+cause maximal damage to infrastructure while the government forces attempt
+to destroy the guerilla forces. An outlying party may be attempting to
+propagate its doctrine while the more traditional parties attempt to
+maintain the status quo. A sniper may attempt to kill a target. A child
+may be attempting to attract attention during a kidnapping attempt.
 
-If advantage the conflict doesn't deserve a longer narration, or if the
-strongest side won the bout, the conflict stops here. Both sides narrate
-its end.
+Conflicts assumes that both parties have some manner of assessing their
+situation, and have some ability to act. In other words, as long as the
+target of the sniper is not aware of the sniper, there is no conflict *between
+the sniper and the target*. In other words, if no other factors are in play,
+the act of sniping will most likely be a simple case of **Overcoming an obstacle**.
+On the other hand, if the target is running away, there is a – very asummetrical —
+conflict between the sniper and the target. Similarly, if an enemy patrol is
+currently looking for an infiltrator, there is a conflict between the sniper's
+smarts, stealth and sniping ability and the enemy patrol's smarts and detection
+ability. Similarly, if the traditional parties are busy quelling a political
+crisis or are unaware of the outlying party, there is no conflict between the
+outlying party and the traditional parties – although there could be a
+conflict between the outlying party and a specific candidate.
 
-Otherwise, if the conflict was somewhat rebalanced, it continues as a
-**Unbalanced conflict**.
+Conflicts decide whether any of the parties manage to reach their desired
+outcome. In the case of a race, the desired outcome is typically arriving
+first. In the case of a gang fight, the desired outcome is typically getting
+the other gang to end up broken and bleeding or fleeing. In the case of a
+sniper vs. patrol, the desired outcome is typically evading the patrol and
+killing the target vs. capturing the intruder before he has the chance to
+cause damage. The players representing each party must have a clear idea
+of the desired outcome for the conflict.
+
+They are, of course, entirely free to change the desired outcome, but this
+may end up completely changing the state of the conflict. For instance, if
+the hidden sniper finds themself cornered, they may decide to change plan,
+create maximum chaos and attempt to escape – but that's a new conflict.
+
+The following conflict resolution mechanics are, by design, as minimal as
+possible. They assume that the players already know how to estimate the difference
+of strengths between the parties in a conflict.
+
+### Setting up Conflict
+
+Before the Conflict starts, the Table needs to:
+
+1. Agree that it is a Conflict.
+2. Determine the Parties involved.
+3. Determine the Desired Outcomes.
+4. Determine the initial Balance of the Conflit. It may be either
+    - **Balanced** – while the parties may be widely different,
+    they have roughly the same chances of succeeding.
+    - **Unbalanced** – one party has a strong advantage.
+    - **Overwhelming** – one party is nearly certain of victory.
+
+We do not cover this last point – it is left up to the Table, depending
+on how each Party is defined.
+
+### Resolving a Conflict
+
+Conflict Resolution takes place in rounds. Rounds do **not** have a specific
+duration. One round may last a few seconds while the next one lasts several
+months - as long as it makes sense in-story.
+
+Each Round starts with each party describing broadly their current tactics to
+reach their Desired Outcome.
+
+The Round will let the Table determine:
+
+ - which party, if any, has advanced towards their Desired Outcome;
+ - how it happened;
+ - whether the Conflict continues, stops entirely or changes shape.
+
+
+#### Draw cards
+
+- If the Conflict is **Balanced**
+    - Each side picks a card of the Space·Time Deck.
+- If the Conflict is **Unbalanced**
+    - The advantaged side draws two cards.
+    - The disadvantaged sides draw one card.
+- If the Conflict is **Overwhelming**
+    - The advantaged side draws two cards.
+    - The disadvantaged sides also draw two cards.
+
+Once drawn, cards are visible.
+
+
+#### Establishing the flow
+
+- If any of the cards drawn is the Excuse
+    - The Balance of Conflict moves towards **Balanced**:
+        - Balanced -> Balanced
+        - Unbalanced -> Balanced
+        - Overwhelming -> Unbalanced
+    - Discard the Excuse and draw another one for narration purposes.
+- Otherwise, if the Conflict is **Balanced**
+    - If the card of a party beats the card of all other parties, the Balance moves in favor of the winning party
+        - Balanced -> Unbalanced
+    - Otherwise, the round is a stalemate, the Balance does not change
+- Otherwise
+    - If, for *every one of the* disadvantaged parties involved, there is one card of the advantaged side and one card of the disadvantaged side such that the the advantaged side wins, the Balance moves in favor of the side that is already advantaged
+        - Balanced -> Unbalanced
+        - Unbalanced -> Overwhelming
+        - Overwhelming -> Victory
+    - If, for *every one of the* disadvantaged party involved, all the combinations of one card of the advantaged side
+    and one card of the disadvantaged side imply that the advantaged side loses, the Balance moves towards **Balanced**
+        - Unbalanced -> Balanced
+        - Overwhelming -> Unbalanced
+    - Otherwise, the Balance remains unchanged.
+
+#### Narrating the outcome
+
+Using the images and/or interpretations on the Cards as a basis
+for narration, each side gets to narrate how their immediate
+tactics beat the other sides'/backfired or was beaten by the
+other sides'. Note that a side may not dictate what the other
+sides did, only how it interacted with their own tactics.
+
+#### Deciding whether the Conflict continues
+
+If any side reached Victory, the Conflict is over,
+congratulations, that side's Desired Outcome has been
+reached.
+
+Otherwise, any side may decide to stop the Conflict,
+possibly to turn it into a different Conflict. In
+particular, if there are more than two sides, two
+sides may decide to temporarily join forces, with
+the Desired Outcome of getting rid of a third side.
+Of course, two sides who had temporarily joined forces
+may break their alliance.
+
