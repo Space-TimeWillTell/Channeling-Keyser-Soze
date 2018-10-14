@@ -6,4 +6,16 @@ description = "Rebuild the deck"
 
 [dependencies]
 clap = "*"
+env_logger = "*"
 itertools = "*"
+log = "*"
+rand = "*"
+smallvec = "*"
+
+[[bin]]
+name = "simulate"
+path = "src/simulate.rs"
+
+[[bin]]
+name = "generate"
+path = "src/generate.rs"
