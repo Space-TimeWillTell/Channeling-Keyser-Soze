@@ -17,8 +17,9 @@ const TMP_DIR : &'static str = "/tmp/spacetimedeck/";
 const TMP_MAX_QUALITY_HORIZONTAL_PDF_PREFIX : &'static str = "/tmp/spacetimedeck/pdf/";
 const TMP_MAX_QUALITY_HORIZONTAL_PNG_PREFIX : &'static str = "/tmp/spacetimedeck/png/";
 
-const PIXEL_WIDTH_TOTAL: isize = 2250;
-const PIXEL_HEIGHT_TOTAL: isize = 1650;
+/// The dimensions of images when extracted from the pdf
+const PIXEL_WIDTH_INITIAL: isize = 2250;
+const PIXEL_HEIGHT_INITIAL: isize = 1650;
 
 const PIXEL_WIDTH_WITHOUT_BLEED: isize = 1964;
 const PIXEL_HEIGHT_WITHOUT_BLEED: isize = 1360;
@@ -26,9 +27,19 @@ const PIXEL_HEIGHT_WITHOUT_BLEED: isize = 1360;
 const PIXEL_WIDTH_WITH_PHOTO_BLEED: isize = 2000;
 const PIXEL_HEIGHT_WITH_PHOTO_BLEED: isize = 1370;
 
-const BLEED_FACTOR_PRINT_YOURSELF: f64 = 1.1;
-const MARGIN_FACTOR_PRINT_YOURSELF: f64 = 0.1;
-const RESAMPLE_FACTOR_PRINT_YOURSELF: f64 = 0.5;
+/// Size of the "safety zone" in the cards document.
+/// That's the place where we don't put text or images
+/// to avoid it being cut.
+const SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM: f64 = 2.54;
+const SOURCE_DOCUMENT_WIDTH_CM: f64 = 38.;
+const SOURCE_DOCUMENT_HEIGHT_CM: f64 = 28.;
+const INITIAL_PADDING_BOTTOM: usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_HEIGHT_INITIAL as f64 / SOURCE_DOCUMENT_HEIGHT_CM) as usize;
+const INITIAL_PADDING_TOP:    usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_HEIGHT_INITIAL as f64 / SOURCE_DOCUMENT_HEIGHT_CM) as usize;
+const INITIAL_PADDING_LEFT:   usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
+const INITIAL_PADDING_RIGHT:  usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
+
+const PAGE_WIDTH_A4_PIXELS: usize = (PIXEL_WIDTH_INITIAL as f64 * 2.5) as usize; // Arbitrary width.
+const PAGE_HEIGHT_A4_PIXELS: usize = ((PAGE_WIDTH_A4_PIXELS as f64) * 29.7 / 21.) as usize;
 
 struct Dimensions {
     lines: usize,
@@ -356,8 +367,8 @@ fn main() {
                             .arg(&options.source_back)
                             .args(&["--rotate", "90"])
                             .args(&["--resampleHeightWidth",
-                                &format!("{}", PIXEL_WIDTH_TOTAL),
-                                &format!("{}", PIXEL_HEIGHT_TOTAL),
+                                &format!("{}", PIXEL_WIDTH_INITIAL),
+                                &format!("{}", PIXEL_HEIGHT_INITIAL),
                             ])
                             .args(&["--out", &dest]);
                         debug!(target: "generate", "High Quality PNGs with bleed (back): Starting command {:?}", command);
@@ -603,43 +614,81 @@ fn main() {
         std::fs::create_dir_all(dest_print_at_home_cards)
             .expect("Could not create directory");
 
-        print!("Extracting print-at-home horizontal cards");
+/*
+
+//        let dx = ((PIXEL_WIDTH_INITIAL as f64 - PIXEL_WIDTH_WITHOUT_BLEED as f64 / BLEED_FACTOR_WIDTH_PRINT_YOURSELF) / 2.) as usize;
+//        let dy = ((PIXEL_HEIGHT_INITIAL as f64 - PIXEL_HEIGHT_WITHOUT_BLEED as f64 / BLEED_FACTOR_HEIGHT_PRINT_YOURSELF) / 2.) as usize;
+        let dx = 0;
+        let dy = 0;
+
+        let w  = PIXEL_WIDTH_INITIAL as isize - dx as isize;
+        let h  = PIXEL_HEIGHT_INITIAL as isize - dy as isize;
+*/
+/*
+        print!("Extracting single horizontal cards for print-at-home");
+
+
+
+        let tasks = cards.iter()
+            .map(|name| {
+                let source = options.dest_max_quality_horizontal_cards
+                    .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
+                        source = name,
+                        dx = dx,
+                        dy = dy,
+                        w = w,
+                        h = h));
+                let dest = dest_print_at_home_cards.join(format!("{}.png", name));
+                let mut command = Command::new("convert");
+                command.arg(source.into_os_string())
+                    .arg(dest);
+
+                command.spawn()
+                    .expect("Coud not launch command")
+            })
+            .collect();
+        batch(tasks);
+*/
+        print!("Extracting entire pages for print-at-home");
+
+        let images_per_page = options.print_at_home_dimensions.lines as usize
+                * options.print_at_home_dimensions.rows as usize;
+
         let groups = (1..NUMBER_OF_CARDS+1)
-            .chunks(options.print_at_home_dimensions.lines as usize
-                * options.print_at_home_dimensions.rows as usize);
+            .chunks(images_per_page);
 
-        let margin_width = (PIXEL_WIDTH_WITHOUT_BLEED as f64
-                * MARGIN_FACTOR_PRINT_YOURSELF) as usize;
 
-        let margin_height = (PIXEL_HEIGHT_WITHOUT_BLEED as f64
-                * MARGIN_FACTOR_PRINT_YOURSELF) as usize;
+        // Width and height of the page, in pixels, including bleed.
+        let page_width = PAGE_WIDTH_A4_PIXELS;
+        let page_height = PAGE_HEIGHT_A4_PIXELS;
 
-        let image_width = (PIXEL_WIDTH_WITHOUT_BLEED as f64
-            * BLEED_FACTOR_PRINT_YOURSELF ) as usize;
+        // Width and height of the image, in pixels.
+        let image_width = PIXEL_WIDTH_INITIAL as usize;
+        let image_height = PIXEL_HEIGHT_INITIAL as usize;
 
-        let image_height = (PIXEL_HEIGHT_WITHOUT_BLEED as f64
-            * BLEED_FACTOR_PRINT_YOURSELF) as usize;
+        // Compute margins that will let us put all the images on the document.
+        let margin_width = (page_width / options.print_at_home_dimensions.rows - image_width) / 2;
+        let margin_height = (page_height / options.print_at_home_dimensions.lines - image_height) / 2;
 
-        let image_plus_margin_width = (PIXEL_WIDTH_WITHOUT_BLEED as f64
-            * (BLEED_FACTOR_PRINT_YOURSELF + MARGIN_FACTOR_PRINT_YOURSELF)) as usize;
+        let image_plus_margin_width = image_width + margin_width * 2;
 
-        let image_plus_margin_height = (PIXEL_HEIGHT_WITHOUT_BLEED as f64
-            * (BLEED_FACTOR_PRINT_YOURSELF + MARGIN_FACTOR_PRINT_YOURSELF)) as usize;
+        let image_plus_margin_height = image_height + margin_height * 2;
 
-        let page_width = (PIXEL_WIDTH_WITHOUT_BLEED as f64
-            * (BLEED_FACTOR_PRINT_YOURSELF + MARGIN_FACTOR_PRINT_YOURSELF)
-            * options.print_at_home_dimensions.rows as f64) as usize;
-
-        let page_height = (PIXEL_HEIGHT_WITHOUT_BLEED as f64
-            * (BLEED_FACTOR_PRINT_YOURSELF + MARGIN_FACTOR_PRINT_YOURSELF)
-            * options.print_at_home_dimensions.lines as f64) as usize;
-
-        let dx = ((PIXEL_WIDTH_TOTAL as f64 - PIXEL_WIDTH_WITHOUT_BLEED as f64 * BLEED_FACTOR_PRINT_YOURSELF) / 2.) as usize;
-        let dy = ((PIXEL_HEIGHT_TOTAL as f64 - PIXEL_HEIGHT_WITHOUT_BLEED as f64 * BLEED_FACTOR_PRINT_YOURSELF) / 2.) as usize;
+        assert_eq!(image_plus_margin_width, page_width / options.print_at_home_dimensions.rows, "Images per line");
+        assert_eq!(image_plus_margin_height, page_height / options.print_at_home_dimensions.lines, "Images per row");
 
         let tasks = groups.into_iter()
             .map(|group| {
-                let group : Vec<_> = group.collect();
+                group
+                    .map(|i| format!("{}", i))
+                    .collect_vec()
+            })
+            .chain({
+                let vec = itertools::repeat_n("back".to_string(), images_per_page)
+                    .collect_vec();
+                Some(vec).into_iter()
+            })
+            .map(|group| {
                 let dest = dest_print_at_home_cards
                     .join(format!("{}-{}.png", group[0], group[group.len() - 1]));
                 let dest = dest.to_str()
@@ -652,11 +701,13 @@ fn main() {
                         width = page_width,
                         height = page_height,
                     )])
-                    // Page background
-                    .arg("xc:white");
+                    // Page background.
+                    .arg("xc:transparent");
 
+                // Prepare drawing lines.
                 command
                     .args(&["-stroke", "black"])
+                    .args(&["-strokewidth", "3"])
                     .args(&["-fill", "none"]);
 
                 // Draw horizontal lines
@@ -664,28 +715,32 @@ fn main() {
                     let x0 = 0;
                     let x1 = page_width;
                     // Draw horizontal line for the top of the image
-                    let y = i * image_plus_margin_height + margin_height;
+                    let y = i * image_plus_margin_height +
+                        margin_height + INITIAL_PADDING_TOP;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y,
                         y1 = y,
                         x0 = x0,
                         x1 = x1)]);
-                    // Draw horizontal line for the bottom of the image
-                    let y = (i + 1 ) * image_plus_margin_height - margin_height;
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        y0 = y,
-                        y1 = y,
-                        x0 = x0,
-                        x1 = x1)]);
-                }
 
+
+                    // Draw horizontal line for the bottom of the image
+                    let y = (i + 1) * image_plus_margin_height - margin_height - INITIAL_PADDING_BOTTOM;
+                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                        y0 = y,
+                        y1 = y,
+                        x0 = x0,
+                        x1 = x1)]);
+
+                }
                 // Draw vertical lines
                 for i in 0..options.print_at_home_dimensions.rows {
                     let y0 = 0;
                     let y1 = page_height;
 
                     // Draw vertical line for the left of the image
-                    let x = i * image_plus_margin_width + margin_width;
+                    let x = i * image_plus_margin_width +
+                        margin_width + INITIAL_PADDING_LEFT;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y0,
                         y1 = y1,
@@ -693,7 +748,7 @@ fn main() {
                         x1 = x)]);
 
                     // Draw vertical line for the right of the image
-                    let x = (i + 1) * image_plus_margin_width - margin_width;
+                    let x = (i + 1) * image_plus_margin_width - margin_width - INITIAL_PADDING_RIGHT;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y0,
                         y1 = y1,
@@ -702,25 +757,28 @@ fn main() {
                 }
 
                 let mut sources = group.iter();
-                'outer: for i in 0..options.print_at_home_dimensions.rows {
+                'grid: for i in 0..options.print_at_home_dimensions.rows {
                     for j in 0..options.print_at_home_dimensions.lines {
                         let source = if let Some(source) = sources.next() {
                             source
                         } else {
-                            break 'outer
+                            // We've run out of sources.
+                            break 'grid
                         };
                         let path = options.dest_max_quality_horizontal_cards
-                            .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
+                            .join(format!("{source}.png",
+                                source = source));
+/*                            .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
                                 source = source,
-                                dx = dx,
-                                dy = dy,
-                                w = image_width,
-                                h = image_height));
+                                dx = 0, // Full image
+                                dy = 0, // Full image
+                                w = w,
+                                h = h));*/
                         command.arg(path.into_os_string());
 
                         let geometry = format!("+{x}+{y}",
-                            x = i * image_plus_margin_width + margin_width / 2,
-                            y = j * image_plus_margin_height + margin_height / 2);
+                            x = i * image_plus_margin_width + margin_width,
+                            y = j * image_plus_margin_height + margin_height);
                         command.args(&["-geometry", &geometry])
                             .arg("-composite");
                     }
@@ -730,6 +788,7 @@ fn main() {
                 command.spawn()
                     .expect("Could not launch command")
             })
+/*
             .chain(vec![
                 {
                     let mut command = Command::new("convert");
@@ -792,8 +851,8 @@ fn main() {
                     source.set_extension(format!("png[{w}x{h}+{dx}+{dy}]",
                         dx = dx,
                         dy = dy,
-                        w = image_width,
-                        h = image_height));
+                        w = w,
+                        h = h));
                     let source = source.into_os_string();
                     let dest = dest_print_at_home_cards.join("back.png");
                     let dest = dest.to_str()
@@ -810,12 +869,13 @@ fn main() {
                                 .arg("-composite");
                         }
                     }
-                    debug!(target: "generate", "Generating print-at-home: {:?}", command);
                     command.arg(&dest);
+                    debug!(target: "generate", "Generating print-at-home: {:?}", command);
                     command.spawn()
                         .expect("Could not launch command")
                 }
             ].into_iter())
+*/
             .collect();
         batch(tasks);
 
@@ -844,7 +904,8 @@ fn main() {
         for source in sources {
             command.arg(source);
         }
-        command.args(&["-resize", &format!("{:0}%", RESAMPLE_FACTOR_PRINT_YOURSELF * 100.)]);
+//        command.args(&["-resize", &format!("{:0}%", RESAMPLE_FACTOR_PRINT_YOURSELF * 100.)]);
+        command.args(&["-density", "300"]);
         let dest = dest_print_at_home_cards
             .join("cards.pdf");
         let dest = dest.to_str()
@@ -909,8 +970,8 @@ fn main() {
         let pixel_width_with_photo_bleed = format!("{}", PIXEL_WIDTH_WITH_PHOTO_BLEED);
 
         let desired_height = (1.5 * (PIXEL_WIDTH_WITH_PHOTO_BLEED as f64)) as isize;
-        let dx = (PIXEL_WIDTH_TOTAL - PIXEL_WIDTH_WITH_PHOTO_BLEED) / 2;
-        let dy = (PIXEL_HEIGHT_TOTAL - PIXEL_HEIGHT_WITH_PHOTO_BLEED) / 2;
+        let dx = (PIXEL_WIDTH_INITIAL - PIXEL_WIDTH_WITH_PHOTO_BLEED) / 2;
+        let dy = (PIXEL_HEIGHT_INITIAL - PIXEL_HEIGHT_WITH_PHOTO_BLEED) / 2;
 
         let pos_top = "+0+0".to_string();
         let pos_bottom = format!("+0+{}",
