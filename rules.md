@@ -9,13 +9,6 @@
 
 TBD
 
-## Overcoming obstacles
-
-- If the action can succeed, it will eventually succeed.
-- Draw cards until the action has succeeded.
-- Each card increases the *cost* of the action.
-
-TBD
 
 ## Resolving conflicts
 
@@ -150,11 +143,43 @@ If any side reached Victory, the Conflict is over,
 congratulations, that side's Desired Outcome has been
 reached.
 
-Otherwise, any side may decide to stop the Conflict,
-possibly to turn it into a different Conflict. In
-particular, if there are more than two sides, two
-sides may decide to temporarily join forces, with
-the Desired Outcome of getting rid of a third side.
-Of course, two sides who had temporarily joined forces
-may break their alliance.
+Otherwise, any side may decide to stop the Conflict.
+This may represent a concession of defeat, such as
+a thief escaping the scene empty-handed before being
+caught. This may represent a postponed Conflict,
+such as two duelling enemies being forced to hide
+their weapons and bid each other farewell to avoid
+the police. This may represent a party **Reformulating
+the Conflict**, as would be the case in a chess tournament
+if one of the players decides to resort to threats
+and blackmail against their opponent.
 
+If the Conflict is Reformulated, the process restarts
+from scratch: establish the Desired Outcomes, the
+starting Balance of Conflict, then start drawing
+cards.
+
+A very common case of Conflict Reformulation is the
+fleeting alliance: wherever there are more than two
+parties involved, two of the parties may decide to
+temporarily join forces, with the Desired Outcome
+of getting rid of a third side. Of course, two sides
+who had temporarily joined forces may just as easily
+break their alliance.
+
+## Overcoming obstacles
+
+**TBD** Description of obstacles.
+
+The mechanics for Overcoming obstacles are the same as
+for Resolving conflicts. The main difference is the
+narration:
+- the Obstacle generally does not have a tactic, so does not narrate it;
+- the Obstacle does not get to stop the Conflict or Reframe it;
+- each card drawn by the Party introduces a Complication.
+
+- If the action can succeed, it will eventually succeed.
+- Draw cards until the action has succeeded.
+- Each card increases the *cost* of the action.
+
+TBD
