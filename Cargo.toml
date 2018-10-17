@@ -11,6 +11,11 @@ itertools = "*"
 log = "*"
 rand = "*"
 smallvec = "*"
+xvii = "*"
+
+[[bin]]
+name = "conflict"
+path = "src/bin/conflict.rs"
 
 [[bin]]
 # Simulate rules of the game, gather statistics

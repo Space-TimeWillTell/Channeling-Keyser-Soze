@@ -13,7 +13,7 @@ TBD
 ## Resolving conflicts
 
 
-A conflict is a scene in which two parties or more have
+A **Conflict** is a scene in which two parties or more have
 agendas, which cannot be fulfilled simultaneously. In most role-playing
 games, the most common form of conflict is the combat, but that is by
 no mean the only form possible: conflict could be car races, social wit,
@@ -131,11 +131,36 @@ Once drawn, cards are visible.
 
 #### Narrating the outcome
 
-Using the images and/or interpretations on the Cards as a basis
-for narration, each side gets to narrate how their immediate
-tactics beat the other sides'/backfired or was beaten by the
-other sides'. Note that a side may not dictate what the other
-sides did, only how it interacted with their own tactics.
+At this stage, each side knows whether their tactics have
+succeeded or failed. The cards that they have drawn will
+answer the Question: *How did my tactics succeed?* or
+*How did my tactics failed?*.
+
+As usual, the player who drew the card picks the Answer
+and the Facts. If the players decides to interpret the
+card as meaning that reinforcements are coming, or that
+a mysterious deity has blessed that quest, this is
+entirely acceptable, as long as it makes sense with the
+Facts that have already been established – so no deity
+in a Film Noir set in our world's 1920s, no reinforcements
+if you are the last human alive. If playing with a GM,
+the GM is the ultimate responsible for maintaining
+consistency and Facts has the power to veto any
+description if it causes a contradiction.
+
+As usual, this freedom does not extend to one side dictating
+what other sides have been doing. In other words, if you
+narrate that you have been dodging bullets from the Undead
+Marines, the player in charge of the Undead Marines may
+overrule the sentence and inform you that no, the Undead Marines were
+launching grenades or were busy attempting experimenting with
+vodka to see if they still could get drunk.
+
+Within these limitations, the player who drew the card has full
+narrative authority. Again, the player is expected to interpret the
+cards but only the player can decide on the actual interpretation.
+This may mean that players will come up with uninteresting
+interpretations from time to time. That's ok.
 
 #### Deciding whether the Conflict continues
 
