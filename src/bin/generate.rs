@@ -761,15 +761,34 @@ fn main() {
         for source in sources {
             command.arg(source);
         }
-//        command.args(&["-resample", "25%"]);
-//        command.args(&["-resize", &format!("{:0}%", RESAMPLE_FACTOR_PRINT_YOURSELF * 100.)]);
-//        command.args(&["-density", "300"]);
+
+        let dest = dest_print_at_home_cards
+            .join("cards-highres.pdf");
+        let dest = dest.to_str()
+            .unwrap();
+        command.arg(dest);
+        debug!(target: "generate", "Generating high-res print-at-home: {:?}", command);
+        command.spawn()
+            .expect("Could not launch command")
+            .wait()
+            .expect("Error executing command");
+
+        let source = dest;
         let dest = dest_print_at_home_cards
             .join("cards.pdf");
         let dest = dest.to_str()
             .unwrap();
-        command.arg(dest);
-        debug!(target: "generate", "Generating single print-at-home: {:?}", command);
+        let mut command = Command::new("gs");
+        command.args(&[
+            "-dAutoRotatePages=/None",
+            "-r300",
+            "-sDEVICE=pdfwrite",
+            "-dBATCH",
+            "-dNOPAUSE",
+        "-quit"]);
+        command.arg(format!("-sOutputFile={}", dest))
+            .arg(source);
+        debug!(target: "generate", "Generating destination print-at-home: {:?}", command);
         command.spawn()
             .expect("Could not launch command")
             .wait()

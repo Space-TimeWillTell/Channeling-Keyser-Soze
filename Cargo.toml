@@ -1,8 +1,8 @@
 [package]
-name = "minotaurs"
+name = "plotonomicon"
 version = "0.1.0"
 authors = ["David Teller <D.O.Teller@gmail.com>"]
-description = "Rebuild the deck"
+description = "Tools for the Plotonomicon"
 
 [dependencies]
 clap = "*"
@@ -13,9 +13,11 @@ rand = "*"
 smallvec = "*"
 
 [[bin]]
+# Simulate rules of the game, gather statistics
 name = "simulate"
-path = "src/simulate.rs"
+path = "src/bin/simulate.rs"
 
 [[bin]]
+# Generate images for the deck
 name = "generate"
-path = "src/generate.rs"
+path = "src/bin/generate.rs"
