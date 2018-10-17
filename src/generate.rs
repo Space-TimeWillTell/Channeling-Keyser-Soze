@@ -33,6 +33,7 @@ const PIXEL_HEIGHT_WITH_PHOTO_BLEED: isize = 1370;
 const SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM: f64 = 2.54;
 const SOURCE_DOCUMENT_WIDTH_CM: f64 = 38.;
 const SOURCE_DOCUMENT_HEIGHT_CM: f64 = 28.;
+const DESIRED_PADDING_FACTOR: f64   = 1.1;
 const INITIAL_PADDING_BOTTOM: usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_HEIGHT_INITIAL as f64 / SOURCE_DOCUMENT_HEIGHT_CM) as usize;
 const INITIAL_PADDING_TOP:    usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_HEIGHT_INITIAL as f64 / SOURCE_DOCUMENT_HEIGHT_CM) as usize;
 const INITIAL_PADDING_LEFT:   usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
@@ -58,11 +59,9 @@ struct Options {
     regenerate_pdfs: bool,
     regenerate_pngs: bool,
 
-    vignette_dimensions: Dimensions,
     print_at_home_dimensions: Dimensions,
 
     /// Destination directory.
-    dest_montage: Option<PathBuf>,
     dest_max_quality_horizontal_cards: PathBuf,
     dest_book_quality_cards: Option<PathBuf>,
     dest_printer_cards: Option<PathBuf>,
@@ -83,7 +82,7 @@ fn command_high_quality_horizontal_with_bleed(options: &Options, source: &PathBu
         .stdout(std::process::Stdio::null())        // Mute sips
         .args(&["-s", "format", "png"])             // Output format
         .args(&["--out", dest])                     // Output file
-        .arg(source);                                // Input file
+        .arg(source);                               // Input file
     command
 }
 
@@ -136,25 +135,6 @@ fn parse_cli() -> Options {
             .takes_value(true)
             .help("Destination directory for print as 2 cards per 10x15 photo.")
         )
-        .arg(Arg::with_name("vignettedir")
-            .long("vignettedir")
-            .takes_value(true)
-            .help("Destination for a thumbnail montage.")
-        )
-/*
-        .arg(Arg::with_name("vignettes_per_line")
-            .long("vignettes_per_line")
-            .takes_value(true)
-            .default_value("2")
-            .help("Number of cards in each vignette line.")
-        )
-        .arg(Arg::with_name("vignettes_per_row")
-            .long("vignettes_per_row")
-            .takes_value(true)
-            .default_value("4")
-            .help("Number of cards in each vignette row.")
-        )
-*/
         .arg(Arg::with_name("regenpdf")
             .long("regenpdf")
             .conflicts_with("no-regenpdf")
@@ -228,9 +208,6 @@ fn parse_cli() -> Options {
     let color_profile_path = matches.value_of("colorprofile")
         .map(|value| PathBuf::from(value));
 
-    let dest_montage = matches.value_of("vignettedir")
-        .map(|value| PathBuf::from(value));
-
     Options {
         cards,
         source_front,
@@ -242,12 +219,7 @@ fn parse_cli() -> Options {
         dest_print_at_home_cards,
         dest_printer_cards,
         dest_print_as_photos,
-        dest_montage,
         color_profile_path,
-        vignette_dimensions: Dimensions {
-            lines: 4,
-            rows: 2,
-        },
         print_at_home_dimensions: Dimensions {
             lines: 4,
             rows: 2,
@@ -383,6 +355,8 @@ fn main() {
     }
 
     if let Some(ref dest_book_quality_cards) = options.dest_book_quality_cards {
+        std::fs::create_dir_all(dest_book_quality_cards)
+            .expect("Could not create directory");
         let pixel_height_without_bleed = format!("{}", PIXEL_HEIGHT_WITHOUT_BLEED);
         let pixel_width_without_bleed = format!("{}", PIXEL_WIDTH_WITHOUT_BLEED);
         print!("Extracting book high quality horizontal card(s)");
@@ -400,13 +374,16 @@ fn main() {
                 let dest = dest
                     .to_str()
                     .expect("Path String error");
-                Command::new("sips")
+                let mut command = Command::new("sips");
+                command
                     .stdout(std::process::Stdio::null())
                     .args(&["--cropToHeightWidth", &pixel_height_without_bleed, &pixel_width_without_bleed])
                     .args(&["--resampleWidth", "800"])
                     .args(&["-s", "format", "png"])             // Output format
                     .arg(&source)
-                    .args(&["--out", &dest])
+                    .args(&["--out", &dest]);
+                debug!(target: "generate", "Generating book files: {:?}", command);
+                command
                     .spawn()
                     .expect("Command failed to start")
             })
@@ -614,41 +591,6 @@ fn main() {
         std::fs::create_dir_all(dest_print_at_home_cards)
             .expect("Could not create directory");
 
-/*
-
-//        let dx = ((PIXEL_WIDTH_INITIAL as f64 - PIXEL_WIDTH_WITHOUT_BLEED as f64 / BLEED_FACTOR_WIDTH_PRINT_YOURSELF) / 2.) as usize;
-//        let dy = ((PIXEL_HEIGHT_INITIAL as f64 - PIXEL_HEIGHT_WITHOUT_BLEED as f64 / BLEED_FACTOR_HEIGHT_PRINT_YOURSELF) / 2.) as usize;
-        let dx = 0;
-        let dy = 0;
-
-        let w  = PIXEL_WIDTH_INITIAL as isize - dx as isize;
-        let h  = PIXEL_HEIGHT_INITIAL as isize - dy as isize;
-*/
-/*
-        print!("Extracting single horizontal cards for print-at-home");
-
-
-
-        let tasks = cards.iter()
-            .map(|name| {
-                let source = options.dest_max_quality_horizontal_cards
-                    .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
-                        source = name,
-                        dx = dx,
-                        dy = dy,
-                        w = w,
-                        h = h));
-                let dest = dest_print_at_home_cards.join(format!("{}.png", name));
-                let mut command = Command::new("convert");
-                command.arg(source.into_os_string())
-                    .arg(dest);
-
-                command.spawn()
-                    .expect("Coud not launch command")
-            })
-            .collect();
-        batch(tasks);
-*/
         print!("Extracting entire pages for print-at-home");
 
         let images_per_page = options.print_at_home_dimensions.lines as usize
@@ -661,6 +603,11 @@ fn main() {
         // Width and height of the page, in pixels, including bleed.
         let page_width = PAGE_WIDTH_A4_PIXELS;
         let page_height = PAGE_HEIGHT_A4_PIXELS;
+        let padding_extension = DESIRED_PADDING_FACTOR;
+        let padding_left   = (INITIAL_PADDING_LEFT   as f64 / padding_extension) as usize;
+        let padding_right  = (INITIAL_PADDING_RIGHT  as f64 / padding_extension) as usize;
+        let padding_top    = (INITIAL_PADDING_TOP    as f64 / padding_extension) as usize;
+        let padding_bottom = (INITIAL_PADDING_BOTTOM as f64 / padding_extension) as usize;
 
         // Width and height of the image, in pixels.
         let image_width = PIXEL_WIDTH_INITIAL as usize;
@@ -690,7 +637,7 @@ fn main() {
             })
             .map(|group| {
                 let dest = dest_print_at_home_cards
-                    .join(format!("{}-{}.png", group[0], group[group.len() - 1]));
+                    .join(format!("{}-{}.tiff", group[0], group[group.len() - 1]));
                 let dest = dest.to_str()
                     .unwrap();
 
@@ -701,8 +648,9 @@ fn main() {
                         width = page_width,
                         height = page_height,
                     )])
+                    .args(&["-density", "900"])
                     // Page background.
-                    .arg("xc:transparent");
+                    .arg("xc:white");
 
                 // Prepare drawing lines.
                 command
@@ -716,7 +664,7 @@ fn main() {
                     let x1 = page_width;
                     // Draw horizontal line for the top of the image
                     let y = i * image_plus_margin_height +
-                        margin_height + INITIAL_PADDING_TOP;
+                        margin_height + padding_top;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y,
                         y1 = y,
@@ -725,7 +673,7 @@ fn main() {
 
 
                     // Draw horizontal line for the bottom of the image
-                    let y = (i + 1) * image_plus_margin_height - margin_height - INITIAL_PADDING_BOTTOM;
+                    let y = (i + 1) * image_plus_margin_height - margin_height - padding_bottom;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y,
                         y1 = y,
@@ -740,7 +688,7 @@ fn main() {
 
                     // Draw vertical line for the left of the image
                     let x = i * image_plus_margin_width +
-                        margin_width + INITIAL_PADDING_LEFT;
+                        margin_width + padding_left;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y0,
                         y1 = y1,
@@ -748,7 +696,7 @@ fn main() {
                         x1 = x)]);
 
                     // Draw vertical line for the right of the image
-                    let x = (i + 1) * image_plus_margin_width - margin_width - INITIAL_PADDING_RIGHT;
+                    let x = (i + 1) * image_plus_margin_width - margin_width - padding_right;
                     command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
                         y0 = y0,
                         y1 = y1,
@@ -768,12 +716,6 @@ fn main() {
                         let path = options.dest_max_quality_horizontal_cards
                             .join(format!("{source}.png",
                                 source = source));
-/*                            .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
-                                source = source,
-                                dx = 0, // Full image
-                                dy = 0, // Full image
-                                w = w,
-                                h = h));*/
                         command.arg(path.into_os_string());
 
                         let geometry = format!("+{x}+{y}",
@@ -783,99 +725,14 @@ fn main() {
                             .arg("-composite");
                     }
                 }
-                debug!(target: "generate", "Generating print-at-home: {:?}", command);
+                command.args(&["-flatten"]);
+                command.args(&["-alpha", "remove"]);
+                command.args(&["-alpha", "off"]);
                 command.arg(&dest);
+                debug!(target: "generate", "Generating print-at-home: {:?}", command);
                 command.spawn()
                     .expect("Could not launch command")
             })
-/*
-            .chain(vec![
-                {
-                    let mut command = Command::new("convert");
-                    command
-                        // Page size, in pixels.
-                        .args(&["-size", &format!("{width}x{height}",
-                            width = page_width,
-                            height = page_height)])
-                        // Page background
-                        .arg("xc:white");
-
-                    command
-                        .args(&["-stroke", "black"])
-                        .args(&["-fill", "none"]);
-
-                    // Draw horizontal lines
-                    for i in 0..options.print_at_home_dimensions.lines {
-                        let x0 = 0;
-                        let x1 = page_width;
-                        // Draw horizontal line for the top of the image
-                        let y = i * image_plus_margin_height + margin_height;
-                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                            y0 = y,
-                            y1 = y,
-                            x0 = x0,
-                            x1 = x1)]);
-                        // Draw horizontal line for the bottom of the image
-                        let y = (i + 1 ) * image_plus_margin_height - margin_height;
-                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                            y0 = y,
-                            y1 = y,
-                            x0 = x0,
-                            x1 = x1)]);
-                    }
-
-                    // Draw vertical lines
-                    for i in 0..options.print_at_home_dimensions.rows {
-                        let y0 = 0;
-                        let y1 = page_height;
-
-                        // Draw vertical line for the left of the image
-                        let x = i * image_plus_margin_width + margin_width;
-                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                            y0 = y0,
-                            y1 = y1,
-                            x0 = x,
-                            x1 = x)]);
-
-                        // Draw vertical line for the right of the image
-                        let x = (i + 1) * image_plus_margin_width - margin_width;
-                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                            y0 = y0,
-                            y1 = y1,
-                            x0 = x,
-                            x1 = x)]);
-                    }
-
-                    let mut source = options.dest_max_quality_horizontal_cards
-                        .join("back.png");
-                    source.set_extension(format!("png[{w}x{h}+{dx}+{dy}]",
-                        dx = dx,
-                        dy = dy,
-                        w = w,
-                        h = h));
-                    let source = source.into_os_string();
-                    let dest = dest_print_at_home_cards.join("back.png");
-                    let dest = dest.to_str()
-                        .unwrap();
-
-                    for i in 0..options.print_at_home_dimensions.rows {
-                        for j in 0..options.print_at_home_dimensions.lines {
-                            command.arg(&source);
-
-                            let geometry = format!("+{x}+{y}",
-                                x = i * image_plus_margin_width + margin_width / 2,
-                                y = j * image_plus_margin_height + margin_height / 2);
-                            command.args(&["-geometry", &geometry])
-                                .arg("-composite");
-                        }
-                    }
-                    command.arg(&dest);
-                    debug!(target: "generate", "Generating print-at-home: {:?}", command);
-                    command.spawn()
-                        .expect("Could not launch command")
-                }
-            ].into_iter())
-*/
             .collect();
         batch(tasks);
 
@@ -888,14 +745,14 @@ fn main() {
             .map(|group| {
                 let group : Vec<_> = group.collect();
                 let source = dest_print_at_home_cards
-                    .join(format!("{}-{}.png", group[0], group[group.len() - 1]));
+                    .join(format!("{}-{}.tiff", group[0], group[group.len() - 1]));
                 source.to_str()
                     .unwrap()
                     .to_string()
             })
             .chain(Some( {
                 let source = dest_print_at_home_cards
-                    .join("back.png");
+                    .join("back-back.tiff");
                 source.to_str()
                     .unwrap()
                     .to_string()
@@ -904,8 +761,9 @@ fn main() {
         for source in sources {
             command.arg(source);
         }
+//        command.args(&["-resample", "25%"]);
 //        command.args(&["-resize", &format!("{:0}%", RESAMPLE_FACTOR_PRINT_YOURSELF * 100.)]);
-        command.args(&["-density", "300"]);
+//        command.args(&["-density", "300"]);
         let dest = dest_print_at_home_cards
             .join("cards.pdf");
         let dest = dest.to_str()
@@ -917,52 +775,6 @@ fn main() {
             .wait()
             .expect("Error executing command");
     }
-
-
-
-/*
-    if let Some(ref dest_montage) = options.dest_montage {
-        std::fs::create_dir_all(dest_montage)
-            .expect("Could not create directory");
-
-        print!("Exporting cards for self-printing (front)");
-        let groups = (1..NUMBER_OF_CARDS+1)
-            .chunks(options.vignettes_per_montage_line as usize * options.vignettes_per_montage_row as usize);
-        let tile = format!("{}x{}",
-            options.vignettes_per_montage_line,
-            options.vignettes_per_montage_row);
-        let geometry = format!("30+30+{}x{}",
-            PIXEL_WIDTH_WITH_PRINT_YOURSELF_BLEED,
-            PIXEL_HEIGHT_WITH_PRINT_YOURSELF_BLEED
-        );
-
-        batch(groups.into_iter()
-            .enumerate()
-            .map(|(group_index, group)| {
-                let sources : Vec<_> = group
-                    .map(|i| {
-                        let path = options.dest_max_quality_horizontal_cards
-                            .join(format!("{}.png", i));
-                        path.into_os_string()
-                    })
-                    .collect();
-                let dest = dest_montage
-                    .join(format!("{}.png", group_index));
-                    // FIXME: We probably don't need the entire bleed.
-                Command::new("montage")
-                    .args(&["-tile", &tile])
-                    .args(&["-geometry", &geometry])
-                    .args(&sources)
-                    .arg(dest)
-                    .spawn()
-                    .expect("Command failed to start")
-            })
-            .collect()
-        );
-
-        print!("Exporting cards for self-printing (back) FIXME");
-    }
-*/
 
     if let Some(ref dest_print_as_photos) = options.dest_print_as_photos {
         std::fs::create_dir_all(dest_print_as_photos)
@@ -979,23 +791,52 @@ fn main() {
         let groups = (1..NUMBER_OF_CARDS+1)
             .chunks(2);
 
-        print!("Assembling 2 images into one 10x15 photos");
+        print!("Assembling 2 images into one 10x15 photo");
         let tasks = groups.into_iter()
             .map(|group| {
-                let group : Vec<_> = group.collect();
+                group
+                    .map(|i| format!("{}", i))
+                    .collect_vec()
+            })
+            .chain({
+                let vec = itertools::repeat_n("back".to_string(), 2)
+                    .collect_vec();
+                Some(vec).into_iter()
+            })
+            .map(|group| {
                 let dest = dest_print_as_photos
                     .join(format!("{}-{}.jpg", group[0], group[group.len() - 1]));
                 let dest = dest.to_str()
                     .unwrap();
 
                 let mut command = Command::new("convert");
+
+                // Create a new image on a white background.
                 command
                     .args(&["-size", &format!("{}x{}",
                         pixel_width_with_photo_bleed,
                         desired_height
                     )])
                     .arg("xc:white");
+
+                // Prepare drawing lines.
+                command
+                    .args(&["-stroke", "black"])
+                    .args(&["-strokewidth", "3"])
+                    .args(&["-fill", "none"]);
                 for (i, source) in group.iter().enumerate() {
+                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                        x0 = 0,
+                        x1 = pixel_width_with_photo_bleed,
+                        y0 = PIXEL_HEIGHT_WITH_PHOTO_BLEED,
+                        y1 = PIXEL_HEIGHT_WITH_PHOTO_BLEED)]);
+
+                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                        x0 = 0,
+                        x1 = pixel_width_with_photo_bleed,
+                        y0 = desired_height - PIXEL_HEIGHT_WITH_PHOTO_BLEED - 3,
+                        y1 = desired_height - PIXEL_HEIGHT_WITH_PHOTO_BLEED - 3)]);
+
                     let path = options.dest_max_quality_horizontal_cards
                         .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
                             source = source,
