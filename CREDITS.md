@@ -9,7 +9,7 @@
  * 5-legged demon: Illustration du Dictionnaire infernal de Jacques Auguste Simon Collin de Plancy par Louis Le Breton, 6eme édition, 1863. Public Domain (source: Wikipedia).
  * Clock hand: Re digitized vintage public domain illustration of a black and white human hand with a clock, made available by Dawn Hudson.
 
-### Trump cards
+### Triumph Suit
  * **Excuse** Edward Burne-Jones, Tile Design - Theseus and the Minotaur in the Labyrinth. Public Domain \(source: Wikipedia\).
  * **I** No image.
  * **II** Hyeronymus Bosch, The Garden of Earthly Delights \[detail\]. Public Domain \(source: Wikipedia\).
