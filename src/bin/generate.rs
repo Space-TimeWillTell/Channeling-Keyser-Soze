@@ -39,8 +39,30 @@ const INITIAL_PADDING_TOP:    usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL
 const INITIAL_PADDING_LEFT:   usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
 const INITIAL_PADDING_RIGHT:  usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
 
-const PAGE_WIDTH_A4_PIXELS: usize = (PIXEL_WIDTH_INITIAL as f64 * 2.5) as usize; // Arbitrary width.
-const PAGE_HEIGHT_A4_PIXELS: usize = ((PAGE_WIDTH_A4_PIXELS as f64) * 29.7 / 21.) as usize;
+struct PageFormat {
+    width_pixels: usize,
+    height_pixels: usize,
+}
+
+const PAGE_FORMAT_A4 : PageFormat = {
+    const WIDTH_CM: f64 = 21.;
+    const HEIGHT_CM: f64 = 29.7;
+    const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 2.15; // Arbitrary width
+    PageFormat {
+        width_pixels: WIDTH_PIXELS as usize,
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize
+    }
+};
+
+const PAGE_FORMAT_LETTER : PageFormat = {
+    const WIDTH_CM: f64 = 21.59;
+    const HEIGHT_CM: f64 = 27.94;
+    const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 2.35; // Arbitrary width
+    PageFormat {
+        width_pixels: WIDTH_PIXELS as usize,
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize
+    }
+};
 
 struct Dimensions {
     lines: usize,
@@ -596,203 +618,236 @@ fn main() {
         let images_per_page = options.print_at_home_dimensions.lines as usize
                 * options.print_at_home_dimensions.rows as usize;
 
-        let groups = (1..NUMBER_OF_CARDS+1)
-            .chunks(images_per_page);
+        let formats = [("a4", PAGE_FORMAT_A4), ("us_letter", PAGE_FORMAT_LETTER)];
+
+        for (format_name, format) in &formats {
+            let groups = (1..NUMBER_OF_CARDS+1)
+                .chunks(images_per_page);
+
+            // Width and height of the page, in pixels, including bleed.
+            let padding_extension = DESIRED_PADDING_FACTOR;
+            let padding_left   = (INITIAL_PADDING_LEFT   as f64 / padding_extension) as usize;
+            let padding_right  = (INITIAL_PADDING_RIGHT  as f64 / padding_extension) as usize;
+            let padding_top    = (INITIAL_PADDING_TOP    as f64 / padding_extension) as usize;
+            let padding_bottom = (INITIAL_PADDING_BOTTOM as f64 / padding_extension) as usize;
+
+            // Width and height of the image, in pixels.
+            let image_width = PIXEL_WIDTH_INITIAL as usize;
+            let image_height = PIXEL_HEIGHT_INITIAL as usize;
+
+            // Compute margins that will let us put all the images on the document.
+            assert!(format.width_pixels >= image_width * options.print_at_home_dimensions.rows,
+                "In format {name}, I need a width of at least {need} pixels, got {got}",
+                    name = format_name,
+                    need = image_width * options.print_at_home_dimensions.rows,
+                    got = format.width_pixels
+            );
+            let margin_width = (format.width_pixels / options.print_at_home_dimensions.rows - image_width) / 2;
+
+            assert!(format.height_pixels >= image_height * options.print_at_home_dimensions.lines,
+                "In format {name}, I need a height of at least {need} pixels, got {got}",
+                    name = format_name,
+                    need = image_height * options.print_at_home_dimensions.lines,
+                    got = format.height_pixels
+            );
+            let margin_height = (format.height_pixels / options.print_at_home_dimensions.lines - image_height) / 2;
+
+            let image_plus_margin_width = image_width + margin_width * 2;
+
+            let image_plus_margin_height = image_height + margin_height * 2;
+
+            assert!((image_plus_margin_width as isize - format.width_pixels as isize / options.print_at_home_dimensions.rows as isize).abs() <= 1, "Images per line");
+            assert!((image_plus_margin_height as isize - format.height_pixels as isize / options.print_at_home_dimensions.lines as isize).abs() <= 1, "Images per row");
+
+            let tasks = groups.into_iter()
+                .map(|group| {
+                    group
+                        .map(|i| format!("{}", i))
+                        .collect_vec()
+                })
+                .chain({
+                    let vec = itertools::repeat_n("back".to_string(), images_per_page)
+                        .collect_vec();
+                    Some(vec).into_iter()
+                })
+                .map(|group| {
+                    let dest = dest_print_at_home_cards
+                        .join(format!("{format}-{start}-{stop}.tiff",
+                            format = format_name,
+                            start = group[0],
+                            stop = group[group.len() - 1]));
+                    let dest = dest.to_str()
+                        .unwrap();
+
+                    let mut command = Command::new("convert");
+                    command
+                        // Page size, in pixels.
+                        .args(&["-size", &format!("{width}x{height}",
+                            width = format.width_pixels,
+                            height = format.height_pixels,
+                        )])
+                        .args(&["-density", "900"])
+                        // Page background.
+                        .arg("xc:white");
+
+                    // Prepare drawing lines.
+                    command
+                        .args(&["-stroke", "black"])
+                        .args(&["-strokewidth", "3"])
+                        .args(&["-fill", "none"]);
+
+                    // Draw horizontal lines
+                    for i in 0..options.print_at_home_dimensions.lines {
+                        let x0 = 0;
+                        let x1 = format.width_pixels;
+                        // Draw horizontal line for the top of the image
+                        let y = i * image_plus_margin_height +
+                            margin_height + padding_top;
+                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                            y0 = y,
+                            y1 = y,
+                            x0 = x0,
+                            x1 = x1)]);
 
 
-        // Width and height of the page, in pixels, including bleed.
-        let page_width = PAGE_WIDTH_A4_PIXELS;
-        let page_height = PAGE_HEIGHT_A4_PIXELS;
-        let padding_extension = DESIRED_PADDING_FACTOR;
-        let padding_left   = (INITIAL_PADDING_LEFT   as f64 / padding_extension) as usize;
-        let padding_right  = (INITIAL_PADDING_RIGHT  as f64 / padding_extension) as usize;
-        let padding_top    = (INITIAL_PADDING_TOP    as f64 / padding_extension) as usize;
-        let padding_bottom = (INITIAL_PADDING_BOTTOM as f64 / padding_extension) as usize;
+                        // Draw horizontal line for the bottom of the image
+                        let y = (i + 1) * image_plus_margin_height - margin_height - padding_bottom;
+                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                            y0 = y,
+                            y1 = y,
+                            x0 = x0,
+                            x1 = x1)]);
 
-        // Width and height of the image, in pixels.
-        let image_width = PIXEL_WIDTH_INITIAL as usize;
-        let image_height = PIXEL_HEIGHT_INITIAL as usize;
-
-        // Compute margins that will let us put all the images on the document.
-        let margin_width = (page_width / options.print_at_home_dimensions.rows - image_width) / 2;
-        let margin_height = (page_height / options.print_at_home_dimensions.lines - image_height) / 2;
-
-        let image_plus_margin_width = image_width + margin_width * 2;
-
-        let image_plus_margin_height = image_height + margin_height * 2;
-
-        assert_eq!(image_plus_margin_width, page_width / options.print_at_home_dimensions.rows, "Images per line");
-        assert_eq!(image_plus_margin_height, page_height / options.print_at_home_dimensions.lines, "Images per row");
-
-        let tasks = groups.into_iter()
-            .map(|group| {
-                group
-                    .map(|i| format!("{}", i))
-                    .collect_vec()
-            })
-            .chain({
-                let vec = itertools::repeat_n("back".to_string(), images_per_page)
-                    .collect_vec();
-                Some(vec).into_iter()
-            })
-            .map(|group| {
-                let dest = dest_print_at_home_cards
-                    .join(format!("{}-{}.tiff", group[0], group[group.len() - 1]));
-                let dest = dest.to_str()
-                    .unwrap();
-
-                let mut command = Command::new("convert");
-                command
-                    // Page size, in pixels.
-                    .args(&["-size", &format!("{width}x{height}",
-                        width = page_width,
-                        height = page_height,
-                    )])
-                    .args(&["-density", "900"])
-                    // Page background.
-                    .arg("xc:white");
-
-                // Prepare drawing lines.
-                command
-                    .args(&["-stroke", "black"])
-                    .args(&["-strokewidth", "3"])
-                    .args(&["-fill", "none"]);
-
-                // Draw horizontal lines
-                for i in 0..options.print_at_home_dimensions.lines {
-                    let x0 = 0;
-                    let x1 = page_width;
-                    // Draw horizontal line for the top of the image
-                    let y = i * image_plus_margin_height +
-                        margin_height + padding_top;
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        y0 = y,
-                        y1 = y,
-                        x0 = x0,
-                        x1 = x1)]);
-
-
-                    // Draw horizontal line for the bottom of the image
-                    let y = (i + 1) * image_plus_margin_height - margin_height - padding_bottom;
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        y0 = y,
-                        y1 = y,
-                        x0 = x0,
-                        x1 = x1)]);
-
-                }
-                // Draw vertical lines
-                for i in 0..options.print_at_home_dimensions.rows {
-                    let y0 = 0;
-                    let y1 = page_height;
-
-                    // Draw vertical line for the left of the image
-                    let x = i * image_plus_margin_width +
-                        margin_width + padding_left;
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        y0 = y0,
-                        y1 = y1,
-                        x0 = x,
-                        x1 = x)]);
-
-                    // Draw vertical line for the right of the image
-                    let x = (i + 1) * image_plus_margin_width - margin_width - padding_right;
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        y0 = y0,
-                        y1 = y1,
-                        x0 = x,
-                        x1 = x)]);
-                }
-
-                let mut sources = group.iter();
-                'grid: for i in 0..options.print_at_home_dimensions.rows {
-                    for j in 0..options.print_at_home_dimensions.lines {
-                        let source = if let Some(source) = sources.next() {
-                            source
-                        } else {
-                            // We've run out of sources.
-                            break 'grid
-                        };
-                        let path = options.dest_max_quality_horizontal_cards
-                            .join(format!("{source}.png",
-                                source = source));
-                        command.arg(path.into_os_string());
-
-                        let geometry = format!("+{x}+{y}",
-                            x = i * image_plus_margin_width + margin_width,
-                            y = j * image_plus_margin_height + margin_height);
-                        command.args(&["-geometry", &geometry])
-                            .arg("-composite");
                     }
-                }
-                command.args(&["-flatten"]);
-                command.args(&["-alpha", "remove"]);
-                command.args(&["-alpha", "off"]);
-                command.arg(&dest);
-                debug!(target: "generate", "Generating print-at-home: {:?}", command);
-                command.spawn()
-                    .expect("Could not launch command")
-            })
-            .collect();
-        batch(tasks);
+                    // Draw vertical lines
+                    for i in 0..options.print_at_home_dimensions.rows {
+                        let y0 = 0;
+                        let y1 = format.height_pixels;
 
-        // Convert into a single pdf
-        println!("Converting print-at-home horizontal cards into a single pdf");
-        let groups = (1..NUMBER_OF_CARDS+1)
-            .chunks(options.print_at_home_dimensions.lines as usize
-                * options.print_at_home_dimensions.rows as usize);
-        let sources = groups.into_iter()
-            .map(|group| {
-                let group : Vec<_> = group.collect();
-                let source = dest_print_at_home_cards
-                    .join(format!("{}-{}.tiff", group[0], group[group.len() - 1]));
-                source.to_str()
-                    .unwrap()
-                    .to_string()
-            })
-            .chain(Some( {
-                let source = dest_print_at_home_cards
-                    .join("back-back.tiff");
-                source.to_str()
-                    .unwrap()
-                    .to_string()
-            }).into_iter());
-        let mut command = Command::new("convert");
-        for source in sources {
-            command.arg(source);
+                        // Draw vertical line for the left of the image
+                        let x = i * image_plus_margin_width +
+                            margin_width + padding_left;
+                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                            y0 = y0,
+                            y1 = y1,
+                            x0 = x,
+                            x1 = x)]);
+
+                        // Draw vertical line for the right of the image
+                        let x = (i + 1) * image_plus_margin_width - margin_width - padding_right;
+                        command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
+                            y0 = y0,
+                            y1 = y1,
+                            x0 = x,
+                            x1 = x)]);
+                    }
+
+                    let mut sources = group.iter();
+                    'grid: for i in 0..options.print_at_home_dimensions.rows {
+                        for j in 0..options.print_at_home_dimensions.lines {
+                            let source = if let Some(source) = sources.next() {
+                                source
+                            } else {
+                                // We've run out of sources.
+                                break 'grid
+                            };
+                            let path = options.dest_max_quality_horizontal_cards
+                                .join(format!("{source}.png",
+                                    source = source));
+                            command.arg(path.into_os_string());
+
+                            let geometry = format!("+{x}+{y}",
+                                x = i * image_plus_margin_width + margin_width,
+                                y = j * image_plus_margin_height + margin_height);
+                            command.args(&["-geometry", &geometry])
+                                .arg("-composite");
+                        }
+                    }
+                    command.args(&["-flatten"]);
+                    command.args(&["-alpha", "remove"]);
+                    command.args(&["-alpha", "off"]);
+                    command.arg(&dest);
+                    debug!(target: "generate", "Generating print-at-home: {:?}", command);
+                    command.spawn()
+                        .expect("Could not launch command")
+                })
+                .collect();
+            batch(tasks);
         }
 
-        let dest = dest_print_at_home_cards
-            .join("cards-highres.pdf");
-        let dest = dest.to_str()
-            .unwrap();
-        command.arg(dest);
-        debug!(target: "generate", "Generating high-res print-at-home: {:?}", command);
-        command.spawn()
-            .expect("Could not launch command")
-            .wait()
-            .expect("Error executing command");
+        // Convert into a single pdf
+        print!("Converting print-at-home horizontal cards into a single high-res pdf");
+        let tasks = formats.iter()
+            .map(|(format_name, _)| {
+                let groups = (1..NUMBER_OF_CARDS+1)
+                    .chunks(options.print_at_home_dimensions.lines as usize
+                        * options.print_at_home_dimensions.rows as usize);
+                let sources = groups.into_iter()
+                    .map(|group| {
+                        group
+                            .map(|i| format!("{}", i))
+                            .collect_vec()
+                    })
+                    .chain({
+                        let vec = itertools::repeat_n("back".to_string(), images_per_page)
+                            .collect_vec();
+                        Some(vec).into_iter()
+                    })
+                    .map(|group| {
+                        let source = dest_print_at_home_cards
+                            .join(format!("{format}-{start}-{stop}.tiff",
+                                format = format_name,
+                                start = group[0],
+                                stop = group[group.len() - 1]));
+                        source.to_str()
+                            .unwrap()
+                            .to_string()
+                    });
+                let mut command = Command::new("convert");
+                for source in sources {
+                    command.arg(source);
+                }
 
-        let source = dest;
-        let dest = dest_print_at_home_cards
-            .join("cards.pdf");
-        let dest = dest.to_str()
-            .unwrap();
-        let mut command = Command::new("gs");
-        command.args(&[
-            "-dAutoRotatePages=/None",
-            "-r300",
-            "-sDEVICE=pdfwrite",
-            "-dBATCH",
-            "-dNOPAUSE",
-        "-quit"]);
-        command.arg(format!("-sOutputFile={}", dest))
-            .arg(source);
-        debug!(target: "generate", "Generating destination print-at-home: {:?}", command);
-        command.spawn()
-            .expect("Could not launch command")
-            .wait()
-            .expect("Error executing command");
+                let dest = dest_print_at_home_cards
+                    .join(format!("{format}-cards-highres.pdf",
+                        format = format_name));
+                let dest = dest.to_str()
+                    .unwrap();
+                command.arg(dest);
+                debug!(target: "generate", "Generating high-res print-at-home: {:?}", command);
+                command.spawn()
+                    .expect("Could not launch command")
+            }).collect();
+        batch(tasks);
+
+        print!("Converting print-at-home horizontal cards into a single high-res pdf");
+        let tasks = formats.iter()
+            .map(|(format_name, _)|{
+                let source = dest_print_at_home_cards
+                    .join(format!("{format}-cards-highres.pdf",
+                        format = format_name));
+                let source = source.to_str()
+                    .unwrap();
+                let dest = dest_print_at_home_cards
+                    .join(format!("{format}-cards.pdf",
+                        format = format_name));
+                let dest = dest.to_str()
+                    .unwrap();
+                let mut command = Command::new("gs");
+                command.args(&[
+                    "-dAutoRotatePages=/None",
+                    "-r300",
+                    "-sDEVICE=pdfwrite",
+                    "-dBATCH",
+                    "-dNOPAUSE",
+                "-quit"]);
+                command.arg(format!("-sOutputFile={}", dest))
+                    .arg(source);
+                debug!(target: "generate", "Generating destination print-at-home: {:?}", command);
+                command.spawn()
+                    .expect("Could not launch command")
+            }).collect();
+        batch(tasks);
     }
 
     if let Some(ref dest_print_as_photos) = options.dest_print_as_photos {
