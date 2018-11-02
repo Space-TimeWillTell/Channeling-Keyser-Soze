@@ -16,6 +16,7 @@ Let's ask the Space·Time Deck. Alice draws, declaring "*Let's see what's happen
 
 On this card, we see:
 
+- A number, XVI.
 - A name "XVI. Planning for retirement."
 - An interpretation "Being ready, always?"
 - A picture, with many terracota soldiers.
@@ -33,6 +34,7 @@ Actually, let's go further "*Circulation on the main streets is quite complicate
 And since Alice intended to add some flavour, not ruin the pursuit, she adds "*Frank, since you have been here for hours, if you wish, you may have mapped an escape route that avoids the military.*"
 
 With this draw, Alice has gained:
+
 - an overarching threat for both Desmond + Erika and for Frank (let's not get shot by soldiers);
 - strategic choices during the pursuit (the PCs could decide to get close to the soldiers, or even to disguise themselves as soldiers and board a truck);
 - some background information that may be reused after the pursuit (people were expecting a military redeployment today, why?).

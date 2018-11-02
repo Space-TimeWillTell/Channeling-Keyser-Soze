@@ -24,8 +24,8 @@ pub enum Suit {
     Rock,
     Paper,
     Blades,
-    Lizard,
-    OutThere,
+    Serpent,
+    Unknown,
 }
 impl Display for Suit {
     fn fmt(&self, fmt: &mut Formatter) -> Result<(), FmtError> {
@@ -34,8 +34,8 @@ impl Display for Suit {
             Rock => "Rock",
             Paper => "Paper",
             Blades => "Blade",
-            Lizard => "Serpent",
-            OutThere => "OutThere",
+            Serpent => "Serpent",
+            Unknown => "Unknown",
         };
         name.fmt(fmt)
     }
@@ -45,7 +45,7 @@ impl Suit {
     #[cfg(test)]
     fn suits() -> [Suit; 5] {
         use Suit::*;
-        [Rock, Paper, Blades, Lizard, OutThere]
+        [Rock, Paper, Blades, Serpent, Unknown]
     }
 }
 impl Beats for Suit {
@@ -53,20 +53,20 @@ impl Beats for Suit {
         use Suit::*;
         match (*self, *other) {
             (Rock, Rock) => Comparison::Draw,
-            (Rock, Paper) | (Rock, OutThere) => Comparison::Lose,
-            (Rock, Blades) | (Rock, Lizard )=> Comparison::Win,
+            (Rock, Paper) | (Rock, Unknown) => Comparison::Lose,
+            (Rock, Blades) | (Rock, Serpent )=> Comparison::Win,
             (Paper, Paper) => Comparison::Draw,
-            (Paper, Blades) | (Paper, Lizard) => Comparison::Lose,
-            (Paper, Rock) | (Paper, OutThere) => Comparison::Win,
+            (Paper, Blades) | (Paper, Serpent) => Comparison::Lose,
+            (Paper, Rock) | (Paper, Unknown) => Comparison::Win,
             (Blades, Blades) => Comparison::Draw,
-            (Blades, Rock) | (Blades, OutThere) => Comparison::Lose,
-            (Blades, Paper) | (Blades, Lizard) => Comparison::Win,
-            (Lizard, Lizard) => Comparison::Draw,
-            (Lizard, Rock) | (Lizard, Blades) => Comparison::Lose,
-            (Lizard, OutThere) | (Lizard, Paper) => Comparison::Win,
-            (OutThere, OutThere) => Comparison::Draw,
-            (OutThere, Paper) | (OutThere, Lizard) => Comparison::Lose,
-            (OutThere, Rock) | (OutThere, Blades) => Comparison::Win,
+            (Blades, Rock) | (Blades, Unknown) => Comparison::Lose,
+            (Blades, Paper) | (Blades, Serpent) => Comparison::Win,
+            (Serpent, Serpent) => Comparison::Draw,
+            (Serpent, Rock) | (Serpent, Blades) => Comparison::Lose,
+            (Serpent, Unknown) | (Serpent, Paper) => Comparison::Win,
+            (Unknown, Unknown) => Comparison::Draw,
+            (Unknown, Paper) | (Unknown, Serpent) => Comparison::Lose,
+            (Unknown, Rock) | (Unknown, Blades) => Comparison::Win,
         }
     }
 }
@@ -116,21 +116,7 @@ pub enum Card {
     Color(Suit, Role),
 }
 
-/*
-const TRUMPS : [&'static str; 21] = [
 
-];
-
-impl Display for Card {
-    fn fmt<F: Formatter>(&self, fmt: &mut Formatter) -> Result<(), FmtError> {
-        use Card::*;
-        match *self {
-            Excuse => write!(fmt, "Excuse"),
-            Trump(n) => write!(fmt, TRUMPS[i]),
-        }
-    }
-}
-*/
 #[derive(PartialEq, Eq, Debug)]
 pub enum Comparison {
     Excuse,
@@ -139,6 +125,20 @@ pub enum Comparison {
     Draw,
 }
 impl Comparison {
+    pub fn loses(&self) -> bool {
+        match self {
+            &Comparison::Lose => true,
+            _ => false
+        }
+    }
+
+    pub fn wins(&self) -> bool {
+        match self {
+            &Comparison::Win => true,
+            _ => false
+        }
+    }
+
     #[cfg(test)]
     fn rev(self) -> Self {
         use Comparison::*;
@@ -153,7 +153,6 @@ impl Comparison {
 
 impl Beats for Card {
     fn beats(&self, other: &Card) -> Comparison {
-        debug_assert!(self != other);
         match (self, other) {
             (&Card::Excuse, _) | (_, &Card::Excuse) => Comparison::Excuse,
             (&Card::Trump(ref me), &Card::Trump(ref them)) => {
@@ -221,7 +220,7 @@ impl Deck {
             deck.push(Card::Trump(i));
         }
         // Each suit
-        for suit in [Suit::Rock, Suit::Paper, Suit::Blades, Suit::Lizard, Suit::OutThere].iter() {
+        for suit in [Suit::Rock, Suit::Paper, Suit::Blades, Suit::Serpent, Suit::Unknown].iter() {
             for role in [Role::Ruler, Role::Dragon, Role::Treasure,
                 Role::Builder, Role::Seeker, Role::Soldier,
                 Role::Lover, Role::Servant, Role::Home].iter()
@@ -236,7 +235,7 @@ impl Deck {
         Deck(deck)
     }
 
-    fn next_card<R: Rng>(&mut self, rng: &mut R) -> Card {
+    pub fn next_card<R: Rng>(&mut self, rng: &mut R) -> Card {
         if let Some(result) = self.0.pop() {
             return result
         }
@@ -258,7 +257,7 @@ impl Deck {
     }
 }
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Orientation {
     Up,
     Reversed
@@ -272,7 +271,14 @@ impl Display for Orientation {
         }
     }
 }
-
+impl Orientation {
+    pub fn is_reversed(&self) -> bool {
+        match *self {
+            Orientation::Up => false,
+            Orientation::Reversed => true,
+        }
+    }
+}
 
 #[derive(PartialEq, Eq, Clone, Copy, Hash)]
 pub enum Side {
@@ -298,20 +304,52 @@ impl Side {
     }
 }
 
+/// An implementation of Balance for the three-state rules.
 #[derive(PartialEq, Eq, Clone, Copy, Hash)]
-pub enum Balance {
+pub enum ThreeStateBalance {
     Balanced,
     Unbalanced(Side),
     Overwhelming(Side),
     Victory(Side),
 }
-impl Display for Balance {
+impl Display for ThreeStateBalance {
     fn fmt(&self, fmt: &mut Formatter<'_>) -> Result<(), FmtError> {
-        use Balance::*;
+        use ThreeStateBalance::*;
         match *self {
             Balanced => write!(fmt, "Balanced"),
             Unbalanced(side) => write!(fmt, "Advantage: {}", side),
             Overwhelming(side) => write!(fmt, "Overwhelming: {}", side),
+            Victory(side) => write!(fmt, "Victory: {}", side),
+        }
+    }
+}
+
+#[derive(PartialEq, Eq, Clone, Hash)]
+struct Losses {
+    temporary: usize,
+    serious: usize,
+    left: usize,
+}
+
+#[derive(PartialEq, Eq, Clone, Hash)]
+pub struct BiddingBalance {
+    losses: [Losses; 2],
+    advantage: BiddingAdvantage,
+}
+
+#[derive(PartialEq, Eq, Clone, Copy, Hash)]
+/// An inplementation of Balance for the Bidding rules.
+pub enum BiddingAdvantage {
+    Balanced,
+    Unbalanced(Side, /*non-0*/usize),
+    Victory(Side),
+}
+impl Display for BiddingAdvantage {
+    fn fmt(&self, fmt: &mut Formatter<'_>) -> Result<(), FmtError> {
+        use BiddingAdvantage::*;
+        match *self {
+            Balanced => write!(fmt, "Balanced"),
+            Unbalanced(side, level) => write!(fmt, "Advantage {}: {}", level, side),
             Victory(side) => write!(fmt, "Victory: {}", side),
         }
     }
@@ -328,6 +366,38 @@ impl DrawnCard {
     pub fn card(&self) -> &Card {
         &self.card
     }
+    pub fn index(&self) -> String {
+        let num = match self.card {
+            Card::Excuse => 5,
+            Card::Trump(n) => 5 + n,
+            Card::Color(suit, figure) => {
+                let start = match suit {
+                    Suit::Paper => 32,
+                    Suit::Unknown => 43,
+                    Suit::Rock => 54,
+                    Suit::Blades => 65,
+                    Suit::Serpent => 76,
+                };
+                let offset = match figure {
+                    Role::Ruler => 0,
+                    Role::Dragon => 1,
+                    Role::Treasure => 2,
+                    Role::Soldier => 3,
+                    Role::Builder => 4,
+                    Role::Seeker => 5,
+                    Role::Lover => 6,
+                    Role::Servant => 7,
+                    Role::Home => 8,
+                };
+                start + offset
+            }
+        };
+        let orientation = match self.orientation {
+            Orientation::Up => "+",
+            Orientation::Reversed => "-",
+        };
+        format!("{}{}", num, orientation)
+    }
 }
 impl Display for DrawnCard {
     fn fmt(&self, fmt: &mut Formatter) -> Result<(), FmtError> {
@@ -340,13 +410,13 @@ impl Display for DrawnCard {
     }
 }
 
-pub struct State<'a, R: Rng> {
-    balance: Balance,
+pub struct State<'a, B, R: Rng> {
+    balance: B,
     deck: Deck,
     rng: &'a mut R,
 }
-impl<'a, R> State<'a, R> where R: Rng {
-    pub fn new(rng: &'a mut R, balance: Balance) -> Self {
+impl<'a, B, R> State<'a, B, R> where R: Rng {
+    pub fn new(rng: &'a mut R, balance: B) -> Self {
         let deck = Deck::shuffle(rng);
         State {
             balance,
@@ -356,18 +426,18 @@ impl<'a, R> State<'a, R> where R: Rng {
     }
 }
 
-pub struct Step {
-    start: Balance,
-    stop: Balance,
+pub struct Step<B> {
+    start: B,
+    stop: B,
     a: Draw,
     b: Draw,
     winner: Option<Side>,
 }
-impl Step {
-    pub fn start(&self) -> &Balance {
+impl<B> Step<B> {
+    pub fn start(&self) -> &B {
         &self.start
     }
-    pub fn stop(&self) -> &Balance {
+    pub fn stop(&self) -> &B {
         &self.stop
     }
     pub fn a(&self) -> &Draw {
@@ -381,15 +451,15 @@ impl Step {
     }
 }
 
-impl<'a, R> Iterator for State<'a, R> where R: Rng {
-    type Item = Step;
+impl<'a, R> Iterator for State<'a, ThreeStateBalance, R> where R: Rng {
+    type Item = Step<ThreeStateBalance>;
     fn next(&mut self) -> Option<Self::Item> {
         let balance = self.balance;
         let (over, under, who) = match balance {
-            Balance::Balanced => (smallvec![self.deck.next(self.rng)], smallvec![self.deck.next(self.rng)], Side::A /* Arbitrary */),
-            Balance::Unbalanced(side) => (smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], smallvec![self.deck.next(self.rng)], side),
-            Balance::Overwhelming(side) => (smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], side),
-            Balance::Victory(_) => return None
+            ThreeStateBalance::Balanced => (smallvec![self.deck.next(self.rng)], smallvec![self.deck.next(self.rng)], Side::A /* Arbitrary */),
+            ThreeStateBalance::Unbalanced(side) => (smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], smallvec![self.deck.next(self.rng)], side),
+            ThreeStateBalance::Overwhelming(side) => (smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], smallvec![self.deck.next(self.rng), self.deck.next(self.rng)], side),
+            ThreeStateBalance::Victory(_) => return None
         };
         let (winner, new_balance) = match over.beats(&under) {
             Comparison::Excuse => (Some(who.rev()), balance.shift(None)),
@@ -412,32 +482,71 @@ impl<'a, R> Iterator for State<'a, R> where R: Rng {
     }
 }
 
-impl Balance {
+impl ThreeStateBalance {
     fn shift(self, towards: Option<Side>) -> Self {
         match (self, towards) {
-            (Balance::Balanced, None) =>
-                Balance::Balanced,
-            (Balance::Balanced, Some(side)) =>
-                Balance::Unbalanced(side),
-            (Balance::Unbalanced(_), None) =>
-                Balance::Balanced,
-            (Balance::Unbalanced(side), Some(side_)) =>
+            (ThreeStateBalance::Balanced, None) =>
+                ThreeStateBalance::Balanced,
+            (ThreeStateBalance::Balanced, Some(side)) =>
+                ThreeStateBalance::Unbalanced(side),
+            (ThreeStateBalance::Unbalanced(_), None) =>
+                ThreeStateBalance::Balanced,
+            (ThreeStateBalance::Unbalanced(side), Some(side_)) =>
                 if side == side_ {
-                    Balance::Overwhelming(side)
+                    ThreeStateBalance::Overwhelming(side)
                 } else {
-                    Balance::Balanced
+                    ThreeStateBalance::Balanced
                 }
-            (Balance::Overwhelming(side), None) =>
-                Balance::Unbalanced(side),
-            (Balance::Overwhelming(side), Some(side_)) =>
+            (ThreeStateBalance::Overwhelming(side), None) =>
+                ThreeStateBalance::Unbalanced(side),
+            (ThreeStateBalance::Overwhelming(side), Some(side_)) =>
                 if side == side_ {
-                    Balance::Victory(side)
+                    ThreeStateBalance::Victory(side)
                 } else {
-                    Balance::Unbalanced(side)
+                    ThreeStateBalance::Unbalanced(side)
                 }
-            (Balance::Victory(side), _) =>
-                Balance::Victory(side)
+            (ThreeStateBalance::Victory(side), _) =>
+                ThreeStateBalance::Victory(side)
         }
     }
 }
 
+impl<'a, R> Iterator for State<'a, BiddingBalance, R> where R: Rng {
+    type Item = Step<BiddingBalance>;
+    fn next(&mut self) -> Option<Self::Item> {
+        let mut cards_dominant: SmallVec<[Card; 10]> = smallvec![];
+        let mut cards_dominated: SmallVec<[Card; 10]> = smallvec![];
+        loop {
+
+            // FIXME: Dominant draws until it beats Dominated or is about to be elimited.
+            // FIXME: If Dominant is about to be eliminated, it Concedes the Bid.
+            // FIXME: Dominated draws until it beats Dominant or is about to be eliminated.
+            // FIXME: If Dominated is about to be eliminated, it Concedes the Bid.
+            // FIXME: We should try several strategies. Maybe later :)
+        }
+        unimplemented!()
+    }
+}
+
+impl BiddingAdvantage {
+    fn shift(self, towards: Option<Side>) -> Self {
+        match (self, towards) {
+            (BiddingAdvantage::Balanced, None) =>
+                BiddingAdvantage::Balanced,
+            (BiddingAdvantage::Balanced, Some(side)) =>
+                BiddingAdvantage::Unbalanced(side, 1),
+            (BiddingAdvantage::Unbalanced(_, _), None) =>
+                BiddingAdvantage::Balanced,
+            (BiddingAdvantage::Unbalanced(side, level), Some(side_)) =>
+                if side == side_ {
+                    BiddingAdvantage::Unbalanced(side, level + 1)
+                } else if level > 1 {
+                    BiddingAdvantage::Unbalanced(side, level - 1)
+                } else {
+                    BiddingAdvantage::Balanced
+                }
+            (BiddingAdvantage::Victory(side), _) =>
+                BiddingAdvantage::Victory(side)
+        }
+    }
+}

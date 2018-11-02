@@ -35,11 +35,11 @@ fn main() {
     let mut rng = rand::thread_rng();
 
     let start = match matches.value_of("balance").unwrap() {
-        "=" => Balance::Balanced,
-        "A" => Balance::Unbalanced(Side::A),
-        "B" => Balance::Unbalanced(Side::B),
-        "AA" => Balance::Overwhelming(Side::A),
-        "BB" => Balance::Overwhelming(Side::B),
+        "=" => ThreeStateBalance::Balanced,
+        "A" => ThreeStateBalance::Unbalanced(Side::A),
+        "B" => ThreeStateBalance::Unbalanced(Side::B),
+        "AA" => ThreeStateBalance::Overwhelming(Side::A),
+        "BB" => ThreeStateBalance::Overwhelming(Side::B),
         _ => unreachable!()
     };
     println!("Start: {}", start);

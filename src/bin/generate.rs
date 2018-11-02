@@ -24,9 +24,6 @@ const PIXEL_HEIGHT_INITIAL: isize = 1650;
 const PIXEL_WIDTH_WITHOUT_BLEED: isize = 1964;
 const PIXEL_HEIGHT_WITHOUT_BLEED: isize = 1360;
 
-const PIXEL_WIDTH_WITH_PHOTO_BLEED: isize = 2000;
-const PIXEL_HEIGHT_WITH_PHOTO_BLEED: isize = 1370;
-
 /// Size of the "safety zone" in the cards document.
 /// That's the place where we don't put text or images
 /// to avoid it being cut.
@@ -39,9 +36,19 @@ const INITIAL_PADDING_TOP:    usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL
 const INITIAL_PADDING_LEFT:   usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
 const INITIAL_PADDING_RIGHT:  usize = (SAFETY_ZONE_IN_SOURCE_DOCUMENT_CM * PIXEL_WIDTH_INITIAL as f64 / SOURCE_DOCUMENT_WIDTH_CM) as usize;
 
+enum Format {
+    PDF,
+    JPG,
+//    PNG,
+}
+
 struct PageFormat {
+    name: &'static str,
     width_pixels: usize,
     height_pixels: usize,
+    lines: usize,
+    rows: usize,
+    format: Format,
 }
 
 const PAGE_FORMAT_A4 : PageFormat = {
@@ -49,8 +56,12 @@ const PAGE_FORMAT_A4 : PageFormat = {
     const HEIGHT_CM: f64 = 29.7;
     const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 2.15; // Arbitrary width
     PageFormat {
+        name: "a4",
         width_pixels: WIDTH_PIXELS as usize,
-        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize,
+        lines: 4,
+        rows: 2,
+        format: Format::PDF,
     }
 };
 
@@ -59,15 +70,42 @@ const PAGE_FORMAT_LETTER : PageFormat = {
     const HEIGHT_CM: f64 = 27.94;
     const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 2.35; // Arbitrary width
     PageFormat {
+        name: "us_letter",
         width_pixels: WIDTH_PIXELS as usize,
-        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize,
+        lines: 4,
+        rows: 2,
+        format: Format::PDF,
     }
 };
 
-struct Dimensions {
-    lines: usize,
-    rows: usize,
-}
+const PAGE_FORMAT_10_15 : PageFormat = {
+    const WIDTH_CM: f64 = 10.;
+    const HEIGHT_CM: f64 = 15.;
+    const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 1.1; // Arbitrary width
+    PageFormat {
+        name: "10x15",
+        width_pixels: WIDTH_PIXELS as usize,
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize,
+        lines: 2,
+        rows: 1,
+        format: Format::JPG,
+    }
+};
+
+const PAGE_FORMAT_11_15 : PageFormat = {
+    const WIDTH_CM: f64 = 11.;
+    const HEIGHT_CM: f64 = 15.;
+    const WIDTH_PIXELS: f64 = PIXEL_WIDTH_INITIAL as f64 * 1.1; // Arbitrary width
+    PageFormat {
+        name: "11x15",
+        width_pixels: WIDTH_PIXELS as usize,
+        height_pixels: (WIDTH_PIXELS * HEIGHT_CM / WIDTH_CM) as usize,
+        lines: 2,
+        rows: 1,
+        format: Format::JPG,
+    }
+};
 
 struct Options {
     /// Source pdf.
@@ -81,14 +119,13 @@ struct Options {
     regenerate_pdfs: bool,
     regenerate_pngs: bool,
 
-    print_at_home_dimensions: Dimensions,
+    formats: Vec<PageFormat>,
 
-    /// Destination directory.
+    /// Destination directories.
     dest_max_quality_horizontal_cards: PathBuf,
     dest_book_quality_cards: Option<PathBuf>,
     dest_printer_cards: Option<PathBuf>,
     dest_print_at_home_cards: Option<PathBuf>,
-    dest_print_as_photos: Option<PathBuf>,
 
     color_profile_path: Option<PathBuf>,
 }
@@ -152,10 +189,14 @@ fn parse_cli() -> Options {
             .takes_value(true)
             .help("Destination horizontal cards, print-at-home quality.")
         )
-        .arg(Arg::with_name("photosdir")
-            .long("photosdir")
+        .arg(Arg::with_name("format")
+            .long("format")
             .takes_value(true)
-            .help("Destination directory for print as 2 cards per 10x15 photo.")
+            .multiple(true)
+            .use_delimiter(true)
+            .default_value("a4")
+            .possible_values(&["a4", "usletter", "10x15", "11x15"])
+            .help("Page size")
         )
         .arg(Arg::with_name("regenpdf")
             .long("regenpdf")
@@ -177,12 +218,27 @@ fn parse_cli() -> Options {
         )
         .get_matches();
 
+    // Page sizes
+    let formats = matches.values_of("format")
+        .unwrap()
+        .map(|name| {
+            match name {
+                "a4" => PAGE_FORMAT_A4,
+                "usletter" => PAGE_FORMAT_LETTER,
+                "10x15" => PAGE_FORMAT_10_15,
+                "11x15" => PAGE_FORMAT_11_15,
+                _ => panic!("Invalid format {}", name)
+            }
+        }).collect_vec();
+
     // Cards
     let mut cards = HashSet::new();
     if let Some(values) = matches.values_of("cards") {
         for range in values {
+            debug!(target: "generate", "Adding cards: \"{}\"", range);
             // Single card number.
             if let Ok(index) = str::parse::<usize>(range) {
+                debug!(target: "generate", "Adding single card {}", index);
                 cards.insert(index);
                 continue;
             }
@@ -192,7 +248,8 @@ fn parse_cli() -> Options {
                     .unwrap_or_else(|_| panic!("Invalid range format {} (range start)", range));
                 let stop = str::parse::<usize>(&range[index + 1 .. range.len()])
                     .unwrap_or_else(|_| panic!("Invalid range format {} (range end)", range));
-                for _ in start..stop + 1 {
+                debug!(target: "generate", "Adding card in [{}, {}]", start, stop);
+                for index in start..stop + 1 {
                     cards.insert(index);
                 }
                 continue;
@@ -206,6 +263,7 @@ fn parse_cli() -> Options {
         }
     }
 
+    debug!(target: "generate", "Eding up with cards: {:?}", cards);
     // Source
     let source_front = PathBuf::from(matches.value_of("input")
         .unwrap());
@@ -224,9 +282,6 @@ fn parse_cli() -> Options {
     let dest_printer_cards = matches.value_of("printerdir")
         .map(|value| PathBuf::from(value));
 
-    let dest_print_as_photos = matches.value_of("photosdir")
-        .map(|value| PathBuf::from(value));
-
     let color_profile_path = matches.value_of("colorprofile")
         .map(|value| PathBuf::from(value));
 
@@ -240,12 +295,8 @@ fn parse_cli() -> Options {
         dest_book_quality_cards,
         dest_print_at_home_cards,
         dest_printer_cards,
-        dest_print_as_photos,
         color_profile_path,
-        print_at_home_dimensions: Dimensions {
-            lines: 4,
-            rows: 2,
-        }
+        formats,
     }
 }
 
@@ -272,9 +323,10 @@ fn main() {
         .cloned()
         .sorted();
 
-    println!("Regenerating card(s) {cards} from {source}",
+    println!("Regenerating card(s) {cards} from {source}, to print-at-home formats [{formats}]",
         cards = cards.iter().format(","),
-        source = options.source_front.as_os_str().to_string_lossy());
+        source = options.source_front.as_os_str().to_string_lossy(),
+        formats = options.formats.iter().map(|format| format.name).format(", "));
 
     for dir in &[TMP_DIR, TMP_MAX_QUALITY_HORIZONTAL_PDF_PREFIX, TMP_MAX_QUALITY_HORIZONTAL_PNG_PREFIX] {
         std::fs::create_dir_all(dir)
@@ -615,13 +667,12 @@ fn main() {
 
         print!("Extracting entire pages for print-at-home");
 
-        let images_per_page = options.print_at_home_dimensions.lines as usize
-                * options.print_at_home_dimensions.rows as usize;
+        for format in &options.formats {
+            let images_per_page = format.lines * format.rows;
 
-        let formats = [("a4", PAGE_FORMAT_A4), ("us_letter", PAGE_FORMAT_LETTER)];
-
-        for (format_name, format) in &formats {
-            let groups = (1..NUMBER_OF_CARDS+1)
+            let groups = options.cards.iter()
+                .sorted()
+                .into_iter()
                 .chunks(images_per_page);
 
             // Width and height of the page, in pixels, including bleed.
@@ -636,28 +687,28 @@ fn main() {
             let image_height = PIXEL_HEIGHT_INITIAL as usize;
 
             // Compute margins that will let us put all the images on the document.
-            assert!(format.width_pixels >= image_width * options.print_at_home_dimensions.rows,
+            assert!(format.width_pixels >= image_width * format.rows,
                 "In format {name}, I need a width of at least {need} pixels, got {got}",
-                    name = format_name,
-                    need = image_width * options.print_at_home_dimensions.rows,
+                    name = format.name,
+                    need = image_width * format.rows,
                     got = format.width_pixels
             );
-            let margin_width = (format.width_pixels / options.print_at_home_dimensions.rows - image_width) / 2;
+            let margin_width = (format.width_pixels / format.rows - image_width) / 2;
 
-            assert!(format.height_pixels >= image_height * options.print_at_home_dimensions.lines,
+            assert!(format.height_pixels >= image_height * format.lines,
                 "In format {name}, I need a height of at least {need} pixels, got {got}",
-                    name = format_name,
-                    need = image_height * options.print_at_home_dimensions.lines,
+                    name = format.name,
+                    need = image_height * format.lines,
                     got = format.height_pixels
             );
-            let margin_height = (format.height_pixels / options.print_at_home_dimensions.lines - image_height) / 2;
+            let margin_height = (format.height_pixels / format.lines - image_height) / 2;
 
             let image_plus_margin_width = image_width + margin_width * 2;
 
             let image_plus_margin_height = image_height + margin_height * 2;
 
-            assert!((image_plus_margin_width as isize - format.width_pixels as isize / options.print_at_home_dimensions.rows as isize).abs() <= 1, "Images per line");
-            assert!((image_plus_margin_height as isize - format.height_pixels as isize / options.print_at_home_dimensions.lines as isize).abs() <= 1, "Images per row");
+            assert!((image_plus_margin_width as isize - format.width_pixels as isize / format.rows as isize).abs() <= 1, "Images per line");
+            assert!((image_plus_margin_height as isize - format.height_pixels as isize / format.lines as isize).abs() <= 1, "Images per row");
 
             let tasks = groups.into_iter()
                 .map(|group| {
@@ -673,7 +724,7 @@ fn main() {
                 .map(|group| {
                     let dest = dest_print_at_home_cards
                         .join(format!("{format}-{start}-{stop}.tiff",
-                            format = format_name,
+                            format = format.name,
                             start = group[0],
                             stop = group[group.len() - 1]));
                     let dest = dest.to_str()
@@ -697,7 +748,7 @@ fn main() {
                         .args(&["-fill", "none"]);
 
                     // Draw horizontal lines
-                    for i in 0..options.print_at_home_dimensions.lines {
+                    for i in 0..format.lines {
                         let x0 = 0;
                         let x1 = format.width_pixels;
                         // Draw horizontal line for the top of the image
@@ -720,7 +771,7 @@ fn main() {
 
                     }
                     // Draw vertical lines
-                    for i in 0..options.print_at_home_dimensions.rows {
+                    for i in 0..format.rows {
                         let y0 = 0;
                         let y1 = format.height_pixels;
 
@@ -743,8 +794,8 @@ fn main() {
                     }
 
                     let mut sources = group.iter();
-                    'grid: for i in 0..options.print_at_home_dimensions.rows {
-                        for j in 0..options.print_at_home_dimensions.lines {
+                    'grid: for i in 0..format.rows {
+                        for j in 0..format.lines {
                             let source = if let Some(source) = sources.next() {
                                 source
                             } else {
@@ -775,13 +826,81 @@ fn main() {
             batch(tasks);
         }
 
+        // Convert into jpg, if necessary
+        print!("Converting print-at-home horizontal cards into jpg (if necessary)");
+        let tasks = options.formats.iter()
+            // Establish list of files to convert
+            .flat_map(|format| {
+                if let Format::JPG = format.format {
+                    // Ok, we need to generate a jpg.
+                } else {
+                    // Skip this format
+                    return vec![].into_iter();
+                }
+                let images_per_page = format.lines * format.rows;
+                let groups = options.cards.iter()
+                    .sorted()
+                    .into_iter()
+                    .chunks(images_per_page);
+                let sources : Vec<(_, _)> = groups.into_iter()
+                    .map(|group| {
+                        group
+                            .map(|i| format!("{}", i))
+                            .collect_vec()
+                    })
+                    .chain({
+                        let vec = itertools::repeat_n("back".to_string(), images_per_page)
+                            .collect_vec();
+                        Some(vec).into_iter()
+                    })
+                    .map(|group| {
+                        let source = dest_print_at_home_cards
+                            .join(format!("{format}-{start}-{stop}.tiff",
+                                format = format.name,
+                                start = group[0],
+                                stop = group[group.len() - 1]));
+                        let dest = dest_print_at_home_cards
+                            .join(format!("{format}-{start}-{stop}.jpg",
+                                format = format.name,
+                                start = group[0],
+                                stop = group[group.len() - 1]));
+                        (
+                            source.to_str()
+                                .unwrap()
+                                .to_string(),
+                            dest.to_str()
+                                .unwrap()
+                                .to_string()
+                        )
+                    })
+                    .collect();
+                sources.into_iter()
+            })
+            .map(|(source, dest)| {
+                let mut command = Command::new("convert");
+                command.arg(source);
+                command.arg(dest);
+                command.spawn()
+                    .expect("Could not launch command")
+            })
+            .collect_vec();
+        batch(tasks);
+
         // Convert into a single pdf
-        print!("Converting print-at-home horizontal cards into a single high-res pdf");
-        let tasks = formats.iter()
-            .map(|(format_name, _)| {
-                let groups = (1..NUMBER_OF_CARDS+1)
-                    .chunks(options.print_at_home_dimensions.lines as usize
-                        * options.print_at_home_dimensions.rows as usize);
+        print!("Converting print-at-home horizontal cards into a single high-res pdf (if necessary)");
+        let tasks = options.formats.iter()
+            .filter_map(|format| {
+                if let Format::PDF = format.format {
+                    // Ok, we need to generate a pdf.
+                } else {
+                    // Skip this format
+                    return None;
+                }
+                let images_per_page = format.lines * format.rows;
+                let groups = options.cards.iter()
+                    .sorted()
+                    .into_iter()
+                    .chunks(images_per_page);
                 let sources = groups.into_iter()
                     .map(|group| {
                         group
@@ -796,7 +915,7 @@ fn main() {
                     .map(|group| {
                         let source = dest_print_at_home_cards
                             .join(format!("{format}-{start}-{stop}.tiff",
-                                format = format_name,
+                                format = format.name,
                                 start = group[0],
                                 stop = group[group.len() - 1]));
                         source.to_str()
@@ -810,27 +929,33 @@ fn main() {
 
                 let dest = dest_print_at_home_cards
                     .join(format!("{format}-cards-highres.pdf",
-                        format = format_name));
+                        format = format.name));
                 let dest = dest.to_str()
                     .unwrap();
                 command.arg(dest);
                 debug!(target: "generate", "Generating high-res print-at-home: {:?}", command);
-                command.spawn()
-                    .expect("Could not launch command")
+                Some(command.spawn()
+                    .expect("Could not launch command"))
             }).collect();
         batch(tasks);
 
-        print!("Converting print-at-home horizontal cards into a single high-res pdf");
-        let tasks = formats.iter()
-            .map(|(format_name, _)|{
+        print!("Converting print-at-home horizontal cards into a single high-res pdf (if necessary)");
+        let tasks = options.formats.iter()
+            .filter_map(|format|{
+                if let Format::PDF = format.format {
+                    // Ok, we need to generate a pdf.
+                } else {
+                    // Skip this format
+                    return None;
+                }
                 let source = dest_print_at_home_cards
                     .join(format!("{format}-cards-highres.pdf",
-                        format = format_name));
+                        format = format.name));
                 let source = source.to_str()
                     .unwrap();
                 let dest = dest_print_at_home_cards
                     .join(format!("{format}-cards.pdf",
-                        format = format_name));
+                        format = format.name));
                 let dest = dest.to_str()
                     .unwrap();
                 let mut command = Command::new("gs");
@@ -844,90 +969,8 @@ fn main() {
                 command.arg(format!("-sOutputFile={}", dest))
                     .arg(source);
                 debug!(target: "generate", "Generating destination print-at-home: {:?}", command);
-                command.spawn()
-                    .expect("Could not launch command")
-            }).collect();
-        batch(tasks);
-    }
-
-    if let Some(ref dest_print_as_photos) = options.dest_print_as_photos {
-        std::fs::create_dir_all(dest_print_as_photos)
-            .expect("Could not create directory");
-        let pixel_width_with_photo_bleed = format!("{}", PIXEL_WIDTH_WITH_PHOTO_BLEED);
-
-        let desired_height = (1.5 * (PIXEL_WIDTH_WITH_PHOTO_BLEED as f64)) as isize;
-        let dx = (PIXEL_WIDTH_INITIAL - PIXEL_WIDTH_WITH_PHOTO_BLEED) / 2;
-        let dy = (PIXEL_HEIGHT_INITIAL - PIXEL_HEIGHT_WITH_PHOTO_BLEED) / 2;
-
-        let pos_top = "+0+0".to_string();
-        let pos_bottom = format!("+0+{}",
-            desired_height - PIXEL_HEIGHT_WITH_PHOTO_BLEED);
-        let groups = (1..NUMBER_OF_CARDS+1)
-            .chunks(2);
-
-        print!("Assembling 2 images into one 10x15 photo");
-        let tasks = groups.into_iter()
-            .map(|group| {
-                group
-                    .map(|i| format!("{}", i))
-                    .collect_vec()
-            })
-            .chain({
-                let vec = itertools::repeat_n("back".to_string(), 2)
-                    .collect_vec();
-                Some(vec).into_iter()
-            })
-            .map(|group| {
-                let dest = dest_print_as_photos
-                    .join(format!("{}-{}.jpg", group[0], group[group.len() - 1]));
-                let dest = dest.to_str()
-                    .unwrap();
-
-                let mut command = Command::new("convert");
-
-                // Create a new image on a white background.
-                command
-                    .args(&["-size", &format!("{}x{}",
-                        pixel_width_with_photo_bleed,
-                        desired_height
-                    )])
-                    .arg("xc:white");
-
-                // Prepare drawing lines.
-                command
-                    .args(&["-stroke", "black"])
-                    .args(&["-strokewidth", "3"])
-                    .args(&["-fill", "none"]);
-                for (i, source) in group.iter().enumerate() {
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        x0 = 0,
-                        x1 = pixel_width_with_photo_bleed,
-                        y0 = PIXEL_HEIGHT_WITH_PHOTO_BLEED,
-                        y1 = PIXEL_HEIGHT_WITH_PHOTO_BLEED)]);
-
-                    command.args(&["-draw", &format!("line {x0},{y0} {x1},{y1}",
-                        x0 = 0,
-                        x1 = pixel_width_with_photo_bleed,
-                        y0 = desired_height - PIXEL_HEIGHT_WITH_PHOTO_BLEED - 3,
-                        y1 = desired_height - PIXEL_HEIGHT_WITH_PHOTO_BLEED - 3)]);
-
-                    let path = options.dest_max_quality_horizontal_cards
-                        .join(format!("{source}.png[{w}x{h}+{dx}+{dy}]",
-                            source = source,
-                            dx = dx,
-                            dy = dy,
-                            w = PIXEL_WIDTH_WITH_PHOTO_BLEED,
-                            h = PIXEL_HEIGHT_WITH_PHOTO_BLEED));
-                    command.arg(path.into_os_string());
-                    let geometry = if i == 0 { &pos_top } else { &pos_bottom };
-                    command.args(&["-geometry", geometry])
-                        .arg("-composite");
-                }
-                command.arg(&dest);
-
-                debug!(target: "generate", "Assembling photos: {:?}", command);
-                command.spawn()
-                    .expect("Could not launch command")
+                Some(command.spawn()
+                    .expect("Could not launch command"))
             }).collect();
         batch(tasks);
     }

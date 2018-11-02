@@ -14,6 +14,10 @@ smallvec = "*"
 xvii = "*"
 
 [[bin]]
+name = "draw"
+path = "src/bin/draw.rs"
+
+[[bin]]
 name = "conflict"
 path = "src/bin/conflict.rs"
 
